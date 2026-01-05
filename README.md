@@ -1,11 +1,9 @@
-## LightYear: Memory Systems Benchmark + Eval Harness
+## Atlas: Cognitive-Based Benchmarking for Agentic Memory Systems
 
-This repo contains a small benchmark + evaluation harness for comparing “memory” systems on synthetic long-context conversations.
-
-### What’s included
+### Overview
 
 - **`benchmark/`**: benchmark generator + evaluation code (adapters, scoring, metrics)
-- **`simple_test_set/`** and **`complex_test_set/`**: benchmark JSON test sets
+- **`simple_test_set/`** and **`complex_test_set/`**: JSON test sets
 - **`evaluation_results/`**: saved runs / example results
 - **Entry points**:
   - `run_eval.py` (recommended)
@@ -56,4 +54,4 @@ python run_eval.py simple --adapter nebula --skip-ingest
 
 ### License
 
-MIT (see `LICENSE`).
+GNU Affero General Public License v3.0 (see `LICENSE`).
