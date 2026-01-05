@@ -4,7 +4,7 @@
 
 - **`benchmark/`**: benchmark generator + evaluation code (adapters, scoring, metrics)
 - **`simple_test_set/`** and **`complex_test_set/`**: JSON test sets
-- **`evaluation_results/`**: saved runs / example results
+- **`results/`**: saved runs / example results
 - **Entry points**:
   - `run_eval.py` (recommended)
   - `ingest_mem0.py` (pre-ingest Mem0)
@@ -36,7 +36,7 @@ python run_eval.py complex --adapter naive_rag
 python run_eval.py simple --adapter no_rag --max-files 3 --no-llm-eval
 ```
 
-Results are written to `evaluation_results/` by default.
+Results are written to `results/` by default.
 
 ### Pre-ingestion (optional)
 
