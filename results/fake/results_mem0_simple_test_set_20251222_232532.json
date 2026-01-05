@@ -1,0 +1,398 @@
+{
+  "generated_at": "2025-12-22T23:26:34.730502",
+  "adapter_type": "Mem0Adapter",
+  "num_benchmarks": 1,
+  "total_probes": 13,
+  "overall_summary": {
+    "overall_accuracy": 0.3076923076923077,
+    "total_score": 4,
+    "count": 13,
+    "by_answer_type": {
+      "short_answer": {
+        "total": 4,
+        "count": 11,
+        "accuracy": 0.36363636363636365
+      },
+      "boolean": {
+        "total": 0,
+        "count": 2,
+        "accuracy": 0.0
+      }
+    },
+    "by_pillar": {
+      "world_modeling": {
+        "total": 0,
+        "count": 2,
+        "accuracy": 0.0
+      },
+      "declarative_reasoning": {
+        "total": 1,
+        "count": 2,
+        "accuracy": 0.5
+      },
+      "temporal_episodic": {
+        "total": 1,
+        "count": 3,
+        "accuracy": 0.3333333333333333
+      },
+      "preference_learning": {
+        "total": 1,
+        "count": 2,
+        "accuracy": 0.5
+      },
+      "knowledge_boundaries": {
+        "total": 1,
+        "count": 2,
+        "accuracy": 0.5
+      },
+      "procedural_knowledge": {
+        "total": 0,
+        "count": 2,
+        "accuracy": 0.0
+      }
+    }
+  },
+  "benchmark_summaries": [
+    {
+      "file": "C:\\Users\\k_nai\\nebulaMemBenchmark\\simple_test_set\\benchmark_nebula_devtools_010.json",
+      "accuracy": 0.3076923076923077,
+      "num_probes": 13,
+      "ingestion_time_s": 37.4906587600708,
+      "eval_time_s": 22.17284393310547
+    }
+  ],
+  "detailed_results": [
+    {
+      "benchmark_file": "C:\\Users\\k_nai\\nebulaMemBenchmark\\simple_test_set\\benchmark_nebula_devtools_010.json",
+      "adapter_type": "Mem0Adapter",
+      "num_sessions": 10,
+      "num_probes": 13,
+      "ingestion_time_s": 37.4906587600708,
+      "total_evaluation_time_s": 22.17284393310547,
+      "probe_results": [
+        {
+          "probe_id": "world_modeling-entity_resolution-1",
+          "pillar": "world_modeling",
+          "subpillar": "entity_resolution",
+          "question": "Which individual is repeatedly identified as the user's cofounder throughout the sessions?",
+          "answer_type": "short_answer",
+          "gold_answer": "Sato",
+          "predicted_answer": "Unknown",
+          "retrieved_context": [
+            "User is preparing for a meeting with cofounder later",
+            "User and cofounder need to finalize architecture for core platform",
+            "User is good on tech side"
+          ],
+          "score": 0,
+          "match_type": "llm_judge",
+          "latency_ms": 851.189374923706
+        },
+        {
+          "probe_id": "world_modeling-relationship_mapping-2",
+          "pillar": "world_modeling",
+          "subpillar": "relationship_mapping",
+          "question": "What is the professional relationship between the user and the person concerned about the API layer's speed?",
+          "answer_type": "short_answer",
+          "gold_answer": "Cofounders",
+          "predicted_answer": "Unknown. The context does not provide information about the professional relationship between the user and the person concerned about the API layer's speed.",
+          "retrieved_context": [
+            "Sato was adamant about performance benefits for backend services",
+            "User is good on tech side",
+            "User and cofounder need to finalize architecture for core platform"
+          ],
+          "score": 0,
+          "match_type": "llm_judge",
+          "latency_ms": 969.8078632354736
+        },
+        {
+          "probe_id": "declarative_reasoning-fact_composition-3",
+          "pillar": "declarative_reasoning",
+          "subpillar": "fact_composition",
+          "question": "Which framework used in the CodeStream core project is described as a systems language with a 'crab mascot'?",
+          "answer_type": "short_answer",
+          "gold_answer": "Rust",
+          "predicted_answer": "The framework described as a systems language with a 'crab mascot' is Rust.",
+          "retrieved_context": [
+            "User is uncertain whether the architecture for core platform uses single language or mix",
+            "User and cofounder need to finalize architecture for core platform",
+            "Sato was adamant about performance benefits for backend services"
+          ],
+          "score": 1,
+          "match_type": "llm_judge",
+          "latency_ms": 934.0331554412842
+        },
+        {
+          "probe_id": "declarative_reasoning-constraint_propagation-4",
+          "pillar": "declarative_reasoning",
+          "subpillar": "constraint_propagation",
+          "question": "Based on the rule 'Organization Name + Year + !', what is the password for the office wifi?",
+          "answer_type": "short_answer",
+          "gold_answer": "CodeStream2024!",
+          "predicted_answer": "Unknown",
+          "retrieved_context": [
+            "User fixed tablet connection by adding exclamation mark to credentials",
+            "User is having trouble connecting tablet to office network",
+            "User will grab a bagel"
+          ],
+          "score": 0,
+          "match_type": "llm_judge",
+          "latency_ms": 934.8058700561523
+        },
+        {
+          "probe_id": "temporal_episodic-cyclical_event_recognition-5",
+          "pillar": "temporal_episodic",
+          "subpillar": "cyclical_event_recognition",
+          "question": "What specific technical concern does the cofounder Sato raise repeatedly across multiple sessions?",
+          "answer_type": "short_answer",
+          "gold_answer": "Backend performance",
+          "predicted_answer": "Sato was adamant about performance benefits for backend services.",
+          "retrieved_context": [
+            "Sato was adamant about performance benefits for backend services",
+            "User and cofounder need to finalize architecture for core platform",
+            "User is preparing for a meeting with cofounder later"
+          ],
+          "score": 1,
+          "match_type": "llm_judge",
+          "latency_ms": 1297.0082759857178
+        },
+        {
+          "probe_id": "temporal_episodic-episode_reconstruction-6",
+          "pillar": "temporal_episodic",
+          "subpillar": "episode_reconstruction",
+          "question": "In the session where the user requested a reminder to call the dentist, what office detail did they also ask about?",
+          "answer_type": "short_answer",
+          "gold_answer": "Wifi password",
+          "predicted_answer": "Unknown.",
+          "retrieved_context": [
+            "User wants reminder to pick up dry cleaning at 5 PM",
+            "User is preparing for a meeting with cofounder later",
+            "User fixed tablet connection by adding exclamation mark to credentials"
+          ],
+          "score": 0,
+          "match_type": "llm_judge",
+          "latency_ms": 1235.4443073272705
+        },
+        {
+          "probe_id": "temporal_episodic-temporal_sequencing-7",
+          "pillar": "temporal_episodic",
+          "subpillar": "temporal_sequencing",
+          "question": "Did the user ask about their lost jacket before or after the conversation about the rain?",
+          "answer_type": "short_answer",
+          "gold_answer": "Before",
+          "predicted_answer": "Unknown",
+          "retrieved_context": [
+            "User will grab a bagel",
+            "User skipped breakfast",
+            "User is preparing for a meeting with cofounder later"
+          ],
+          "score": 0,
+          "match_type": "llm_judge",
+          "latency_ms": 945.570707321167
+        },
+        {
+          "probe_id": "preference_learning-preference_induction-8",
+          "pillar": "preference_learning",
+          "subpillar": "preference_induction",
+          "question": "Which aspect of the project does the user prioritize discussing: frontend UI or backend performance?",
+          "answer_type": "short_answer",
+          "gold_answer": "Backend performance",
+          "predicted_answer": "Backend performance.",
+          "retrieved_context": [
+            "Sato was adamant about performance benefits for backend services",
+            "User and cofounder need to finalize architecture for core platform",
+            "User is good on tech side"
+          ],
+          "score": 1,
+          "match_type": "llm_judge",
+          "latency_ms": 1106.2042713165283
+        },
+        {
+          "probe_id": "preference_learning-preference_scope-9",
+          "pillar": "preference_learning",
+          "subpillar": "preference_scope",
+          "question": "Has the user explicitly requested the assistant to use a formal persona during their conversations?",
+          "answer_type": "boolean",
+          "gold_answer": "No",
+          "predicted_answer": "Unknown",
+          "retrieved_context": [
+            "User is preparing for a meeting with cofounder later",
+            "User will grab a bagel",
+            "User is uncertain whether the architecture for core platform uses single language or mix"
+          ],
+          "score": 0,
+          "match_type": "llm_judge",
+          "latency_ms": 837.4881744384766
+        },
+        {
+          "probe_id": "knowledge_boundaries-negative_knowledge-10",
+          "pillar": "knowledge_boundaries",
+          "subpillar": "negative_knowledge",
+          "question": "What specific database technology is mentioned as part of the CodeStream core project stack?",
+          "answer_type": "short_answer",
+          "gold_answer": "Not mentioned",
+          "predicted_answer": "Unknown",
+          "retrieved_context": [
+            "User is uncertain whether the architecture for core platform uses single language or mix",
+            "User and cofounder need to finalize architecture for core platform",
+            "Sato was adamant about performance benefits for backend services"
+          ],
+          "score": 1,
+          "match_type": "llm_judge",
+          "latency_ms": 831.7198753356934
+        },
+        {
+          "probe_id": "knowledge_boundaries-confidence_calibration-11",
+          "pillar": "knowledge_boundaries",
+          "subpillar": "confidence_calibration",
+          "question": "Is the CodeStream core project built exclusively using the Rust programming language?",
+          "answer_type": "boolean",
+          "gold_answer": "No",
+          "predicted_answer": "Unknown. The context does not provide information about the specific programming language used for the CodeStream core project.",
+          "retrieved_context": [
+            "User is uncertain whether the architecture for core platform uses single language or mix",
+            "User and cofounder need to finalize architecture for core platform",
+            "User's cofounder complained about compile times on the core module"
+          ],
+          "score": 0,
+          "match_type": "llm_judge",
+          "latency_ms": 1441.171646118164
+        },
+        {
+          "probe_id": "procedural_knowledge-procedure_storage-12",
+          "pillar": "procedural_knowledge",
+          "subpillar": "procedure_storage",
+          "question": "What is the procedure described for constructing the organization's wifi password?",
+          "answer_type": "short_answer",
+          "gold_answer": "Name + Year + !",
+          "predicted_answer": "The procedure described for constructing the organization's wifi password involves adding an exclamation mark to the credentials.",
+          "retrieved_context": [
+            "User reset phone and lost saved networks",
+            "User is having trouble connecting tablet to office network",
+            "User fixed tablet connection by adding exclamation mark to credentials"
+          ],
+          "score": 0,
+          "match_type": "llm_judge",
+          "latency_ms": 1049.5660305023193
+        },
+        {
+          "probe_id": "procedural_knowledge-lesson_extraction-13",
+          "pillar": "procedural_knowledge",
+          "subpillar": "lesson_extraction",
+          "question": "According to the sessions, what technical limitation of Node.js necessitated the inclusion of Rust?",
+          "answer_type": "short_answer",
+          "gold_answer": "Heavy computation struggles",
+          "predicted_answer": "Unknown. The context does not provide information about any technical limitation of Node.js that necessitated the inclusion of Rust.",
+          "retrieved_context": [
+            "API layer is faster to iterate on because it uses Node.js",
+            "Sato was adamant about performance benefits for backend services",
+            "User's cofounder complained about compile times on the core module"
+          ],
+          "score": 0,
+          "match_type": "llm_judge",
+          "latency_ms": 1298.1035709381104
+        }
+      ],
+      "summary": {
+        "overall_accuracy": 0.3076923076923077,
+        "total_score": 4,
+        "count": 13,
+        "by_answer_type": {
+          "short_answer": {
+            "total": 4,
+            "count": 11,
+            "accuracy": 0.36363636363636365
+          },
+          "boolean": {
+            "total": 0,
+            "count": 2,
+            "accuracy": 0.0
+          }
+        },
+        "by_pillar": {
+          "world_modeling": {
+            "total": 0,
+            "count": 2,
+            "accuracy": 0.0
+          },
+          "declarative_reasoning": {
+            "total": 1,
+            "count": 2,
+            "accuracy": 0.5
+          },
+          "temporal_episodic": {
+            "total": 1,
+            "count": 3,
+            "accuracy": 0.3333333333333333
+          },
+          "preference_learning": {
+            "total": 1,
+            "count": 2,
+            "accuracy": 0.5
+          },
+          "knowledge_boundaries": {
+            "total": 1,
+            "count": 2,
+            "accuracy": 0.5
+          },
+          "procedural_knowledge": {
+            "total": 0,
+            "count": 2,
+            "accuracy": 0.0
+          }
+        }
+      },
+      "stored_memories": [
+        {
+          "id": "d0714179-d045-472f-9886-2da53f085f94",
+          "memory": "User will grab a bagel",
+          "created_at": "2025-12-22T20:26:03.087030-08:00"
+        },
+        {
+          "id": "9394f41b-01e1-40d0-9531-312305695b6c",
+          "memory": "User skipped breakfast",
+          "created_at": "2025-12-22T20:26:02.087876-08:00"
+        },
+        {
+          "id": "edfdad8d-4677-40d0-b26e-49aed5536eaf",
+          "memory": "User is good on tech side",
+          "created_at": "2025-12-22T20:26:01.136602-08:00"
+        },
+        {
+          "id": "7a7c6d96-fa42-4134-89a4-6e4d535b4eff",
+          "memory": "User fixed tablet connection by adding exclamation mark to credentials",
+          "created_at": "2025-12-22T20:26:00.101931-08:00"
+        },
+        {
+          "id": "2719a277-7ffb-44dc-b9c3-6307ce15b845",
+          "memory": "User is having trouble connecting tablet to office network",
+          "created_at": "2025-12-22T20:25:59.073690-08:00"
+        },
+        {
+          "id": "69a2a1ba-d60f-4e3b-8415-3809457d671f",
+          "memory": "User wants reminder to pick up dry cleaning at 5 PM",
+          "created_at": "2025-12-22T20:25:58.052659-08:00"
+        },
+        {
+          "id": "98220ace-37ea-4eaf-b7f2-2a048523c88b",
+          "memory": "Sato was adamant about performance benefits for backend services",
+          "created_at": "2025-12-22T20:25:57.222914-08:00"
+        },
+        {
+          "id": "d5802c3c-dabf-4b85-b25c-a4b172f0628b",
+          "memory": "User is uncertain whether the architecture for core platform uses single language or mix",
+          "created_at": "2025-12-22T20:25:56.046520-08:00"
+        },
+        {
+          "id": "e34e0357-23e9-475a-bb25-a601f265e8c0",
+          "memory": "User and cofounder need to finalize architecture for core platform",
+          "created_at": "2025-12-22T20:25:55.509307-08:00"
+        },
+        {
+          "id": "3b5d4cdb-2cf0-4dff-99f9-456639e9b127",
+          "memory": "User is preparing for a meeting with cofounder later",
+          "created_at": "2025-12-22T20:25:54.834824-08:00"
+        }
+      ]
+    }
+  ]
+}

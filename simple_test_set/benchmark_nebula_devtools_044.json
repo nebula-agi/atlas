@@ -1,0 +1,824 @@
+{
+  "seed": 44,
+  "world_summary": {
+    "entities": [
+      "person:user",
+      "person:sato",
+      "org:codestream",
+      "project:codestream_core"
+    ],
+    "facts_count": 3,
+    "events_count": 0,
+    "preferences_count": 0
+  },
+  "num_sessions": 10,
+  "num_probes": 12,
+  "sessions": [
+    {
+      "id": "llm-0",
+      "timestamp": 0,
+      "turns": [
+        {
+          "speaker": "user",
+          "text": "Good morning. Do you know if the coffee machine in the break room is fixed yet?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Morning! Yes, maintenance came by earlier. It should be up and running now."
+        },
+        {
+          "speaker": "user",
+          "text": "Thank goodness. I need caffeine before I tackle the CodeStream core documentation."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Sounds like a busy start. Are you updating the dependency lists today?"
+        },
+        {
+          "speaker": "user",
+          "text": "Yeah. We're still using that V8-based runtime for the primary services, right?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Correct, the event-driven JavaScript environment is still the backbone of the project."
+        },
+        {
+          "speaker": "user",
+          "text": "Okay. And for the performance-critical components? My cofounder mentioned we switched languages there."
+        },
+        {
+          "speaker": "assistant",
+          "text": "We did. We are utilizing the systems language from Mozilla, the one with the crab mascot."
+        },
+        {
+          "speaker": "user",
+          "text": "Right, the one with the borrow checker. Thanks."
+        },
+        {
+          "speaker": "assistant",
+          "text": "No problem. Is there anything else you need to document?"
+        },
+        {
+          "speaker": "user",
+          "text": "Not for the docs. But Sato is here trying to connect his laptop and can't remember the wifi string."
+        },
+        {
+          "speaker": "assistant",
+          "text": "It is the company name, capitalize the C and S, followed by 2024 and an exclamation point."
+        },
+        {
+          "speaker": "user",
+          "text": "Great, I'll pass that along. By the way, remind me to call my dentist at 3 PM."
+        },
+        {
+          "speaker": "assistant",
+          "text": "I've added a reminder for your dentist appointment at 3 PM."
+        },
+        {
+          "speaker": "user",
+          "text": "Thanks, you're a lifesaver."
+        }
+      ]
+    },
+    {
+      "id": "llm-1",
+      "timestamp": 1,
+      "turns": [
+        {
+          "speaker": "user",
+          "text": "Hey, do you think it's going to rain later this afternoon?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "The forecast looks clear for the rest of the day, so you should be safe without an umbrella."
+        },
+        {
+          "speaker": "user",
+          "text": "Perfect. I was just catching up with Sato about the architecture for the main project."
+        },
+        {
+          "speaker": "assistant",
+          "text": "How is your cofounder feeling about the progress on CodeStream Core?"
+        },
+        {
+          "speaker": "user",
+          "text": "He's a bit anxious about the tech stack integration. We are mixing two languages, right?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "That's correct. The backend relies heavily on Rust for performance, while Node.js handles the rest of the services."
+        },
+        {
+          "speaker": "user",
+          "text": "Right, that's the combo. I need to grab some lunch soon, maybe that sushi place."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Enjoy your lunch. Do you need me to look up their hours?"
+        },
+        {
+          "speaker": "user",
+          "text": "No, I'm good. Oh, actually, we have a client visiting the office later. What's the wireless key again?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "It is the company name combined with the current year, 2024, ending with an exclamation point."
+        },
+        {
+          "speaker": "user",
+          "text": "Just to be sure, are the C and S capitalized?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Yes, Capital C and Capital S, then the year and the punctuation mark."
+        },
+        {
+          "speaker": "user",
+          "text": "Thanks. Also, remind me to pick up dry cleaning on my way home."
+        },
+        {
+          "speaker": "assistant",
+          "text": "I've added a reminder to pick up your dry cleaning after work."
+        }
+      ]
+    },
+    {
+      "id": "llm-2",
+      "timestamp": 2,
+      "turns": [
+        {
+          "speaker": "user",
+          "text": "Hey, can you set a reminder for me to call the dentist at 2 PM?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Done. I've scheduled a reminder to call the dentist at 2:00 PM today."
+        },
+        {
+          "speaker": "user",
+          "text": "Thanks. I was talking to my cofounder earlier about the tech stack for our main project."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Did Sato have some new input on the architecture?"
+        },
+        {
+          "speaker": "user",
+          "text": "Not really, just wanted to confirm we are still using Rust for the system-level components."
+        },
+        {
+          "speaker": "assistant",
+          "text": "I've made a note that the core system components are being written in Rust."
+        },
+        {
+          "speaker": "user",
+          "text": "Right, and we are sticking with Node.js for the web server parts to keep things moving fast."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Understood. Rust for the system layer and Node.js for the web server to prioritize speed of development."
+        },
+        {
+          "speaker": "user",
+          "text": "Perfect. By the way, did I leave my jacket in the conference room?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "I'm not sure, but I can remind you to check there before you leave for the day."
+        },
+        {
+          "speaker": "user",
+          "text": "Yeah, do that. Also, my tablet keeps dropping the connection. What's the wifi password here again?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "It is the organization name followed by the current year and an exclamation mark."
+        },
+        {
+          "speaker": "user",
+          "text": "You mean CodeStream2024! right?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Yes, that is the correct password."
+        },
+        {
+          "speaker": "user",
+          "text": "Great, thanks."
+        }
+      ]
+    },
+    {
+      "id": "llm-3",
+      "timestamp": 3,
+      "turns": [
+        {
+          "speaker": "user",
+          "text": "Hey, hope you're having a good morning. Did you catch the game last night?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Good morning! I missed the game, unfortunately. I've been organizing some files. Who won?"
+        },
+        {
+          "speaker": "user",
+          "text": "The home team took it in overtime. Anyway, I need to update the documentation for our core platform. What are we using for the backend again?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "For the core project, we're sticking with that hybrid approach. It's mostly the Mozilla-backed systems language for performance, paired with the V8 JavaScript runtime for the services."
+        },
+        {
+          "speaker": "user",
+          "text": "Right, mixing memory safety with async speed. Got it. Also, reminds me I need to pick up milk later."
+        },
+        {
+          "speaker": "assistant",
+          "text": "I've added milk to your shopping list. Do you need a reminder for that later?"
+        },
+        {
+          "speaker": "user",
+          "text": "No, I'll remember. Oh, Sato is asking for the internet login for the office. He forgot it again."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Typical! Tell him it's just the company name, capitalized C and S, plus the current year and an exclamation point at the end."
+        },
+        {
+          "speaker": "user",
+          "text": "Thanks. My cofounder really needs to use a password manager. By the way, is it supposed to rain later?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "It looks like clear skies for the rest of the afternoon, so you should be fine."
+        },
+        {
+          "speaker": "user",
+          "text": "Perfect. I'll let him know about the network credentials."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Sounds good. Let me know if he has trouble connecting to the network."
+        },
+        {
+          "speaker": "user",
+          "text": "Will do. I'm going to grab another coffee before diving back into the code."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Enjoy your coffee break"
+        }
+      ]
+    },
+    {
+      "id": "llm-4",
+      "timestamp": 4,
+      "turns": [
+        {
+          "speaker": "user",
+          "text": "Hey, hope you're having a good morning."
+        },
+        {
+          "speaker": "assistant",
+          "text": "I am, thank you. How is your day going so far?"
+        },
+        {
+          "speaker": "user",
+          "text": "It's pretty hectic. I need to grab a double espresso soon or I'm going to crash."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Sounds like you have a long day ahead. Don't forget to hydrate as well."
+        },
+        {
+          "speaker": "user",
+          "text": "Good point. Anyway, I was syncing with Sato earlier about the tech stack for the main repository."
+        },
+        {
+          "speaker": "assistant",
+          "text": "It is always good to be on the same page as your cofounder. What did you two decide?"
+        },
+        {
+          "speaker": "user",
+          "text": "We are locking in Rust for the systems-level stuff in the core project."
+        },
+        {
+          "speaker": "assistant",
+          "text": "That makes sense for CodeStream Core; the memory safety features will be beneficial."
+        },
+        {
+          "speaker": "user",
+          "text": "Exactly. Also, remind me to call my mom for her birthday later."
+        },
+        {
+          "speaker": "assistant",
+          "text": "I've added a reminder to call your mom. Do you want to set a specific time?"
+        },
+        {
+          "speaker": "user",
+          "text": "Let's say 6 PM. Back to the stack, we're going to use Node.js for the interface layer."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Got it. Node.js should handle the I/O for the project quite efficiently."
+        },
+        {
+          "speaker": "user",
+          "text": "Right. Oh, we have a vendor coming by the office today. Can you look up the wifi pass?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Sure, the password for the org network is CodeStream2024! with a capital C and S."
+        },
+        {
+          "speaker": "user",
+          "text": "Perfect, thanks. I better run to that meeting now."
+        }
+      ]
+    },
+    {
+      "id": "llm-5",
+      "timestamp": 5,
+      "turns": [
+        {
+          "speaker": "user",
+          "text": "Good morning. Can you set a reminder for me to call the dentist at 2 PM?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Good morning. I've set a reminder for your dentist appointment at 2 PM today."
+        },
+        {
+          "speaker": "user",
+          "text": "Thanks. I'm trying to update the documentation for the core project. What's the current tech stack composition again?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "For the CodeStream core repository, the backend processing is primarily built with Rust, while the service layer utilizes Node.js."
+        },
+        {
+          "speaker": "user",
+          "text": "Right, the hybrid approach. Makes sense. By the way, did you see that new coffee shop open downstairs?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "I haven't, but I can look up their menu if you're interested in grabbing a drink later."
+        },
+        {
+          "speaker": "user",
+          "text": "Maybe later. My cofounder is actually stopping by the office in a bit, so I need to be ready."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Understood. Is Sato coming in for a specific meeting, or just a general visit?"
+        },
+        {
+          "speaker": "user",
+          "text": "Just a general sync. He's asking for the office internet login again. It hasn't changed, right?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "No changes. The password for the CodeStream network is still the company name, capitalized, followed by the current year and an exclamation mark."
+        },
+        {
+          "speaker": "user",
+          "text": "So CodeStream2024! then?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "That is correct."
+        },
+        {
+          "speaker": "user",
+          "text": "Perfect, I'll text it to him. Oh, also remind me to water the plants when I get home."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Noted. I'll remind you to water the plants this evening."
+        },
+        {
+          "speaker": "user",
+          "text": "Awesome, thanks."
+        }
+      ]
+    },
+    {
+      "id": "llm-6",
+      "timestamp": 6,
+      "turns": [
+        {
+          "speaker": "user",
+          "text": "Hey, did you catch the game last night?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "No, I missed it. Was it a good one?"
+        },
+        {
+          "speaker": "user",
+          "text": "Yeah, pretty intense. Anyway, I'm trying to update the readme for the core project. What exactly is the tech stack we settled on?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "For the heavy computation in codestreamcore, we are using Rust, but the API services are running on Node.js."
+        },
+        {
+          "speaker": "user",
+          "text": "Right, my cofounder really pushed for that hybrid model. Speaking of the office, I have a client dropping by."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Do you need me to book a conference room?"
+        },
+        {
+          "speaker": "user",
+          "text": "No, just need to get them connected. What's the wifi password for the org again?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "It is the company name, capitalized, plus the current year 2024 and an exclamation mark."
+        },
+        {
+          "speaker": "user",
+          "text": "Thanks. Also, remind me to pick up my dry cleaning at 5."
+        },
+        {
+          "speaker": "assistant",
+          "text": "I have set a reminder for your dry cleaning at 5 PM."
+        },
+        {
+          "speaker": "user",
+          "text": "Perfect. Is it supposed to rain later?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "It looks like clear skies for the rest of the evening."
+        },
+        {
+          "speaker": "user",
+          "text": "Good to hear. I'll get back to documenting the Node.js implementation then."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Sounds like a plan. Let me know if you need help with the docs."
+        }
+      ]
+    },
+    {
+      "id": "llm-7",
+      "timestamp": 7,
+      "turns": [
+        {
+          "speaker": "user",
+          "text": "Hey, hope you're having a good morning. Did you catch the game last night?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "I missed it, actually. I was catching up on some reading. Was it a good match?"
+        },
+        {
+          "speaker": "user",
+          "text": "Yeah, pretty intense ending. Anyway, I'm at the office with Sato trying to figure out this architecture for the new project."
+        },
+        {
+          "speaker": "assistant",
+          "text": "How is the collaboration with your cofounder going?"
+        },
+        {
+          "speaker": "user",
+          "text": "It's okay. We're splitting the stack for CodeStream Core. He's insisting on handling the high-performance backend stuff using that language with the crab mascot."
+        },
+        {
+          "speaker": "assistant",
+          "text": "That makes sense for performance-critical components. What are you using for the rest of the application?"
+        },
+        {
+          "speaker": "user",
+          "text": "I'm sticking to the V8-based runtime for the API services to keep development speed high."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Sounds like a solid hybrid approach. Mixing systems-level logic with event-driven JavaScript usually balances well."
+        },
+        {
+          "speaker": "user",
+          "text": "Exactly. But honestly, the biggest blocker right now isn't the code, it's the internet. I formatted my phone and forgot the office network key."
+        },
+        {
+          "speaker": "assistant",
+          "text": "That is frustrating. Do you remember the pattern they usually use for the organization's security?"
+        },
+        {
+          "speaker": "user",
+          "text": "Yeah, I think Sato said it's just our startup's name capitalized, then the current year, and a bang at the end."
+        },
+        {
+          "speaker": "assistant",
+          "text": "That sounds standard. So it would be the organization name plus 2024 and the punctuation mark. Easy to remember."
+        },
+        {
+          "speaker": "user",
+          "text": "Right. Once I get connected, I need to debug some async issues in the API layer."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Good luck with the debugging. Let me know if you need help tracing those async calls."
+        },
+        {
+          "speaker": "user",
+          "text": "Thanks. I might grab a sandwich first though, starving."
+        }
+      ]
+    },
+    {
+      "id": "llm-8",
+      "timestamp": 8,
+      "turns": [
+        {
+          "speaker": "user",
+          "text": "Good morning. Hope you're having a decent start to the day. Is it raining where you are?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Good morning! It's actually quite sunny here. How are things on your end?"
+        },
+        {
+          "speaker": "user",
+          "text": "A bit gray, but coffee helps. I need to get some admin stuff sorted before my cofounder Sato arrives. He's obsessed with having the wifi ready immediately."
+        },
+        {
+          "speaker": "assistant",
+          "text": "I can help with that. Do you need to retrieve or store the credentials for the office network?"
+        },
+        {
+          "speaker": "user",
+          "text": "Let's store it. For the main CodeStream network, the password is just our company name with a capital C and S, followed by 2024 and an exclamation point."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Understood. I've saved that password for the organization's network. Is there anything else technical we need to log for the new setup?"
+        },
+        {
+          "speaker": "user",
+          "text": "Yeah, update the documentation for the core project. We finalized the backend languages yesterday."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Sure. What did you and Sato decide on for the core stack?"
+        },
+        {
+          "speaker": "user",
+          "text": "We're going to use that systems language with the crab mascot for the performance-critical stuff. Need that memory safety."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Got it, Rust for the performance components. What about the rest of the backend services?"
+        },
+        {
+          "speaker": "user",
+          "text": "We'll handle the rest with the standard server-side JavaScript runtime. It's just easier for the team to write quickly."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Noted, Node.js for the services layer. I've updated the project profile."
+        },
+        {
+          "speaker": "user",
+          "text": "great. Now, totally unrelated, can you remind me to water the plants when I get home?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Consider it done. I've set a reminder for you to water the plants later."
+        },
+        {
+          "speaker": "user",
+          "text": "Thanks. I'm going to grab a bagel before the morning stand-up. Talk later."
+        }
+      ]
+    },
+    {
+      "id": "llm-9",
+      "timestamp": 9,
+      "turns": [
+        {
+          "speaker": "user",
+          "text": "Hey, can you check my calendar for the afternoon? I feel like I'm forgetting a meeting."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Looking at your schedule, you're actually clear until 4 PM. You might be thinking of the sync with Sato tomorrow."
+        },
+        {
+          "speaker": "user",
+          "text": "Oh, right. Speaking of my cofounder, Sato was asking about the tech stack decision for the core project again."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Right, for the CodeStream core repo? We settled on a hybrid architecture to balance performance and iteration speed."
+        },
+        {
+          "speaker": "user",
+          "text": "Yeah, remind me which languages we locked in? I know we debated Go for a while."
+        },
+        {
+          "speaker": "assistant",
+          "text": "We ended up dropping Go. The plan is to use Rust for the performance-critical system components and Node.js for the API layer."
+        },
+        {
+          "speaker": "user",
+          "text": "Got it. Rust and Node. Okay, switching gears, did you see that thunder earlier?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Hard to miss! It shook the windows. Hopefully, the power stays on."
+        },
+        {
+          "speaker": "user",
+          "text": "Seriously. Anyway, we have a guest coming by the office later. Do you have the network credentials handy?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "For the main CodeStream network, the password is just the company name with a capital C and S, followed by the current year and an exclamation mark."
+        },
+        {
+          "speaker": "user",
+          "text": "So CodeStream2024! then?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "That is the one."
+        },
+        {
+          "speaker": "user",
+          "text": "Cool. Also, remind me to pick up my dry cleaning on the way home."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Added to your reminders list for 5:30 PM."
+        },
+        {
+          "speaker": "user",
+          "text": "Thanks. One last thing, are we running the Node services in containers?"
+        }
+      ]
+    }
+  ],
+  "probes": [
+    {
+      "id": "world_modeling-entity_resolution-0",
+      "pillar": "world_modeling",
+      "subpillar": "entity_resolution",
+      "question": "Who is the user's business partner at the CodeStream organization?",
+      "answer_type": "short_answer",
+      "gold_answer": {
+        "text": "Sato",
+        "supporting_items": [
+          "aliases"
+        ]
+      }
+    },
+    {
+      "id": "world_modeling-relationship_mapping-0",
+      "pillar": "world_modeling",
+      "subpillar": "relationship_mapping",
+      "question": "Which individual advocated for the hybrid tech stack model involving the 'crab mascot' language?",
+      "answer_type": "short_answer",
+      "gold_answer": {
+        "text": "Sato",
+        "supporting_items": [
+          "Session llm-6",
+          "Session llm-7"
+        ]
+      }
+    },
+    {
+      "id": "declarative_reasoning-fact_composition-0",
+      "pillar": "declarative_reasoning",
+      "subpillar": "fact_composition",
+      "question": "What two programming languages make up the hybrid architecture for the core project?",
+      "answer_type": "short_answer",
+      "gold_answer": {
+        "text": "Rust and Node.js",
+        "supporting_items": [
+          "Session llm-5",
+          "Session llm-9"
+        ]
+      }
+    },
+    {
+      "id": "declarative_reasoning-verbatim_recall-0",
+      "pillar": "declarative_reasoning",
+      "subpillar": "verbatim_recall",
+      "question": "What is the exact password for the CodeStream organization's wifi network?",
+      "answer_type": "verbatim",
+      "gold_answer": {
+        "text": "CodeStream2024!",
+        "supporting_items": [
+          "Session llm-8"
+        ]
+      }
+    },
+    {
+      "id": "temporal_episodic-temporal_sequencing-0",
+      "pillar": "temporal_episodic",
+      "subpillar": "temporal_sequencing",
+      "question": "Did the discussion about the 'crab mascot' language happen before or after the wifi password was stored?",
+      "answer_type": "short_answer",
+      "gold_answer": {
+        "text": "Before",
+        "supporting_items": [
+          "Session llm-7",
+          "Session llm-8"
+        ]
+      }
+    },
+    {
+      "id": "temporal_episodic-causal_explanation-0",
+      "pillar": "temporal_episodic",
+      "subpillar": "causal_explanation",
+      "question": "Why did the team decide against using Go for the core project?",
+      "answer_type": "short_answer",
+      "gold_answer": {
+        "text": "Performance and iteration speed",
+        "supporting_items": [
+          "Session llm-9"
+        ]
+      }
+    },
+    {
+      "id": "preference_learning-preference_induction-0",
+      "pillar": "preference_learning",
+      "subpillar": "preference_induction",
+      "question": "Which language does the cofounder insist on for high-performance backend tasks?",
+      "answer_type": "short_answer",
+      "gold_answer": {
+        "text": "Rust",
+        "supporting_items": [
+          "Session llm-7"
+        ]
+      }
+    },
+    {
+      "id": "preference_learning-explicit_preferences-0",
+      "pillar": "preference_learning",
+      "subpillar": "explicit_preferences",
+      "question": "What specific type of coffee does the user indicate a need for to avoid crashing?",
+      "answer_type": "short_answer",
+      "gold_answer": {
+        "text": "Double espresso",
+        "supporting_items": [
+          "Session llm-4"
+        ]
+      }
+    },
+    {
+      "id": "knowledge_boundaries-negative_knowledge-0",
+      "pillar": "knowledge_boundaries",
+      "subpillar": "negative_knowledge",
+      "question": "What database technology is used for the CodeStream Core project?",
+      "answer_type": "abstain",
+      "gold_answer": {
+        "text": "Unknown",
+        "supporting_items": []
+      }
+    },
+    {
+      "id": "knowledge_boundaries-negative_knowledge-1",
+      "pillar": "knowledge_boundaries",
+      "subpillar": "negative_knowledge",
+      "question": "What is the model number of the wifi router used at the CodeStream office?",
+      "answer_type": "abstain",
+      "gold_answer": {
+        "text": "Unknown",
+        "supporting_items": []
+      }
+    },
+    {
+      "id": "procedural_knowledge-procedure_storage-0",
+      "pillar": "procedural_knowledge",
+      "subpillar": "procedure_storage",
+      "question": "What are the components required to construct the office wifi password?",
+      "answer_type": "short_answer",
+      "gold_answer": {
+        "text": "Company name, 2024, exclamation point",
+        "supporting_items": [
+          "Session llm-8"
+        ]
+      }
+    },
+    {
+      "id": "procedural_knowledge-lesson_extraction-0",
+      "pillar": "procedural_knowledge",
+      "subpillar": "lesson_extraction",
+      "question": "What architectural lesson was applied to the CodeStream Core project regarding the choice of backend language?",
+      "answer_type": "short_answer",
+      "gold_answer": {
+        "text": "Use Rust for performance",
+        "supporting_items": [
+          "Session llm-7",
+          "Session llm-9"
+        ]
+      }
+    }
+  ]
+}

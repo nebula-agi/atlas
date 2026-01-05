@@ -1,0 +1,799 @@
+{
+  "seed": 2,
+  "world_summary": {
+    "entities": [
+      "person:user",
+      "person:olivia",
+      "org:medpulse",
+      "project:medpulse_core"
+    ],
+    "facts_count": 3,
+    "events_count": 0,
+    "preferences_count": 0
+  },
+  "num_sessions": 10,
+  "num_probes": 12,
+  "sessions": [
+    {
+      "id": "llm-0",
+      "timestamp": 0,
+      "turns": [
+        {
+          "speaker": "user",
+          "text": "Morning. Has Olivia messaged you?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Good morning. No word from your cofounder yet. Is she running late?"
+        },
+        {
+          "speaker": "user",
+          "text": "Yeah, traffic is bad. I'm just looking at the repo for the core project. Did we migrate everything?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "It doesn't look like a full migration. I still see a heavy split between the .py scripts and the services written in Go."
+        },
+        {
+          "speaker": "user",
+          "text": "Ah, so we are sticking with the dual stack. Python for the ML bits and the other one for the API, I guess."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Exactly. It seems that hybrid approach is locked in for now to balance speed and data processing."
+        },
+        {
+          "speaker": "user",
+          "text": "Okay, cool. Hey, my phone disconnected from the network. Did the password change for the office wifi?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "It did recently. The new credential for the org network is basically the company name followed by the current year and a bang."
+        },
+        {
+          "speaker": "user",
+          "text": "Just to be clear, is the name capitalized?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Yes, capitalize the name, add 2024 immediately after, and finish with an exclamation point."
+        },
+        {
+          "speaker": "user",
+          "text": "Thanks, that worked. Also, can you remind me to call my mom at 5?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Sure, I've set a reminder to call your mom at 5 PM."
+        },
+        {
+          "speaker": "user",
+          "text": "Awesome. I need to get some coffee before I start coding."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Sounds like a plan. Don't forget your mug in the breakroom."
+        }
+      ]
+    },
+    {
+      "id": "llm-1",
+      "timestamp": 1,
+      "turns": [
+        {
+          "speaker": "user",
+          "text": "Good morning! Can you add \"buy coffee beans\" to my grocery list?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Good morning. I've added coffee beans to your list. Do you need a reminder for that later?"
+        },
+        {
+          "speaker": "user",
+          "text": "No, I'll check it when I'm at the store. I'm preparing for the technical review with my cofounder later."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Sounds good. Is Olivia reviewing the entire architecture or just specific components?"
+        },
+        {
+          "speaker": "user",
+          "text": "We are looking at the MedPulse core repo. I completely blanked on the backend languages we settled on."
+        },
+        {
+          "speaker": "assistant",
+          "text": "No problem. For the core project, you're utilizing a mix of Python for the data processing and Go for the API services."
+        },
+        {
+          "speaker": "user",
+          "text": "Right, the hybrid approach. Thanks. Also, what's the weather looking like for lunch?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "It looks partly cloudy but dry, so you should be fine to eat outside."
+        },
+        {
+          "speaker": "user",
+          "text": "Perfect. One more thing, we have a consultant coming in today. What's the wifi password for the office again?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "The password for the MedPulse network is MedPulse2024! -- don't forget the exclamation mark at the end."
+        },
+        {
+          "speaker": "user",
+          "text": "Got it, thanks. I always forget the punctuation."
+        },
+        {
+          "speaker": "assistant",
+          "text": "It happens. I can send that to your phone if you want to forward it easily."
+        },
+        {
+          "speaker": "user",
+          "text": "That's okay, I wrote it down. Did I have any missed calls from yesterday?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "You had one missed call from the pharmacy, but no voicemails."
+        },
+        {
+          "speaker": "user",
+          "text": "Okay, I'll handle that later. Back to the tech stack, are we using the Go framework for the frontend too?"
+        }
+      ]
+    },
+    {
+      "id": "llm-2",
+      "timestamp": 2,
+      "turns": [
+        {
+          "speaker": "user",
+          "text": "Morning. Did you catch the game last night?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "No, I missed it. I was catching up on some reading. Was it a good one?"
+        },
+        {
+          "speaker": "user",
+          "text": "Yeah, pretty intense. Anyway, I'm looking at the MedPulse codebase. Are we sticking to just one language for the core services?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "I think we decided on a hybrid approach. The plan is to use Python for the data processing side of things, but switch to Go for the concurrency needs."
+        },
+        {
+          "speaker": "user",
+          "text": "Got it. Makes sense given what Olivia was saying about performance. Oh, do you want anything from the cafe? I'm heading out in five."
+        },
+        {
+          "speaker": "assistant",
+          "text": "I'm good on caffeine for now, thanks for asking though. Just water for me."
+        },
+        {
+          "speaker": "user",
+          "text": "No worries. Hey, quick question before I go\u2014a vendor is coming by later and needs the wifi. Is it still the old one?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "We updated it recently. It's the company name capitalized, followed by 2024 and an exclamation point."
+        },
+        {
+          "speaker": "user",
+          "text": "Cool, I'll write that down for them. Also, remind me to schedule that sync with the design team later."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Will do. I'll add a placeholder to your calendar for this afternoon."
+        },
+        {
+          "speaker": "user",
+          "text": "Thanks. The weather looks terrible outside, hope the rain holds off until I get back."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Fingers crossed. Let me know if you need help setting up the environment for the Go modules when you return."
+        }
+      ]
+    },
+    {
+      "id": "llm-3",
+      "timestamp": 3,
+      "turns": [
+        {
+          "speaker": "user",
+          "text": "Good morning. Can you add a reminder for me to pick up some dry cleaning at 5 PM?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Good morning. I've set that reminder for 5 PM. How is your day looking otherwise?"
+        },
+        {
+          "speaker": "user",
+          "text": "Pretty busy. I'm diving back into the MedPulse core repository today. I honestly keep forgetting which specific languages we finalized for the backend stack."
+        },
+        {
+          "speaker": "assistant",
+          "text": "I recall the team decided to split the architecture, utilizing Python for the data processing side and Go for the microservices."
+        },
+        {
+          "speaker": "user",
+          "text": "Right, the snake and the gopher. Makes sense given the performance requirements. Also, is it supposed to rain later?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "It looks like clear skies for the rest of the day, so your dry cleaning run should be dry."
+        },
+        {
+          "speaker": "user",
+          "text": "Perfect. Oh, Olivia is dropping by the office later and she messaged me asking for the wifi login again. She never remembers it."
+        },
+        {
+          "speaker": "assistant",
+          "text": "You can tell your cofounder it's just the organization's name with a capital M and P, followed by the current year, and finished off with an exclamation mark."
+        },
+        {
+          "speaker": "user",
+          "text": "Thanks, that's easy enough to text her. She's been running around all day meeting investors."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Hopefully the meetings go well. Do you need me to schedule a debrief with her for tomorrow?"
+        },
+        {
+          "speaker": "user",
+          "text": "Not yet, let's wait until she gets here. Actually, can you also remind me to call my mom during lunch?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Done. I have added a reminder to call your mom around noon."
+        },
+        {
+          "speaker": "user",
+          "text": "Great. I'm going to grab a coffee and get started on the code."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Enjoy the coffee and good luck with the development work."
+        }
+      ]
+    },
+    {
+      "id": "llm-4",
+      "timestamp": 4,
+      "turns": [
+        {
+          "speaker": "user",
+          "text": "Hey, can you set a timer for 20 minutes? I need to focus on this documentation."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Timer set for 20 minutes. What specifically are you documenting right now?"
+        },
+        {
+          "speaker": "user",
+          "text": "I'm updating the readme for the medpulsecore repo. We are using a dual-language stack for that, right?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Correct, the current architecture relies on Python for the data processing layers and Go for the backend services."
+        },
+        {
+          "speaker": "user",
+          "text": "Right, I always forget which one we used for the API. Thanks."
+        },
+        {
+          "speaker": "assistant",
+          "text": "No problem. The Go implementation was chosen specifically for the speed of those endpoints."
+        },
+        {
+          "speaker": "user",
+          "text": "Makes sense. Oh, my cofounder just walked in and she's struggling to get her tablet on the office network."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Is Olivia having trouble finding the signal, or does she need the credentials?"
+        },
+        {
+          "speaker": "user",
+          "text": "She needs the login. It's the company name plus the year, right?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Yes, the password is MedPulse2024! \u2014 make sure she includes the exclamation point at the end."
+        },
+        {
+          "speaker": "user",
+          "text": "Got it, that worked for her. I really need to get some plants for this office, it's looking a bit sterile in here."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Adding some greenery could definitely improve the atmosphere. I can look up local nurseries if you'd like."
+        },
+        {
+          "speaker": "user",
+          "text": "Maybe later. I should probably grab lunch first. Do we have any meetings after 1 PM?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Your calendar is clear after 1 PM, so you have plenty of time."
+        }
+      ]
+    },
+    {
+      "id": "llm-5",
+      "timestamp": 5,
+      "turns": [
+        {
+          "speaker": "user",
+          "text": "Good morning, hope your systems are running smooth today."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Everything is green across the board here. How can I help you start your day?"
+        },
+        {
+          "speaker": "user",
+          "text": "I'm trying to update the documentation for the MedPulse Core project. Can you remind me what the primary languages are for the backend and analytics?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Right, for the core project, the backend services are being built out in Go for performance, while the analytics components are utilizing Python."
+        },
+        {
+          "speaker": "user",
+          "text": "Okay, perfect. I always forget which part is which."
+        },
+        {
+          "speaker": "assistant",
+          "text": "No problem. Mixing languages is common, especially when optimizing for speed versus data handling."
+        },
+        {
+          "speaker": "user",
+          "text": "Also, totally unrelated, but remind me to call my mom at 6 PM tonight."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Consider it done. I've added a reminder to call your mom at 6:00 PM."
+        },
+        {
+          "speaker": "user",
+          "text": "Thanks. I'm sitting in the lobby and the network kicked me off. What's the wifi password for the office again?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "It is MedPulse2024! \u2014 don't forget the exclamation point at the end."
+        },
+        {
+          "speaker": "user",
+          "text": "Got it, I'm back online. My cofounder is supposed to meet me here shortly."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Sounds good. Is Olivia bringing anything specific for the meeting?"
+        },
+        {
+          "speaker": "user",
+          "text": "Just her laptop. She's complaining about the traffic though."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Traffic is usually pretty bad around this time. Hopefully, she arrives soon."
+        },
+        {
+          "speaker": "user",
+          "text": "Yeah. While I wait, can you look up a recipe for chicken parmesan? I want to cook dinner later."
+        }
+      ]
+    },
+    {
+      "id": "llm-6",
+      "timestamp": 6,
+      "turns": [
+        {
+          "speaker": "user",
+          "text": "Morning! Hope you're running smoother than I am today. Need coffee."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Good morning. I'm operating at optimal efficiency, but I can't say the same for the break room espresso machine."
+        },
+        {
+          "speaker": "user",
+          "text": "Tragic. Anyway, I'm trying to get the new intern set up on the main repo. Which languages do they need installed?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "For the core project, they'll need to handle a hybrid stack. Tell them to grab Python for the analytics side and Go for the backend services."
+        },
+        {
+          "speaker": "user",
+          "text": "Right, Olivia loves that combination. Speaking of setup, what's the guest wifi password again?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "It's pretty standard. Just take our company name, append the current year, and finish it with an exclamation mark."
+        },
+        {
+          "speaker": "user",
+          "text": "Okay, so MedPulse2024! right?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "That is correct. Make sure they capitalize the M and P."
+        },
+        {
+          "speaker": "user",
+          "text": "Got it. Also, can you remind me to order lunch for the team meeting at noon?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Consider it done. I'll ping you around 11:30 AM to place the order."
+        },
+        {
+          "speaker": "user",
+          "text": "Perfect. Did we ever decide on a venue for the holiday party?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Not yet. The last suggestion was that bowling alley downtown, but nothing is booked."
+        },
+        {
+          "speaker": "user",
+          "text": "I'll ask Olivia about it later. She's usually in charge of the fun stuff."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Sounds like a plan. She'll probably be online soon; I see activity on the Go modules."
+        },
+        {
+          "speaker": "user",
+          "text": "Nice. Alright, I'm going to dive into the Python scripts now. Talk later."
+        }
+      ]
+    },
+    {
+      "id": "llm-7",
+      "timestamp": 7,
+      "turns": [
+        {
+          "speaker": "user",
+          "text": "Good morning! How is the weather looking for a lunch run later?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Good morning. It is sunny and clear, so it should be perfect for getting out at lunch."
+        },
+        {
+          "speaker": "user",
+          "text": "Awesome. I've been heads-down with Olivia working on the medpulsecore architecture."
+        },
+        {
+          "speaker": "assistant",
+          "text": "That sounds productive. Did you decide on the primary languages for the project?"
+        },
+        {
+          "speaker": "user",
+          "text": "Yeah, we're definitely sticking with Python for the data analysis components. It just handles the medical datasets better."
+        },
+        {
+          "speaker": "assistant",
+          "text": "That seems like the standard choice for data-heavy tasks. What about the performance-critical parts?"
+        },
+        {
+          "speaker": "user",
+          "text": "We're going to implement the main services in Go. We need that concurrency support."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Using Go for the services alongside Python for analysis sounds like a robust stack."
+        },
+        {
+          "speaker": "user",
+          "text": "It should scale well. Oh, before I forget, remind me to call the dentist at 2 PM."
+        },
+        {
+          "speaker": "assistant",
+          "text": "I have set a reminder for 2:00 PM to call the dentist."
+        },
+        {
+          "speaker": "user",
+          "text": "Thanks. Also, a consultant is coming in later and needs the wifi. It's the company name, the current year, and an exclamation point, right?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Yes, that is the correct pattern. Capitalize the name, add 2024, and end with the symbol."
+        },
+        {
+          "speaker": "user",
+          "text": "Great, I'll write it down for them. Did any packages arrive for me today?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "No packages have been logged at the front desk for you today."
+        }
+      ]
+    },
+    {
+      "id": "llm-8",
+      "timestamp": 8,
+      "turns": [
+        {
+          "speaker": "user",
+          "text": "Hey, hope your morning is going well. Did you catch the game last night?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "I missed it, actually. I was catching up on some reading. Was it a good one?"
+        },
+        {
+          "speaker": "user",
+          "text": "Yeah, pretty intense. Anyway, Olivia was asking about the backend stack for the core platform. What are we officially running?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "For the core project, we're doing a hybrid approach. We're using Python for the data analysis components and Go for the high-performance services."
+        },
+        {
+          "speaker": "user",
+          "text": "Got it. I'll let her know. Also, remind me to pick up a sandwich before the 1 PM call."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Will do. Don't forget you have that dentist appointment later this afternoon too."
+        },
+        {
+          "speaker": "user",
+          "text": "Ugh, right. Thanks. By the way, a vendor is coming by the office. What's the guest network key again?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "It's just the company name followed by the current year and an exclamation mark. Make sure to capitalize the M and the P."
+        },
+        {
+          "speaker": "user",
+          "text": "Perfect, thanks. Is it raining out there yet? It looked cloudy."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Not yet, but the forecast says it might start pouring around 3 PM."
+        },
+        {
+          "speaker": "user",
+          "text": "Okay, I'll bring an umbrella. Back to the code\u2014are we using any specific frameworks for the Python stuff?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Mostly standard libraries for now, but we might look into specific web frameworks later if the scope expands."
+        },
+        {
+          "speaker": "user",
+          "text": "Cool. And for the Go services?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Just the standard library there mostly, keeping it lightweight."
+        },
+        {
+          "speaker": "user",
+          "text": "Sounds like a plan. Talk later."
+        }
+      ]
+    },
+    {
+      "id": "llm-9",
+      "timestamp": 9,
+      "turns": [
+        {
+          "speaker": "user",
+          "text": "I just got back to the office, did I leave my coffee mug on the meeting table?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "I don't have eyes, but I recall you took it with you when you went to check the mail."
+        },
+        {
+          "speaker": "user",
+          "text": "Right, it was in the breakroom. Anyway, Olivia is here and she's having trouble logging into the internet."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Is she trying to access the guest network or the main internal one?"
+        },
+        {
+          "speaker": "user",
+          "text": "The main MedPulse network. She completely blanked on the secret code."
+        },
+        {
+          "speaker": "assistant",
+          "text": "It happens. Remind my cofounder it's just the company name capitalized, followed by the current year, and then an exclamation mark."
+        },
+        {
+          "speaker": "user",
+          "text": "Ah, right. MedPulse2024! ... yeah, that worked. Thanks."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Glad she's connected. Are you two working on the core project architecture today?"
+        },
+        {
+          "speaker": "user",
+          "text": "Yeah, we are debating the backend structure for the repo."
+        },
+        {
+          "speaker": "assistant",
+          "text": "I thought you settled on the languages last week."
+        },
+        {
+          "speaker": "user",
+          "text": "We did. We're definitely using Go for the high-concurrency services."
+        },
+        {
+          "speaker": "assistant",
+          "text": "That should handle the traffic well. What about the data processing side?"
+        },
+        {
+          "speaker": "user",
+          "text": "Sticking with Python for that. The libraries are just better for what we need to do with the medical data."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Sounds like a solid hybrid approach. Do you need me to look up some interoperability patterns?"
+        },
+        {
+          "speaker": "user",
+          "text": "Not right now. Honestly, I'm more worried about what to order for lunch."
+        }
+      ]
+    }
+  ],
+  "probes": [
+    {
+      "id": "declarative_reasoning-fact_composition-0",
+      "pillar": "declarative_reasoning",
+      "subpillar": "fact_composition",
+      "question": "What two programming languages comprise the hybrid stack for the medpulsecore project?",
+      "answer_type": "short_answer",
+      "gold_answer": {
+        "text": "Python and Go",
+        "supporting_items": [
+          "project:medpulse_core uses_framework Python",
+          "project:medpulse_core uses_framework Go"
+        ]
+      }
+    },
+    {
+      "id": "declarative_reasoning-verbatim_recall-0",
+      "pillar": "declarative_reasoning",
+      "subpillar": "verbatim_recall",
+      "question": "Based on the formula provided to the cofounder, what is the exact string for the MedPulse wifi password?",
+      "answer_type": "verbatim",
+      "gold_answer": {
+        "text": "MedPulse2024!",
+        "supporting_items": [
+          "org:medpulse wifi_password MedPulse2024!"
+        ]
+      }
+    },
+    {
+      "id": "world_modeling-entity_resolution-0",
+      "pillar": "world_modeling",
+      "subpillar": "entity_resolution",
+      "question": "Who is the user referring to when they mention their 'cofounder' having trouble with the internet?",
+      "answer_type": "short_answer",
+      "gold_answer": {
+        "text": "Olivia",
+        "supporting_items": [
+          "person:olivia aliases=(my cofounder)"
+        ]
+      }
+    },
+    {
+      "id": "world_modeling-relationship_mapping-0",
+      "pillar": "world_modeling",
+      "subpillar": "relationship_mapping",
+      "question": "Which specific technology stack combination does Olivia explicitly love?",
+      "answer_type": "short_answer",
+      "gold_answer": {
+        "text": "Python and Go",
+        "supporting_items": [
+          "person:olivia aliases=(my cofounder)"
+        ]
+      }
+    },
+    {
+      "id": "temporal_episodic-temporal_sequencing-0",
+      "pillar": "temporal_episodic",
+      "subpillar": "temporal_sequencing",
+      "question": "Did the conversation about the broken espresso machine occur before or after the user mentioned their dentist appointment?",
+      "answer_type": "short_answer",
+      "gold_answer": {
+        "text": "Before",
+        "supporting_items": []
+      }
+    },
+    {
+      "id": "temporal_episodic-episode_reconstruction-0",
+      "pillar": "temporal_episodic",
+      "subpillar": "episode_reconstruction",
+      "question": "During the discussion about setting up the new intern, what specific appliance did the assistant mention was not operating efficiently?",
+      "answer_type": "short_answer",
+      "gold_answer": {
+        "text": "espresso machine",
+        "supporting_items": []
+      }
+    },
+    {
+      "id": "preference_learning-explicit_preferences-0",
+      "pillar": "preference_learning",
+      "subpillar": "explicit_preferences",
+      "question": "What is the primary reason cited for choosing Go for the backend services over other languages?",
+      "answer_type": "short_answer",
+      "gold_answer": {
+        "text": "performance",
+        "supporting_items": [
+          "project:medpulse_core uses_framework Go"
+        ]
+      }
+    },
+    {
+      "id": "preference_learning-preference_scope-0",
+      "pillar": "preference_learning",
+      "subpillar": "preference_scope",
+      "question": "For which specific domain of the MedPulse Core project is Python the preferred tool?",
+      "answer_type": "short_answer",
+      "gold_answer": {
+        "text": "data analysis",
+        "supporting_items": [
+          "project:medpulse_core uses_framework Python"
+        ]
+      }
+    },
+    {
+      "id": "knowledge_boundaries-negative_knowledge-0",
+      "pillar": "knowledge_boundaries",
+      "subpillar": "negative_knowledge",
+      "question": "What frontend framework is currently used for the MedPulse Core project?",
+      "answer_type": "abstain",
+      "gold_answer": {
+        "text": "not mentioned",
+        "supporting_items": []
+      }
+    },
+    {
+      "id": "knowledge_boundaries-negative_knowledge-1",
+      "pillar": "knowledge_boundaries",
+      "subpillar": "negative_knowledge",
+      "question": "Who is the lead database administrator for the MedPulse organization?",
+      "answer_type": "abstain",
+      "gold_answer": {
+        "text": "not mentioned",
+        "supporting_items": []
+      }
+    },
+    {
+      "id": "procedural_knowledge-procedure_storage-0",
+      "pillar": "procedural_knowledge",
+      "subpillar": "procedure_storage",
+      "question": "What is the three-part formula used to construct the MedPulse wifi password?",
+      "answer_type": "short_answer",
+      "gold_answer": {
+        "text": "Company name, year, exclamation mark",
+        "supporting_items": [
+          "org:medpulse wifi_password MedPulse2024!"
+        ]
+      }
+    },
+    {
+      "id": "procedural_knowledge-tool_method_memory-0",
+      "pillar": "procedural_knowledge",
+      "subpillar": "tool_method_memory",
+      "question": "What software installation steps were prescribed for setting up the new intern's environment?",
+      "answer_type": "short_answer",
+      "gold_answer": {
+        "text": "Install Python and Go",
+        "supporting_items": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+# Backwards-compatible alias.
+# The full set of dependencies now lives in requirements.txt
+-r requirements.txt

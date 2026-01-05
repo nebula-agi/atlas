@@ -1,0 +1,198 @@
+{
+  "generated_at": "2025-12-28T03:38:19.220324",
+  "benchmark_dir": "C:\\Users\\k_nai\\nebulaMemBenchmark\\complex_test_set",
+  "adapters": {
+    "supermemory": {
+      "status": "success",
+      "overall_accuracy": 0.5447316103379721,
+      "total_probes": 503,
+      "by_answer_type": {
+        "short_answer": {
+          "total": 190,
+          "count": 408,
+          "accuracy": 0.46568627450980393
+        },
+        "boolean": {
+          "total": 12,
+          "count": 18,
+          "accuracy": 0.6666666666666666
+        },
+        "abstain": {
+          "total": 70,
+          "count": 73,
+          "accuracy": 0.958904109589041
+        },
+        "verbatim": {
+          "total": 1,
+          "count": 2,
+          "accuracy": 0.5
+        },
+        "generation": {
+          "total": 1,
+          "count": 2,
+          "accuracy": 0.5
+        }
+      },
+      "by_pillar": {
+        "world_modeling": {
+          "total": 55,
+          "count": 85,
+          "accuracy": 0.6470588235294118
+        },
+        "declarative_reasoning": {
+          "total": 60,
+          "count": 95,
+          "accuracy": 0.631578947368421
+        },
+        "temporal_episodic": {
+          "total": 21,
+          "count": 83,
+          "accuracy": 0.25301204819277107
+        },
+        "preference_learning": {
+          "total": 32,
+          "count": 75,
+          "accuracy": 0.4266666666666667
+        },
+        "knowledge_boundaries": {
+          "total": 85,
+          "count": 90,
+          "accuracy": 0.9444444444444444
+        },
+        "procedural_knowledge": {
+          "total": 21,
+          "count": 75,
+          "accuracy": 0.28
+        }
+      }
+    },
+    "naive_rag": {
+      "status": "success",
+      "overall_accuracy": 0.532803180914513,
+      "total_probes": 503,
+      "by_answer_type": {
+        "short_answer": {
+          "total": 188,
+          "count": 408,
+          "accuracy": 0.46078431372549017
+        },
+        "boolean": {
+          "total": 8,
+          "count": 18,
+          "accuracy": 0.4444444444444444
+        },
+        "abstain": {
+          "total": 72,
+          "count": 73,
+          "accuracy": 0.9863013698630136
+        },
+        "verbatim": {
+          "total": 0,
+          "count": 2,
+          "accuracy": 0.0
+        },
+        "generation": {
+          "total": 0,
+          "count": 2,
+          "accuracy": 0.0
+        }
+      },
+      "by_pillar": {
+        "world_modeling": {
+          "total": 51,
+          "count": 85,
+          "accuracy": 0.6
+        },
+        "declarative_reasoning": {
+          "total": 59,
+          "count": 95,
+          "accuracy": 0.6210526315789474
+        },
+        "temporal_episodic": {
+          "total": 19,
+          "count": 83,
+          "accuracy": 0.2289156626506024
+        },
+        "preference_learning": {
+          "total": 24,
+          "count": 75,
+          "accuracy": 0.32
+        },
+        "knowledge_boundaries": {
+          "total": 83,
+          "count": 90,
+          "accuracy": 0.9222222222222223
+        },
+        "procedural_knowledge": {
+          "total": 32,
+          "count": 75,
+          "accuracy": 0.4266666666666667
+        }
+      }
+    },
+    "no_rag": {
+      "status": "success",
+      "overall_accuracy": 0.6819085487077535,
+      "total_probes": 503,
+      "by_answer_type": {
+        "short_answer": {
+          "total": 254,
+          "count": 408,
+          "accuracy": 0.6225490196078431
+        },
+        "boolean": {
+          "total": 16,
+          "count": 18,
+          "accuracy": 0.8888888888888888
+        },
+        "abstain": {
+          "total": 69,
+          "count": 73,
+          "accuracy": 0.9452054794520548
+        },
+        "verbatim": {
+          "total": 2,
+          "count": 2,
+          "accuracy": 1.0
+        },
+        "generation": {
+          "total": 2,
+          "count": 2,
+          "accuracy": 1.0
+        }
+      },
+      "by_pillar": {
+        "world_modeling": {
+          "total": 80,
+          "count": 85,
+          "accuracy": 0.9411764705882353
+        },
+        "declarative_reasoning": {
+          "total": 72,
+          "count": 95,
+          "accuracy": 0.7578947368421053
+        },
+        "temporal_episodic": {
+          "total": 30,
+          "count": 83,
+          "accuracy": 0.3614457831325301
+        },
+        "preference_learning": {
+          "total": 42,
+          "count": 75,
+          "accuracy": 0.56
+        },
+        "knowledge_boundaries": {
+          "total": 84,
+          "count": 90,
+          "accuracy": 0.9333333333333333
+        },
+        "procedural_knowledge": {
+          "total": 35,
+          "count": 75,
+          "accuracy": 0.4666666666666667
+        }
+      }
+    }
+  }
+}

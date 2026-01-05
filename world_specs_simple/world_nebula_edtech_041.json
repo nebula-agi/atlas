@@ -1,0 +1,303 @@
+{
+  "world_id": "world:nebula_edtech_041",
+  "schema_version": "1.0",
+  "metadata": {
+    "domain": "EdTech",
+    "description": "Simulation of LearnLoop scaling from TypeScript to Python.",
+    "seed": 42040,
+    "time": {
+      "timezone": "America/Los_Angeles",
+      "start_date": "2024-01-15T09:00:00Z"
+    }
+  },
+  "entities": [
+    {
+      "id": "ent:person:user",
+      "type": "Person",
+      "canonical_name": "User",
+      "attributes": {
+        "role": "CTO",
+        "employer": {
+          "ref": "ent:org:learnloop"
+        }
+      }
+    },
+    {
+      "id": "ent:person:ming",
+      "type": "Person",
+      "canonical_name": "Ming",
+      "aliases": [
+        {
+          "text": "my cofounder",
+          "scope": "user_perspective"
+        }
+      ],
+      "attributes": {
+        "role": "CEO",
+        "employer": {
+          "ref": "ent:org:learnloop"
+        }
+      }
+    },
+    {
+      "id": "ent:org:learnloop",
+      "type": "Organization",
+      "canonical_name": "LearnLoop",
+      "attributes": {
+        "domain": "EdTech"
+      }
+    },
+    {
+      "id": "ent:project:learnloop_core",
+      "type": "Project",
+      "canonical_name": "Project LearnLoop",
+      "attributes": {
+        "status": "active"
+      }
+    }
+  ],
+  "relations": [],
+  "facts": [
+    {
+      "id": "fact:stack_v1_cce60a",
+      "subject": {
+        "ref": "ent:project:learnloop_core"
+      },
+      "predicate": "uses_framework",
+      "object": {
+        "value_type": "string",
+        "value": "TypeScript"
+      },
+      "scope": {
+        "context_tags": [
+          "work",
+          "tech_stack"
+        ],
+        "applies_when": {
+          "time_window": {
+            "from": "2024-01-15T09:00:00Z",
+            "to": "2024-03-15T09:00:00Z"
+          }
+        }
+      },
+      "temporal": {
+        "asserted_at": "2024-01-16T09:00:00Z"
+      },
+      "epistemics": {
+        "polarity": "affirmed",
+        "confidence": "certain"
+      },
+      "superseded_by": "fact:stack_v2_6cd615"
+    },
+    {
+      "id": "fact:stack_v2_6cd615",
+      "subject": {
+        "ref": "ent:project:learnloop_core"
+      },
+      "predicate": "uses_framework",
+      "object": {
+        "value_type": "string",
+        "value": "Python"
+      },
+      "scope": {
+        "context_tags": [
+          "work",
+          "tech_stack"
+        ],
+        "applies_when": {
+          "time_window": {
+            "from": "2024-03-15T09:00:00Z",
+            "to": "null"
+          }
+        }
+      },
+      "temporal": {
+        "asserted_at": "2024-03-15T09:00:00Z"
+      },
+      "epistemics": {
+        "polarity": "affirmed",
+        "confidence": "certain"
+      },
+      "provenance": [
+        {
+          "source_session": "session:15",
+          "source_turn": "turn:05",
+          "evidence_text": "We are migrating from TypeScript to Python."
+        }
+      ],
+      "supersedes": [
+        "fact:stack_v1_cce60a"
+      ]
+    },
+    {
+      "id": "fact:wifi_923167",
+      "subject": {
+        "ref": "ent:org:learnloop"
+      },
+      "predicate": "wifi_password",
+      "object": {
+        "value_type": "string",
+        "value": "LearnLoop2024!"
+      },
+      "scope": {
+        "context_tags": [
+          "office"
+        ]
+      },
+      "verbatim": {
+        "is_verbatim_item": true,
+        "format": "text",
+        "content": "LearnLoop2024!"
+      }
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task:migration_1e5269",
+      "title": "Migrate backend to Python",
+      "owner": {
+        "ref": "ent:person:user"
+      },
+      "status": "in_progress",
+      "priority": "p0",
+      "created_at": "2024-03-14T09:00:00Z",
+      "updates": [
+        {
+          "at": "2024-03-15T09:00:00Z",
+          "change": "started",
+          "source_session": "session:15"
+        }
+      ]
+    }
+  ],
+  "episodes": [],
+  "preferences": [],
+  "procedures": [],
+  "rules": [],
+  "ambiguities": [],
+  "sessions_blueprint": {
+    "sessions": [
+      {
+        "session_id": "session:01",
+        "time": {
+          "start": "2024-01-15T09:00:00Z",
+          "end": "2024-01-15T10:00:00Z"
+        },
+        "participants": [
+          {
+            "ref": "ent:person:user"
+          },
+          {
+            "ref": "ent:person:ming"
+          }
+        ],
+        "artifacts_introduced": [
+          "ent:project:learnloop_core",
+          "fact:stack_v1_cce60a",
+          "fact:wifi_923167"
+        ],
+        "events_planned": [
+          {
+            "turn_id": "turn:01",
+            "speaker": "user",
+            "intents": [
+              "state_fact"
+            ],
+            "writes": [
+              "fact:stack_v1_cce60a"
+            ],
+            "notes": "Initial setup"
+          }
+        ]
+      },
+      {
+        "session_id": "session:15",
+        "time": {
+          "start": "2024-03-15T14:00:00Z",
+          "end": "2024-03-15T15:00:00Z"
+        },
+        "participants": [
+          {
+            "ref": "ent:person:user"
+          },
+          {
+            "ref": "ent:person:ming"
+          }
+        ],
+        "artifacts_introduced": [
+          "fact:stack_v2_6cd615",
+          "task:migration_1e5269"
+        ],
+        "events_planned": [
+          {
+            "turn_id": "turn:05",
+            "speaker": "user",
+            "intents": [
+              "update_fact",
+              "plan"
+            ],
+            "writes": [
+              "fact:stack_v2_6cd615",
+              "task:migration_1e5269"
+            ],
+            "expected_memory_ops": [
+              "supersede",
+              "link"
+            ],
+            "notes": "The Pivot: changing tech stack."
+          }
+        ]
+      }
+    ]
+  },
+  "probes_blueprint": {
+    "probe_families": [
+      {
+        "pillar": "3",
+        "skill": "belief_revision",
+        "query_templates": [
+          {
+            "id": "probe:tech_stack_current",
+            "prompt": "What framework is LearnLoop using now?",
+            "requires": {
+              "target_ids": [
+                "fact:stack_v2_6cd615"
+              ],
+              "reasoning": [
+                "temporal",
+                "belief_revision"
+              ]
+            },
+            "expected_answer_spec": {
+              "answer_type": "span",
+              "gold": "Python",
+              "must_cite": [
+                "fact:stack_v2_6cd615"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "pillar": "4",
+        "skill": "verbatim_recall",
+        "query_templates": [
+          {
+            "id": "probe:wifi_recall",
+            "prompt": "What is the wifi password?",
+            "requires": {
+              "target_ids": [
+                "fact:wifi_923167"
+              ],
+              "verbatim": true
+            },
+            "expected_answer_spec": {
+              "answer_type": "span",
+              "gold": "LearnLoop2024!"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+venv314/
+env/
+ENV/
+.python-version
+
+# Package / build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Testing and coverage
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Logs and temp files
+*.log
+*.tmp
+*.bak
+
+# IDE/editor files
+.vscode/
+.idea/
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Project outputs
+benchmark_result*.json
+
+# Secrets / local config
+.env
+.env.*
+*apikey*.txt
+nebula_collection_ids.json
+
+# Tooling
+.cursor/
+

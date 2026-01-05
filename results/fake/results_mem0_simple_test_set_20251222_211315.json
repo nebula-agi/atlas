@@ -1,0 +1,301 @@
+{
+  "generated_at": "2025-12-22T21:13:49.444930",
+  "adapter_type": "Mem0Adapter",
+  "num_benchmarks": 1,
+  "total_probes": 13,
+  "overall_summary": {
+    "overall_accuracy": 0.15384615384615385,
+    "total_score": 2,
+    "count": 13,
+    "by_answer_type": {
+      "short_answer": {
+        "total": 2,
+        "count": 11,
+        "accuracy": 0.18181818181818182
+      },
+      "boolean": {
+        "total": 0,
+        "count": 2,
+        "accuracy": 0.0
+      }
+    },
+    "by_pillar": {
+      "world_modeling": {
+        "total": 0,
+        "count": 2,
+        "accuracy": 0.0
+      },
+      "declarative_reasoning": {
+        "total": 1,
+        "count": 2,
+        "accuracy": 0.5
+      },
+      "temporal_episodic": {
+        "total": 0,
+        "count": 3,
+        "accuracy": 0.0
+      },
+      "preference_learning": {
+        "total": 0,
+        "count": 2,
+        "accuracy": 0.0
+      },
+      "knowledge_boundaries": {
+        "total": 1,
+        "count": 2,
+        "accuracy": 0.5
+      },
+      "procedural_knowledge": {
+        "total": 0,
+        "count": 2,
+        "accuracy": 0.0
+      }
+    }
+  },
+  "benchmark_summaries": [
+    {
+      "file": "C:\\Users\\k_nai\\nebulaMemBenchmark\\simple_test_set\\benchmark_nebula_devtools_010.json",
+      "accuracy": 0.15384615384615385,
+      "num_probes": 13,
+      "ingestion_time_s": 8.987628698348999,
+      "eval_time_s": 22.87146830558777
+    }
+  ],
+  "detailed_results": [
+    {
+      "benchmark_file": "C:\\Users\\k_nai\\nebulaMemBenchmark\\simple_test_set\\benchmark_nebula_devtools_010.json",
+      "adapter_type": "Mem0Adapter",
+      "num_sessions": 10,
+      "num_probes": 13,
+      "ingestion_time_s": 8.987628698348999,
+      "total_evaluation_time_s": 22.87146830558777,
+      "probe_results": [
+        {
+          "probe_id": "world_modeling-entity_resolution-1",
+          "pillar": "world_modeling",
+          "subpillar": "entity_resolution",
+          "question": "Which individual is repeatedly identified as the user's cofounder throughout the sessions?",
+          "answer_type": "short_answer",
+          "gold_answer": "Sato",
+          "predicted_answer": "Unknown",
+          "retrieved_context": [],
+          "score": 0,
+          "match_type": "llm_judge",
+          "latency_ms": 1426.8674850463867
+        },
+        {
+          "probe_id": "world_modeling-relationship_mapping-2",
+          "pillar": "world_modeling",
+          "subpillar": "relationship_mapping",
+          "question": "What is the professional relationship between the user and the person concerned about the API layer's speed?",
+          "answer_type": "short_answer",
+          "gold_answer": "Cofounders",
+          "predicted_answer": "Unknown",
+          "retrieved_context": [],
+          "score": 0,
+          "match_type": "llm_judge",
+          "latency_ms": 811.7048740386963
+        },
+        {
+          "probe_id": "declarative_reasoning-fact_composition-3",
+          "pillar": "declarative_reasoning",
+          "subpillar": "fact_composition",
+          "question": "Which framework used in the CodeStream core project is described as a systems language with a 'crab mascot'?",
+          "answer_type": "short_answer",
+          "gold_answer": "Rust",
+          "predicted_answer": "Rust",
+          "retrieved_context": [],
+          "score": 1,
+          "match_type": "llm_judge",
+          "latency_ms": 719.5134162902832
+        },
+        {
+          "probe_id": "declarative_reasoning-constraint_propagation-4",
+          "pillar": "declarative_reasoning",
+          "subpillar": "constraint_propagation",
+          "question": "Based on the rule 'Organization Name + Year + !', what is the password for the office wifi?",
+          "answer_type": "short_answer",
+          "gold_answer": "CodeStream2024!",
+          "predicted_answer": "Unknown",
+          "retrieved_context": [],
+          "score": 0,
+          "match_type": "llm_judge",
+          "latency_ms": 937.2892379760742
+        },
+        {
+          "probe_id": "temporal_episodic-cyclical_event_recognition-5",
+          "pillar": "temporal_episodic",
+          "subpillar": "cyclical_event_recognition",
+          "question": "What specific technical concern does the cofounder Sato raise repeatedly across multiple sessions?",
+          "answer_type": "short_answer",
+          "gold_answer": "Backend performance",
+          "predicted_answer": "Unknown",
+          "retrieved_context": [],
+          "score": 0,
+          "match_type": "llm_judge",
+          "latency_ms": 1034.5537662506104
+        },
+        {
+          "probe_id": "temporal_episodic-episode_reconstruction-6",
+          "pillar": "temporal_episodic",
+          "subpillar": "episode_reconstruction",
+          "question": "In the session where the user requested a reminder to call the dentist, what office detail did they also ask about?",
+          "answer_type": "short_answer",
+          "gold_answer": "Wifi password",
+          "predicted_answer": "Unknown",
+          "retrieved_context": [],
+          "score": 0,
+          "match_type": "llm_judge",
+          "latency_ms": 785.3388786315918
+        },
+        {
+          "probe_id": "temporal_episodic-temporal_sequencing-7",
+          "pillar": "temporal_episodic",
+          "subpillar": "temporal_sequencing",
+          "question": "Did the user ask about their lost jacket before or after the conversation about the rain?",
+          "answer_type": "short_answer",
+          "gold_answer": "Before",
+          "predicted_answer": "Unknown",
+          "retrieved_context": [],
+          "score": 0,
+          "match_type": "llm_judge",
+          "latency_ms": 814.3179416656494
+        },
+        {
+          "probe_id": "preference_learning-preference_induction-8",
+          "pillar": "preference_learning",
+          "subpillar": "preference_induction",
+          "question": "Which aspect of the project does the user prioritize discussing: frontend UI or backend performance?",
+          "answer_type": "short_answer",
+          "gold_answer": "Backend performance",
+          "predicted_answer": "Unknown",
+          "retrieved_context": [],
+          "score": 0,
+          "match_type": "llm_judge",
+          "latency_ms": 1258.880615234375
+        },
+        {
+          "probe_id": "preference_learning-preference_scope-9",
+          "pillar": "preference_learning",
+          "subpillar": "preference_scope",
+          "question": "Has the user explicitly requested the assistant to use a formal persona during their conversations?",
+          "answer_type": "boolean",
+          "gold_answer": "No",
+          "predicted_answer": "Unknown",
+          "retrieved_context": [],
+          "score": 0,
+          "match_type": "llm_judge",
+          "latency_ms": 1119.8301315307617
+        },
+        {
+          "probe_id": "knowledge_boundaries-negative_knowledge-10",
+          "pillar": "knowledge_boundaries",
+          "subpillar": "negative_knowledge",
+          "question": "What specific database technology is mentioned as part of the CodeStream core project stack?",
+          "answer_type": "short_answer",
+          "gold_answer": "Not mentioned",
+          "predicted_answer": "Unknown",
+          "retrieved_context": [],
+          "score": 1,
+          "match_type": "llm_judge",
+          "latency_ms": 975.1355648040771
+        },
+        {
+          "probe_id": "knowledge_boundaries-confidence_calibration-11",
+          "pillar": "knowledge_boundaries",
+          "subpillar": "confidence_calibration",
+          "question": "Is the CodeStream core project built exclusively using the Rust programming language?",
+          "answer_type": "boolean",
+          "gold_answer": "No",
+          "predicted_answer": "Unknown",
+          "retrieved_context": [],
+          "score": 0,
+          "match_type": "llm_judge",
+          "latency_ms": 1081.2571048736572
+        },
+        {
+          "probe_id": "procedural_knowledge-procedure_storage-12",
+          "pillar": "procedural_knowledge",
+          "subpillar": "procedure_storage",
+          "question": "What is the procedure described for constructing the organization's wifi password?",
+          "answer_type": "short_answer",
+          "gold_answer": "Name + Year + !",
+          "predicted_answer": "Unknown",
+          "retrieved_context": [
+            "User needs to finalize architecture for core platform and is unsure whether a single language or a mix was settled.",
+            "User is preparing for a meeting with cofounder later."
+          ],
+          "score": 0,
+          "match_type": "llm_judge",
+          "latency_ms": 837.7306461334229
+        },
+        {
+          "probe_id": "procedural_knowledge-lesson_extraction-13",
+          "pillar": "procedural_knowledge",
+          "subpillar": "lesson_extraction",
+          "question": "According to the sessions, what technical limitation of Node.js necessitated the inclusion of Rust?",
+          "answer_type": "short_answer",
+          "gold_answer": "Heavy computation struggles",
+          "predicted_answer": "The context does not provide specific information about the technical limitation of Node.js that necessitated the inclusion of Rust.",
+          "retrieved_context": [
+            "User needs to finalize architecture for core platform and is unsure whether a single language or a mix was settled.",
+            "Sato was adamant about performance benefits for backend services.",
+            "User is preparing for a meeting with cofounder later."
+          ],
+          "score": 0,
+          "match_type": "llm_judge",
+          "latency_ms": 1139.7595405578613
+        }
+      ],
+      "summary": {
+        "overall_accuracy": 0.15384615384615385,
+        "total_score": 2,
+        "count": 13,
+        "by_answer_type": {
+          "short_answer": {
+            "total": 2,
+            "count": 11,
+            "accuracy": 0.18181818181818182
+          },
+          "boolean": {
+            "total": 0,
+            "count": 2,
+            "accuracy": 0.0
+          }
+        },
+        "by_pillar": {
+          "world_modeling": {
+            "total": 0,
+            "count": 2,
+            "accuracy": 0.0
+          },
+          "declarative_reasoning": {
+            "total": 1,
+            "count": 2,
+            "accuracy": 0.5
+          },
+          "temporal_episodic": {
+            "total": 0,
+            "count": 3,
+            "accuracy": 0.0
+          },
+          "preference_learning": {
+            "total": 0,
+            "count": 2,
+            "accuracy": 0.0
+          },
+          "knowledge_boundaries": {
+            "total": 1,
+            "count": 2,
+            "accuracy": 0.5
+          },
+          "procedural_knowledge": {
+            "total": 0,
+            "count": 2,
+            "accuracy": 0.0
+          }
+        }
+      }
+    }
+  ]
+}

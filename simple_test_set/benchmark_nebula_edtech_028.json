@@ -1,0 +1,808 @@
+{
+  "seed": 28,
+  "world_summary": {
+    "entities": [
+      "person:user",
+      "person:olivia",
+      "org:learnloop",
+      "project:learnloop_core"
+    ],
+    "facts_count": 3,
+    "events_count": 0,
+    "preferences_count": 0
+  },
+  "num_sessions": 10,
+  "num_probes": 12,
+  "sessions": [
+    {
+      "id": "llm-0",
+      "timestamp": 0,
+      "turns": [
+        {
+          "speaker": "user",
+          "text": "Good morning. I'm feeling a bit slow today, didn't sleep well."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Sorry to hear that. Maybe a strong coffee is in order to kickstart the day?"
+        },
+        {
+          "speaker": "user",
+          "text": "Definitely. I'm grabbing a latte before I meet Olivia. We have a long dev session planned."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Is this for the LearnLoop project you mentioned earlier?"
+        },
+        {
+          "speaker": "user",
+          "text": "Yeah, specifically the core repository. We finally agreed on the tech stack last night."
+        },
+        {
+          "speaker": "assistant",
+          "text": "That's a big step. What did you two decide to build it with?"
+        },
+        {
+          "speaker": "user",
+          "text": "We're going with a hybrid approach. TypeScript for the interface and Python for the heavy lifting on the backend."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Understood, I've updated the project details with those frameworks."
+        },
+        {
+          "speaker": "user",
+          "text": "Great. Also, remind me to call my mom at 5 PM."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Reminder set for 5 PM to call your mom."
+        },
+        {
+          "speaker": "user",
+          "text": "Thanks. Oh, one more admin thing. We changed the office wifi password this morning."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Okay, I can update that for the org. What is the new credential?"
+        },
+        {
+          "speaker": "user",
+          "text": "It's LearnLoop2024! \u2014 make sure you get the exclamation mark at the end."
+        },
+        {
+          "speaker": "assistant",
+          "text": "I have updated the network security key for you."
+        },
+        {
+          "speaker": "user",
+          "text": "Cool. I'd better get going, traffic looks terrible on the GPS."
+        }
+      ]
+    },
+    {
+      "id": "llm-1",
+      "timestamp": 1,
+      "turns": [
+        {
+          "speaker": "user",
+          "text": "Good morning. Can you set a reminder for me to pick up coffee beans on my way home?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Good morning! I've set that reminder for you. Do you need anything else to start your day?"
+        },
+        {
+          "speaker": "user",
+          "text": "Yeah, I'm at the office trying to connect a new device. I completely blanked on the wireless secret for the org."
+        },
+        {
+          "speaker": "assistant",
+          "text": "No problem. For the LearnLoop office network, it's the company name, capitalized, followed by the current year and an exclamation point."
+        },
+        {
+          "speaker": "user",
+          "text": "Thanks, that worked. My cofounder just messaged me about the tech stack for our main project."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Is Olivia asking about the specific languages you decided on for the core build?"
+        },
+        {
+          "speaker": "user",
+          "text": "Exactly. She wants to double-check what we're using for the frontend of the core platform. It was the strict syntactical superset of JavaScript, right?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Yes, the plan is to utilize TypeScript for the frontend development of LearnLoop Core."
+        },
+        {
+          "speaker": "user",
+          "text": "Okay, and for the backend services? I recall we wanted something strong for data handling."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Correct, the backend is being built with Python to handle the data processing requirements."
+        },
+        {
+          "speaker": "user",
+          "text": "Great, I'll let her know. By the way, did the Giants win last night?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "I haven't checked the scores, but I can look that up for you if you'd like."
+        },
+        {
+          "speaker": "user",
+          "text": "No worries, I'll check later. Just make sure those language choices are documented in the project readme."
+        },
+        {
+          "speaker": "assistant",
+          "text": "I will ensure the documentation reflects the use of TypeScript and Python for the project."
+        }
+      ]
+    },
+    {
+      "id": "llm-2",
+      "timestamp": 2,
+      "turns": [
+        {
+          "speaker": "user",
+          "text": "Good morning. Can you quickly check if I have any meetings before 10 AM?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Good morning. You're completely free until the 10:30 stand-up."
+        },
+        {
+          "speaker": "user",
+          "text": "Awesome, gives me time to grab a coffee. By the way, I was reviewing the architecture notes Olivia left for the core platform. Which languages are we locking in?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "It looks like the codebase is split. The backend services are built with that snake-symbol language, while the frontend components are all in the typed superset of JavaScript."
+        },
+        {
+          "speaker": "user",
+          "text": "Right, Python and TypeScript. I keep forgetting we switched to the typed version. Also, remind me to call my dentist at noon."
+        },
+        {
+          "speaker": "assistant",
+          "text": "I've added a reminder to call the dentist at 12:00 PM."
+        },
+        {
+          "speaker": "user",
+          "text": "Thanks. My phone just dropped the connection. What's the office wifi pass again?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "It's pretty standard\u2014just the company name capitalized, followed by the current year and an exclamation mark."
+        },
+        {
+          "speaker": "user",
+          "text": "Got it, LearnLoop2024!. I really need to write that down somewhere."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Probably a good idea, or I can just remind you next time you forget."
+        },
+        {
+          "speaker": "user",
+          "text": "Ha, true. I'm going to spend the next hour fixing the linting rules for the TS files."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Sounds productive. Let me know if you need the documentation for the linter config."
+        },
+        {
+          "speaker": "user",
+          "text": "Will do. Oh, did I leave my jacket in the meeting room yesterday?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "I wouldn't know about your jacket, unfortunately. You might have to go check."
+        }
+      ]
+    },
+    {
+      "id": "llm-3",
+      "timestamp": 3,
+      "turns": [
+        {
+          "speaker": "user",
+          "text": "Hey, hope you're having a good morning. Did I leave my coffee mug on the desk? Also, I need to check the repo structure for our main project."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Good morning! I haven't seen the mug, but I'll keep an eye out. Regarding the LearnLoop Core repo, what specifically are you looking for?"
+        },
+        {
+          "speaker": "user",
+          "text": "Just double-checking the languages we settled on. My cofounder mentioned we might switch things up, but I think we stuck to the plan."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Right, Olivia usually keeps things on track. Unless there was a major pivot, the codebase is still relying on that popular typed superset of JavaScript for the frontend and the snake-named language for the backend."
+        },
+        {
+          "speaker": "user",
+          "text": "Okay, good. TypeScript and Python it is then. Oh, by the way, my phone disconnected from the network again. What's the secret code for the office internet?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "It happens sometimes. For the LearnLoop network, just type the organization's name with capital Ls, then the current year, and finish it with an exclamation point."
+        },
+        {
+          "speaker": "user",
+          "text": "Got it, thanks. Can you remind me to email the landlord about the AC later? It's freezing in here."
+        },
+        {
+          "speaker": "assistant",
+          "text": "I've added a reminder to contact the landlord about the temperature. Anything else on your mind?"
+        },
+        {
+          "speaker": "user",
+          "text": "Yeah, did we update the documentation for the API yet?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "I believe that's still in progress. Do you want me to ping Olivia about it?"
+        },
+        {
+          "speaker": "user",
+          "text": "No, don't bother her yet, she's busy with investors. Just remind me to buy milk on my way home."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Noted, I'll remind you to pick up milk later."
+        },
+        {
+          "speaker": "user",
+          "text": "Thanks. I'm going to grab lunch now."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Enjoy your lunch"
+        }
+      ]
+    },
+    {
+      "id": "llm-4",
+      "timestamp": 4,
+      "turns": [
+        {
+          "speaker": "user",
+          "text": "Good morning, hope your day is starting off well."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Good morning! It's been a productive start. How can I help you today?"
+        },
+        {
+          "speaker": "user",
+          "text": "I was chatting with Olivia earlier about the main project, and my brain is totally blanking on the specific tech stack we finalized for the core repo."
+        },
+        {
+          "speaker": "assistant",
+          "text": "No worries, it happens. You are referring to the primary codebase for LearnLoop, right?"
+        },
+        {
+          "speaker": "user",
+          "text": "Yeah, that's the one. I know we mixed two different languages for the frontend and the backend services."
+        },
+        {
+          "speaker": "assistant",
+          "text": "That's correct. The frontend architecture is built using TypeScript, and the backend services are primarily written in Python."
+        },
+        {
+          "speaker": "user",
+          "text": "Okay, great. I'll update the documentation. Also, can you remind me to buy coffee beans on my way home?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Consider it done. I've added a reminder for you to pick up coffee beans later."
+        },
+        {
+          "speaker": "user",
+          "text": "Thanks. Oh, one more thing\u2014we have a guest coming to the office today. What's the wifi credentials again?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "The password is just the company name, followed by the current year, and finished with an exclamation mark."
+        },
+        {
+          "speaker": "user",
+          "text": "Is that case-sensitive?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Yes, make sure to capitalize the first letter of both words in the name."
+        },
+        {
+          "speaker": "user",
+          "text": "Got it, so it's LearnLoop2024!. Simple enough."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Exactly. Let me know if they have any trouble connecting."
+        },
+        {
+          "speaker": "user",
+          "text": "Will do. I really hope the rain holds off until they get here."
+        }
+      ]
+    },
+    {
+      "id": "llm-5",
+      "timestamp": 5,
+      "turns": [
+        {
+          "speaker": "user",
+          "text": "Good morning. Is it looking like rain later today?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Good morning. The forecast shows clear skies for now, so you should be good. What's on your mind?"
+        },
+        {
+          "speaker": "user",
+          "text": "I'm trying to update the readme for the main project repo. I'm blanking on the specific tech stack details we finalized with Olivia."
+        },
+        {
+          "speaker": "assistant",
+          "text": "No problem. For the core codebase, we are sticking with that strongly typed superset of JavaScript for the frontend work."
+        },
+        {
+          "speaker": "user",
+          "text": "Right, and the backend?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "The backend services are all being written in that language named after a British comedy troupe, the one usually associated with data science."
+        },
+        {
+          "speaker": "user",
+          "text": "Okay, makes sense. I need to make sure the linter settings match those. Can you remind me to pick up dry cleaning at 5 PM?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "I've set a reminder for your dry cleaning at 5:00 PM. Do you need directions to the place?"
+        },
+        {
+          "speaker": "user",
+          "text": "No, I know where it is. I'm actually at the office now but my phone dropped the connection. What's the password for our internet again?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "It follows the standard pattern: the organization's name with capital Ls, followed by the current year, and ending with an exclamation mark."
+        },
+        {
+          "speaker": "user",
+          "text": "Got it, thanks. I always forget the punctuation at the end."
+        },
+        {
+          "speaker": "assistant",
+          "text": "It's a common oversight. Is there anything else you need for the LearnLoop setup?"
+        },
+        {
+          "speaker": "user",
+          "text": "Not right now. I'm just going to grab a coffee and wait for my cofounder to get here."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Sounds good. Let me know if you need help with the documentation or anything else once Olivia arrives."
+        }
+      ]
+    },
+    {
+      "id": "llm-6",
+      "timestamp": 6,
+      "turns": [
+        {
+          "speaker": "user",
+          "text": "Good morning. Can you set a reminder for me to call the dentist at 2 PM?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Good morning. I've set that reminder for 2 PM. How is your day starting off?"
+        },
+        {
+          "speaker": "user",
+          "text": "A bit chaotic. I'm trying to update the readme for the core repo but my brain is foggy. What language are we using for the backend scripts again?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "For the backend logic in the core project, you are currently using Python."
+        },
+        {
+          "speaker": "user",
+          "text": "Right, and the frontend is all strictly typed, correct?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Yes, the frontend architecture utilizes TypeScript."
+        },
+        {
+          "speaker": "user",
+          "text": "Perfect, thanks. My cofounder would kill me if I put the wrong info in there."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Olivia definitely cares about keeping the documentation accurate. Do you need help drafting the rest?"
+        },
+        {
+          "speaker": "user",
+          "text": "Not right now. Actually, I need to get a guest on the network. Is the wifi pass still the company name plus the year?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Yes, the password is currently set to LearnLoop2024! with an exclamation mark at the end."
+        },
+        {
+          "speaker": "user",
+          "text": "Great. Also, remind me to pick up dry cleaning later."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Dry cleaning reminder added to your list."
+        },
+        {
+          "speaker": "user",
+          "text": "Thanks. I'm going to grab another coffee before diving back into the Python code."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Enjoy the coffee. Let me know if you need any more details on the tech stack."
+        }
+      ]
+    },
+    {
+      "id": "llm-7",
+      "timestamp": 7,
+      "turns": [
+        {
+          "speaker": "user",
+          "text": "Hey, can you check if I have any meetings before 10 AM today?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "You have a clear schedule until the stand-up at 10:30."
+        },
+        {
+          "speaker": "user",
+          "text": "Perfect. I need to sync with Olivia about the LearnLoop core repo before then."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Is this regarding the tech stack migration you mentioned earlier?"
+        },
+        {
+          "speaker": "user",
+          "text": "Yeah, we are finalizing the decision to use that typed superset of JavaScript for the UI components."
+        },
+        {
+          "speaker": "assistant",
+          "text": "That makes sense for scalability. Are you still keeping the backend in the language named after a snake?"
+        },
+        {
+          "speaker": "user",
+          "text": "Definitely, the data libraries in Python are too good to pass up for our specific needs."
+        },
+        {
+          "speaker": "assistant",
+          "text": "It sounds like a solid architecture for the project."
+        },
+        {
+          "speaker": "user",
+          "text": "By the way, remind me to water the plants when I get home this evening."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Reminder set: water the plants."
+        },
+        {
+          "speaker": "user",
+          "text": "Thanks. Also, I got logged out of the office network. Do you remember the password?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "It follows the standard pattern we set: the company name, the current year, and an exclamation point at the end."
+        },
+        {
+          "speaker": "user",
+          "text": "Ah right, LearnLoop2024! works. Thanks."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Glad you are back online."
+        },
+        {
+          "speaker": "user",
+          "text": "One last thing, add \"buy coffee beans\" to my shopping list."
+        }
+      ]
+    },
+    {
+      "id": "llm-8",
+      "timestamp": 8,
+      "turns": [
+        {
+          "speaker": "user",
+          "text": "Hey, we just got into the new office space and things are a bit chaotic."
+        },
+        {
+          "speaker": "assistant",
+          "text": "That's exciting news! Moving is always stressful but worth it. How can I assist you with the setup?"
+        },
+        {
+          "speaker": "user",
+          "text": "Well, first off, my cofounder can't get her laptop connected. Do you have the credentials for the org's network saved?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "I do. For the LearnLoop network, the password is the company name combined with the current year and an exclamation point at the end."
+        },
+        {
+          "speaker": "user",
+          "text": "Okay, let me try that... capitalization matters, right?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Yes, make sure to capitalize both Ls in the name."
+        },
+        {
+          "speaker": "user",
+          "text": "That worked, thanks. Also, remind me to call the movers about the missing box of cables later."
+        },
+        {
+          "speaker": "assistant",
+          "text": "I've made a note to remind you about the movers in two hours."
+        },
+        {
+          "speaker": "user",
+          "text": "Great. Now, regarding the main project repo, Olivia and I are debating the backend architecture again."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Are you reconsidering the languages you're currently using for the core platform?"
+        },
+        {
+          "speaker": "user",
+          "text": "Not reconsidering, just clarifying boundaries. We are using two main languages, right?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "That's correct. The codebase is split between Python for the data-heavy lifting and TypeScript for the rest of the stack."
+        },
+        {
+          "speaker": "user",
+          "text": "Right, the snake and the superset. I keep forgetting where the divide is."
+        },
+        {
+          "speaker": "assistant",
+          "text": "It's a common pattern. Do you need me to pull up the documentation on the directory structure?"
+        },
+        {
+          "speaker": "user",
+          "text": "No, that's fine for now. Oh, did I tell you I'm thinking of adopting a cat?"
+        }
+      ]
+    },
+    {
+      "id": "llm-9",
+      "timestamp": 9,
+      "turns": [
+        {
+          "speaker": "user",
+          "text": "Did you catch the highlights from the game last night?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "I missed them. Was it a close match?"
+        },
+        {
+          "speaker": "user",
+          "text": "Yeah, went down to the wire. Anyway, looking at the core project repo, are we migrating the frontend scripts?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Not currently. We are sticking with the Microsoft-made syntax that compiles to JS for the frontend to keep the typing strict."
+        },
+        {
+          "speaker": "user",
+          "text": "Makes sense. And the backend is still running on that snake-related language?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Correct, the server-side logic is all Python."
+        },
+        {
+          "speaker": "user",
+          "text": "Okay, good to know. Hey, remind me to call my mom at 5 PM."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Reminder set: Call mom at 5 PM."
+        },
+        {
+          "speaker": "user",
+          "text": "Thanks. Also, the new intern is asking for the office internet credentials."
+        },
+        {
+          "speaker": "assistant",
+          "text": "It's pretty standard. Just the organization name capitalized, the year 2024, and an exclamation point."
+        },
+        {
+          "speaker": "user",
+          "text": "LearnLoop2024! it is. I'll write it on the whiteboard."
+        },
+        {
+          "speaker": "assistant",
+          "text": "That sounds helpful. Just don't use a permanent marker this time."
+        },
+        {
+          "speaker": "user",
+          "text": "Haha, that was one time! Olivia never lets me forget that."
+        },
+        {
+          "speaker": "assistant",
+          "text": "She does have a good memory."
+        },
+        {
+          "speaker": "user",
+          "text": "By the way, is it supposed to rain later?"
+        }
+      ]
+    }
+  ],
+  "probes": [
+    {
+      "id": "world_modeling-entity_resolution-0",
+      "pillar": "world_modeling",
+      "subpillar": "entity_resolution",
+      "question": "Which individual was unable to connect their laptop to the network during the move to the new office space?",
+      "answer_type": "short_answer",
+      "gold_answer": {
+        "text": "Olivia",
+        "supporting_items": [
+          "person:olivia"
+        ]
+      }
+    },
+    {
+      "id": "world_modeling-task_state_tracking-1",
+      "pillar": "world_modeling",
+      "subpillar": "task_state_tracking",
+      "question": "What specific documentation task was the user attempting to complete when they asked about the 'British comedy troupe' language?",
+      "answer_type": "short_answer",
+      "gold_answer": {
+        "text": "Update the readme",
+        "supporting_items": [
+          "project:learnloop_core"
+        ]
+      }
+    },
+    {
+      "id": "declarative_reasoning-fact_composition-0",
+      "pillar": "declarative_reasoning",
+      "subpillar": "fact_composition",
+      "question": "Based on the construction rules provided during the office setup, what is the exact WiFi password for the organization?",
+      "answer_type": "short_answer",
+      "gold_answer": {
+        "text": "LearnLoop2024!",
+        "supporting_items": [
+          "org:learnloop"
+        ]
+      }
+    },
+    {
+      "id": "declarative_reasoning-baseline_factual_recall-1",
+      "pillar": "declarative_reasoning",
+      "subpillar": "baseline_factual_recall",
+      "question": "Which framework is used for the frontend of the core project, described as a Microsoft-made syntax?",
+      "answer_type": "short_answer",
+      "gold_answer": {
+        "text": "TypeScript",
+        "supporting_items": [
+          "project:learnloop_core"
+        ]
+      }
+    },
+    {
+      "id": "knowledge_boundaries-negative_knowledge-0",
+      "pillar": "knowledge_boundaries",
+      "subpillar": "negative_knowledge",
+      "question": "What specific database technology is the LearnLoop core project currently using?",
+      "answer_type": "abstain",
+      "gold_answer": {
+        "text": "not mentioned",
+        "supporting_items": []
+      }
+    },
+    {
+      "id": "knowledge_boundaries-negative_knowledge-1",
+      "pillar": "knowledge_boundaries",
+      "subpillar": "negative_knowledge",
+      "question": "What is the street address of the new office space the user moved into?",
+      "answer_type": "abstain",
+      "gold_answer": {
+        "text": "not mentioned",
+        "supporting_items": []
+      }
+    },
+    {
+      "id": "procedural_knowledge-procedure_storage-0",
+      "pillar": "procedural_knowledge",
+      "subpillar": "procedure_storage",
+      "question": "According to the instructions given to the cofounder, which letters must be capitalized when entering the network credentials?",
+      "answer_type": "short_answer",
+      "gold_answer": {
+        "text": "Both Ls",
+        "supporting_items": [
+          "org:learnloop"
+        ]
+      }
+    },
+    {
+      "id": "procedural_knowledge-tool_method_memory-1",
+      "pillar": "procedural_knowledge",
+      "subpillar": "tool_method_memory",
+      "question": "When working on backend logic for the core project, which language should be used?",
+      "answer_type": "short_answer",
+      "gold_answer": {
+        "text": "Python",
+        "supporting_items": [
+          "project:learnloop_core"
+        ]
+      }
+    },
+    {
+      "id": "temporal_episodic-episode_reconstruction-0",
+      "pillar": "temporal_episodic",
+      "subpillar": "episode_reconstruction",
+      "question": "In the conversation where the user asked about the weather forecast, what project detail were they trying to recall?",
+      "answer_type": "short_answer",
+      "gold_answer": {
+        "text": "Tech stack details",
+        "supporting_items": []
+      }
+    },
+    {
+      "id": "temporal_episodic-causal_explanation-1",
+      "pillar": "temporal_episodic",
+      "subpillar": "causal_explanation",
+      "question": "Why did the user describe their day as 'chaotic' in session llm-8?",
+      "answer_type": "short_answer",
+      "gold_answer": {
+        "text": "Moving office",
+        "supporting_items": []
+      }
+    },
+    {
+      "id": "preference_learning-preference_induction-0",
+      "pillar": "preference_learning",
+      "subpillar": "preference_induction",
+      "question": "What primary benefit does the user associate with the decision to use a typed superset of JavaScript for the UI?",
+      "answer_type": "short_answer",
+      "gold_answer": {
+        "text": "Scalability",
+        "supporting_items": [
+          "project:learnloop_core"
+        ]
+      }
+    },
+    {
+      "id": "preference_learning-explicit_preferences-1",
+      "pillar": "preference_learning",
+      "subpillar": "explicit_preferences",
+      "question": "Does the user prefer strict typing or loose typing for the frontend architecture?",
+      "answer_type": "short_answer",
+      "gold_answer": {
+        "text": "Strict typing",
+        "supporting_items": [
+          "project:learnloop_core"
+        ]
+      }
+    }
+  ]
+}

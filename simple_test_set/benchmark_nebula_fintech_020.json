@@ -1,0 +1,815 @@
+{
+  "seed": 20,
+  "world_summary": {
+    "entities": [
+      "person:user",
+      "person:sato",
+      "org:ledgerflow",
+      "project:ledgerflow_core"
+    ],
+    "facts_count": 3,
+    "events_count": 0,
+    "preferences_count": 0
+  },
+  "num_sessions": 10,
+  "num_probes": 12,
+  "sessions": [
+    {
+      "id": "llm-0",
+      "timestamp": 0,
+      "turns": [
+        {
+          "speaker": "user",
+          "text": "Hey there. I need to jot down some outcomes from my sync with Sato earlier."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Hello. I can help with that. What did you and your cofounder discuss?"
+        },
+        {
+          "speaker": "user",
+          "text": "Mostly about the architecture for the main project. We are definitely sticking to the JVM for the core."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Does that mean you are using Java, or looking at other options?"
+        },
+        {
+          "speaker": "user",
+          "text": "A bit of both. We'll maintain the existing Java code, but we agreed to write all the new services for LedgerFlow Core in Kotlin."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Understood. Java for existing code and Kotlin for new services on the core project."
+        },
+        {
+          "speaker": "user",
+          "text": "Exactly. On a totally different note, can you remind me to call my mom in about an hour?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Sure thing. I set a reminder to call your mom in one hour."
+        },
+        {
+          "speaker": "user",
+          "text": "Thanks. Oh, I also changed the guest network settings for the office."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Did you update the security key for the LedgerFlow network?"
+        },
+        {
+          "speaker": "user",
+          "text": "Yeah, it's pretty simple. It's just the company name, capitalized normally, followed by 2024 and an exclamation mark."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Just to confirm, that is LedgerFlow2024! for the password?"
+        },
+        {
+          "speaker": "user",
+          "text": "That's the one. I really need to get some coffee before I continue."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Enjoy your coffee break. Let me know if you need anything else when you get back."
+        }
+      ]
+    },
+    {
+      "id": "llm-1",
+      "timestamp": 1,
+      "turns": [
+        {
+          "speaker": "user",
+          "text": "Hey, good morning. Can you set a reminder for me to call the dentist at 2 PM?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Good morning. I've set a reminder for your dentist appointment at 2:00 PM today. Anything else on your mind?"
+        },
+        {
+          "speaker": "user",
+          "text": "Yeah, I'm trying to get my dev environment set up for the core project again. I forgot, are we sticking to one language now?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Not exactly. The repository is still split. A good chunk of it remains in the standard legacy JVM language, but all the new services are being written using that concise syntax from JetBrains."
+        },
+        {
+          "speaker": "user",
+          "text": "Right, the mix makes the build times a bit longer. Did my cofounder mention if we are refactoring the old files?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Sato hasn't mentioned a full rewrite yet. It seems the plan is just to maintain interoperability between the `.java` and `.kt` files for now."
+        },
+        {
+          "speaker": "user",
+          "text": "Okay, makes sense. By the way, my phone keeps dropping the connection. Did we change the office internet credentials?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "It should be the same as before. Just combine the organization's name, the current year, and an exclamation mark at the end."
+        },
+        {
+          "speaker": "user",
+          "text": "Ah, right. I always forget if the 'L' and 'F' need to be capitalized."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Yes, keep the standard capitalization for the name part."
+        },
+        {
+          "speaker": "user",
+          "text": "Got it, thanks. I'm starving, is it lunch time yet?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "It's only 11:00 AM, so you have another hour or so. Do you want me to look up a place nearby?"
+        },
+        {
+          "speaker": "user",
+          "text": "No, I brought a sandwich. Back to the code\u2014make sure the linter is set up for both file types in the project settings."
+        },
+        {
+          "speaker": "assistant",
+          "text": "I'll make a note to check the configuration for the core project to ensure it handles the hybrid stack correctly."
+        },
+        {
+          "speaker": "user",
+          "text": "Perfect. I'll catch you later."
+        }
+      ]
+    },
+    {
+      "id": "llm-2",
+      "timestamp": 2,
+      "turns": [
+        {
+          "speaker": "user",
+          "text": "Hey, just got in. Traffic was absolutely terrible on the highway this morning."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Sorry to hear that. Commutes can be draining. Do you need a moment to decompress, or are you diving straight in?"
+        },
+        {
+          "speaker": "user",
+          "text": "Diving in. I need to get the dev environment set up for the core project before my meeting with Sato."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Understood. I can help you locate the documentation or environment variables if you need them."
+        },
+        {
+          "speaker": "user",
+          "text": "Thanks. I remember my cofounder mentioning we were migrating languages. Are we still strictly on Java?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Not strictly. While there is still a significant amount of Java in the codebase, a lot of the newer modules in the core project are being written in Kotlin."
+        },
+        {
+          "speaker": "user",
+          "text": "Interesting mix. I'll make sure my IDE is prepped for both. Oh, remind me to check the expiration date on the milk in the fridge later."
+        },
+        {
+          "speaker": "assistant",
+          "text": "I've added a reminder to check the milk. Is there a specific time you want that nudge?"
+        },
+        {
+          "speaker": "user",
+          "text": "Maybe around lunch. Also, I reset my devices and lost the office network credentials. What's the passkey?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "It\u2019s pretty standard. Just use the company name, capitalized, followed by the current year and an exclamation point."
+        },
+        {
+          "speaker": "user",
+          "text": "Got it, that worked. I'm connected. Did the build pipeline finish running from last night?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "I don't have access to the live CI/CD logs right now, so you'll have to check the dashboard manually."
+        },
+        {
+          "speaker": "user",
+          "text": "Alright, I'll look into it. I really hope it didn't fail on a linting error again."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Fingers crossed. Let me know if you need help debugging any stack traces once you're in."
+        }
+      ]
+    },
+    {
+      "id": "llm-3",
+      "timestamp": 3,
+      "turns": [
+        {
+          "speaker": "user",
+          "text": "Good morning. I just got into the office and it feels freezing in here."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Welcome in. It might take a moment for the HVAC to catch up, or I can suggest a warm coffee spot nearby."
+        },
+        {
+          "speaker": "user",
+          "text": "Coffee is a must. My laptop isn't auto-connecting to the internet for some reason. What was the credential string for the office network again?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "It should be the standard one we set up: the company name, followed by 2024, and finished off with an exclamation mark."
+        },
+        {
+          "speaker": "user",
+          "text": "Right, capital L and F, got it. Thanks."
+        },
+        {
+          "speaker": "assistant",
+          "text": "You're welcome. Let me know if you need help troubleshooting the connection further."
+        },
+        {
+          "speaker": "user",
+          "text": "It's working now. By the way, remind me to call my mom for her birthday during lunch."
+        },
+        {
+          "speaker": "assistant",
+          "text": "I've added a reminder to call your mom around 12:30 PM."
+        },
+        {
+          "speaker": "user",
+          "text": "Perfect. I'm diving into the repo for the core platform today. It looks like a mix of file types."
+        },
+        {
+          "speaker": "assistant",
+          "text": "That is correct. The architecture currently relies on a blend of Java for the older components and Kotlin for the newer modules."
+        },
+        {
+          "speaker": "user",
+          "text": "That explains the syntax switching. Sato was complaining about the compile times yesterday."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Your cofounder often brings up build optimization. The hybrid environment might be contributing to the slowness."
+        },
+        {
+          "speaker": "user",
+          "text": "Yeah, we'll have to address that. Also, cancel my 3 PM meeting, I want to leave early."
+        },
+        {
+          "speaker": "assistant",
+          "text": "I have removed the 3 PM meeting from your calendar. Anything else?"
+        },
+        {
+          "speaker": "user",
+          "text": "No, that's it. Just wanted to clarify the tech stack situation."
+        }
+      ]
+    },
+    {
+      "id": "llm-4",
+      "timestamp": 4,
+      "turns": [
+        {
+          "speaker": "user",
+          "text": "Good morning, hope the system is running smooth today."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Everything is operational. How can I help you kick off the day?"
+        },
+        {
+          "speaker": "user",
+          "text": "I'm writing up some documentation for the new hires. What languages are we officially using for the core backend?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Looking at the repository for the main project, it is a JVM-based stack. It seems to be a mix of the classic enterprise language and the newer one developed by JetBrains."
+        },
+        {
+          "speaker": "user",
+          "text": "So we are supporting both Java and Kotlin files?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Yes, the codebase contains significant amounts of both, allowing for interoperability."
+        },
+        {
+          "speaker": "user",
+          "text": "Got it. Changing subjects, remind me to call the caterer for the lunch meeting at noon."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Consider it done. I have added a reminder to call the caterer at 12:00 PM."
+        },
+        {
+          "speaker": "user",
+          "text": "Thanks. Also, I reset my phone and lost the saved networks. What's the wifi pass for the office?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "It is the standard format: the organization's name, the current year, and then an exclamation mark."
+        },
+        {
+          "speaker": "user",
+          "text": "LedgerFlow2024! ?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "That matches the current configuration on file."
+        },
+        {
+          "speaker": "user",
+          "text": "Great. My cofounder was having trouble connecting earlier too."
+        },
+        {
+          "speaker": "assistant",
+          "text": "If Sato continues to have issues, we might need to check if his device is blocked by the router."
+        },
+        {
+          "speaker": "user",
+          "text": "I'll let him know. Did you see that new sci-fi movie trailer yet?"
+        }
+      ]
+    },
+    {
+      "id": "llm-5",
+      "timestamp": 5,
+      "turns": [
+        {
+          "speaker": "user",
+          "text": "Hey, did you remind me about that dentist appointment later?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Yes, I have it marked for 3 PM today. Do you need me to send the address to your phone?"
+        },
+        {
+          "speaker": "user",
+          "text": "No, I know where it is. I'm just stressed about the backend refactor. My cofounder wants to modernize the codebase."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Is Sato looking to switch frameworks completely on the project?"
+        },
+        {
+          "speaker": "user",
+          "text": "Not completely. We're keeping the old Java parts for now, but all the new modules for the core project are being written in Kotlin."
+        },
+        {
+          "speaker": "assistant",
+          "text": "That sounds like a reasonable interoperability strategy for LedgerFlow Core given the JVM environment."
+        },
+        {
+          "speaker": "user",
+          "text": "Yeah, hopefully it works out. By the way, is it raining outside? It looks pretty dark through the window."
+        },
+        {
+          "speaker": "assistant",
+          "text": "It looks like there's a light drizzle starting, but it should clear up by the time you leave for your appointment."
+        },
+        {
+          "speaker": "user",
+          "text": "Good to know. Also, I got a new phone and forgot the office network key. Is it still the standard format?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "I believe so. It should just be the capitalized company name combined with the current year and an exclamation mark at the end."
+        },
+        {
+          "speaker": "user",
+          "text": "Right, let me try... LedgerFlow2024! ... okay, that connected. Thanks."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Glad to help. Do you need me to pull up the documentation for the new Kotlin modules before you head out?"
+        },
+        {
+          "speaker": "user",
+          "text": "Nah, I'll look at it tomorrow. I need to focus on this coffee first."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Enjoy your coffee. Let me know if you need anything else before 3 PM."
+        }
+      ]
+    },
+    {
+      "id": "llm-6",
+      "timestamp": 6,
+      "turns": [
+        {
+          "speaker": "user",
+          "text": "Hey, do you have a minute to check something regarding the backend architecture?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "I'm always here. What specific part of the architecture are you looking into today?"
+        },
+        {
+          "speaker": "user",
+          "text": "I'm writing up a summary for the new investors. I know Sato has been tweaking the stack for the core platform, but I forget the exact mix."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Right, for the main LedgerFlow Core project? It looks like a hybrid JVM environment right now."
+        },
+        {
+          "speaker": "user",
+          "text": "Okay, so are we strictly on the old standard or did we move to something more modern?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "It's a combination. The foundation is still heavily Java, but a significant portion of the newer modules are being written in Kotlin."
+        },
+        {
+          "speaker": "user",
+          "text": "That makes sense. My cofounder is obsessed with concise syntax, so I'm not surprised he pushed for the switch."
+        },
+        {
+          "speaker": "assistant",
+          "text": "It seems like a robust setup. Do you need the version numbers for the documentation?"
+        },
+        {
+          "speaker": "user",
+          "text": "No, that's too much detail. By the way, did I miss a meeting reminder for this morning?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "No, your calendar is clear until the 2 PM sync."
+        },
+        {
+          "speaker": "user",
+          "text": "Great. One random thing\u2014my brother is stopping by the office later to drop off some keys. Can I get him on the wifi?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Sure. The password for the office network is pretty standard. It's just our company name, the current year, and an exclamation mark."
+        },
+        {
+          "speaker": "user",
+          "text": "Capitalized?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Yes, capitalize the L and F in the name, then 2024, then the punctuation."
+        },
+        {
+          "speaker": "user",
+          "text": "Perfect. I really need to get that written down somewhere better than a sticky note."
+        }
+      ]
+    },
+    {
+      "id": "llm-7",
+      "timestamp": 7,
+      "turns": [
+        {
+          "speaker": "user",
+          "text": "Morning. Can you set a reminder for 5 PM to call the bank?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Good morning. I've set that reminder for 5 PM. Is there anything else on your mind?"
+        },
+        {
+          "speaker": "user",
+          "text": "Thanks. I'm sitting down with my cofounder later to review the backend architecture."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Sounds like a busy day. are you focusing on the main LedgerFlow Core project?"
+        },
+        {
+          "speaker": "user",
+          "text": "Yeah. We're still debating the language split. It's currently a mix of Java and Kotlin."
+        },
+        {
+          "speaker": "assistant",
+          "text": "That hybrid JVM approach is pretty common. Is Sato leaning one way or the other?"
+        },
+        {
+          "speaker": "user",
+          "text": "He likes the brevity of the .kt files, but we have so much legacy .java stuff."
+        },
+        {
+          "speaker": "assistant",
+          "text": "It makes sense to keep both if the interoperability is working well for the team."
+        },
+        {
+          "speaker": "user",
+          "text": "True. By the way, I reset my phone and lost the saved networks. What's the office wifi pass?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "It is the company name followed by the year and an exclamation point. So, LedgerFlow2024!"
+        },
+        {
+          "speaker": "user",
+          "text": "Cool, that worked. Oh, also remind me to water the plants when I get home."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Will do. I've added the plant watering to your list as well."
+        },
+        {
+          "speaker": "user",
+          "text": "Great. I need to get some coffee before this meeting starts."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Enjoy your coffee and good luck with the architecture review."
+        }
+      ]
+    },
+    {
+      "id": "llm-8",
+      "timestamp": 8,
+      "turns": [
+        {
+          "speaker": "user",
+          "text": "Hey, hope you're having a good morning."
+        },
+        {
+          "speaker": "assistant",
+          "text": "I am, thank you. How can I help you today?"
+        },
+        {
+          "speaker": "user",
+          "text": "Just wanted to double-check something my cofounder mentioned earlier about the LedgerFlow Core repo."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Sure, what specifically regarding the core project?"
+        },
+        {
+          "speaker": "user",
+          "text": "He was arguing about the languages we use. It's mostly Java, isn't it?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "It relies heavily on Java, but I recall there's a significant amount of Kotlin integration as well."
+        },
+        {
+          "speaker": "user",
+          "text": "Right, the interoperability is key there. Oh, totally unrelated, but did you see that email from the landlord?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "I haven't seen it yet. Is it urgent?"
+        },
+        {
+          "speaker": "user",
+          "text": "Not really, just some maintenance schedule. Anyway, I'm trying to connect my phone to the office Wi-Fi."
+        },
+        {
+          "speaker": "assistant",
+          "text": "You need the credentials for the LedgerFlow network?"
+        },
+        {
+          "speaker": "user",
+          "text": "Yeah, I always forget it. Is it just the company name?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Close. It's the company name, then the current year, and ends with an exclamation point. Make sure to capitalize the L and F."
+        },
+        {
+          "speaker": "user",
+          "text": "Got it, thanks. Also, remind me to call my mom at 5 PM."
+        },
+        {
+          "speaker": "assistant",
+          "text": "I've set a reminder for 5 PM to call your mom."
+        },
+        {
+          "speaker": "user",
+          "text": "Perfect, thanks."
+        }
+      ]
+    },
+    {
+      "id": "llm-9",
+      "timestamp": 9,
+      "turns": [
+        {
+          "speaker": "user",
+          "text": "Hey, I'm back in the office. Did Sato change the internet login? My phone isn't connecting."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Welcome back! I don't think he changed it recently. It should still be the organization's name capitalized, followed by the current year and an exclamation mark."
+        },
+        {
+          "speaker": "user",
+          "text": "Ah, right. Got it. Anyway, we need to review the backend architecture for the core project today."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Sounds like a plan. Are you focusing on the legacy components or the newer modules your cofounder has been working on?"
+        },
+        {
+          "speaker": "user",
+          "text": "Both. It's becoming a bit of a headache managing the two languages side-by-side."
+        },
+        {
+          "speaker": "assistant",
+          "text": "I can imagine. Balancing the verbose legacy syntax with the modern JetBrains-developed language usually requires careful configuration."
+        },
+        {
+          "speaker": "user",
+          "text": "Exactly. The interoperability is great, but the context switching is draining. By the way, remind me to order lunch for the team at noon."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Will do. I'll set a reminder for 12:00 PM. Any preference on cuisine, or just the usual?"
+        },
+        {
+          "speaker": "user",
+          "text": "Probably just pizza. Back to the code\u2014do we have more files ending in .kt or .java right now?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "It looks pretty evenly distributed. The main project seems to rely heavily on both of those languages simultaneously."
+        },
+        {
+          "speaker": "user",
+          "text": "Okay, I'll need to check the build gradle files later. Also, did I leave my jacket in the meeting room yesterday?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "I can't track your physical items, but you did mention it was freezing in there during your last sync."
+        },
+        {
+          "speaker": "user",
+          "text": "Right, I probably left it on the chair. Thanks."
+        },
+        {
+          "speaker": "assistant",
+          "text": "No problem. Let me know if you need help analyzing those backend dependencies later."
+        }
+      ]
+    }
+  ],
+  "probes": [
+    {
+      "id": "world_modeling-entity_resolution-0",
+      "pillar": "world_modeling",
+      "subpillar": "entity_resolution",
+      "question": "Who is the user referring to when they mention 'my cofounder' during the backend architecture discussions?",
+      "answer_type": "short_answer",
+      "gold_answer": {
+        "text": "Sato",
+        "supporting_items": [
+          "person:sato"
+        ]
+      }
+    },
+    {
+      "id": "world_modeling-relationship_mapping-0",
+      "pillar": "world_modeling",
+      "subpillar": "relationship_mapping",
+      "question": "Which individual is primarily driving the modernization of the LedgerFlow Core codebase?",
+      "answer_type": "short_answer",
+      "gold_answer": {
+        "text": "Sato",
+        "supporting_items": [
+          "Session llm-5",
+          "Session llm-6"
+        ]
+      }
+    },
+    {
+      "id": "declarative_reasoning-fact_composition-0",
+      "pillar": "declarative_reasoning",
+      "subpillar": "fact_composition",
+      "question": "Based on the formula provided by the assistant in the final session, what is the wifi password for the organization?",
+      "answer_type": "short_answer",
+      "gold_answer": {
+        "text": "LedgerFlow2024!",
+        "supporting_items": [
+          "Session llm-9"
+        ]
+      }
+    },
+    {
+      "id": "declarative_reasoning-baseline_factual_recall-0",
+      "pillar": "declarative_reasoning",
+      "subpillar": "baseline_factual_recall",
+      "question": "What two programming languages constitute the hybrid stack of the LedgerFlow Core project?",
+      "answer_type": "short_answer",
+      "gold_answer": {
+        "text": "Java and Kotlin",
+        "supporting_items": [
+          "Session llm-4",
+          "Session llm-5"
+        ]
+      }
+    },
+    {
+      "id": "temporal_episodic-episode_reconstruction-0",
+      "pillar": "temporal_episodic",
+      "subpillar": "episode_reconstruction",
+      "question": "In the conversation where the user confirmed a dentist appointment for 3 PM, what work-related source of stress did they mention?",
+      "answer_type": "short_answer",
+      "gold_answer": {
+        "text": "Backend refactor",
+        "supporting_items": [
+          "Session llm-5"
+        ]
+      }
+    },
+    {
+      "id": "temporal_episodic-causal_explanation-0",
+      "pillar": "temporal_episodic",
+      "subpillar": "causal_explanation",
+      "question": "Why did the user describe managing the core project as a 'headache' in the final session?",
+      "answer_type": "short_answer",
+      "gold_answer": {
+        "text": "Managing two languages",
+        "supporting_items": [
+          "Session llm-9"
+        ]
+      }
+    },
+    {
+      "id": "knowledge_boundaries-negative_knowledge-0",
+      "pillar": "knowledge_boundaries",
+      "subpillar": "negative_knowledge",
+      "question": "Has the user mentioned using Scala for any part of the LedgerFlow Core project?",
+      "answer_type": "boolean",
+      "gold_answer": {
+        "text": "No",
+        "supporting_items": []
+      }
+    },
+    {
+      "id": "knowledge_boundaries-confidence_calibration-0",
+      "pillar": "knowledge_boundaries",
+      "subpillar": "confidence_calibration",
+      "question": "What is the specific date of the user's dentist appointment?",
+      "answer_type": "abstain",
+      "gold_answer": {
+        "text": "Unknown",
+        "supporting_items": [
+          "Session llm-5"
+        ]
+      }
+    },
+    {
+      "id": "procedural_knowledge-procedure_storage-0",
+      "pillar": "procedural_knowledge",
+      "subpillar": "procedure_storage",
+      "question": "According to the assistant's instructions, what three components make up the wifi password?",
+      "answer_type": "short_answer",
+      "gold_answer": {
+        "text": "Organization name, year, exclamation mark",
+        "supporting_items": [
+          "Session llm-9"
+        ]
+      }
+    },
+    {
+      "id": "procedural_knowledge-lesson_extraction-0",
+      "pillar": "procedural_knowledge",
+      "subpillar": "lesson_extraction",
+      "question": "What configuration requirement does the assistant suggest is necessary when balancing verbose legacy syntax with modern JetBrains languages?",
+      "answer_type": "short_answer",
+      "gold_answer": {
+        "text": "Careful configuration",
+        "supporting_items": [
+          "Session llm-9"
+        ]
+      }
+    },
+    {
+      "id": "preference_learning-preference_scope-0",
+      "pillar": "preference_learning",
+      "subpillar": "preference_scope",
+      "question": "Does the user explicitly prefer Java over Kotlin for the new modules?",
+      "answer_type": "boolean",
+      "gold_answer": {
+        "text": "No",
+        "supporting_items": [
+          "Session llm-5",
+          "Session llm-9"
+        ]
+      }
+    },
+    {
+      "id": "preference_learning-preference_induction-0",
+      "pillar": "preference_learning",
+      "subpillar": "preference_induction",
+      "question": "What is the user's preferred programming language for the LedgerFlow Core project?",
+      "answer_type": "abstain",
+      "gold_answer": {
+        "text": "Unknown",
+        "supporting_items": []
+      }
+    }
+  ]
+}

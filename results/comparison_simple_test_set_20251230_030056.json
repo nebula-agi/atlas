@@ -1,0 +1,134 @@
+{
+  "generated_at": "2025-12-30T03:00:56.601587",
+  "benchmark_dir": "C:\\Users\\k_nai\\nebulaMemBenchmark\\simple_test_set",
+  "adapters": {
+    "mem0": {
+      "status": "success",
+      "overall_accuracy": 0.5483870967741935,
+      "total_probes": 589,
+      "by_answer_type": {
+        "short_answer": {
+          "total": 206,
+          "count": 450,
+          "accuracy": 0.4577777777777778
+        },
+        "boolean": {
+          "total": 17,
+          "count": 27,
+          "accuracy": 0.6296296296296297
+        },
+        "verbatim": {
+          "total": 16,
+          "count": 21,
+          "accuracy": 0.7619047619047619
+        },
+        "abstain": {
+          "total": 83,
+          "count": 83,
+          "accuracy": 1.0
+        },
+        "generation": {
+          "total": 1,
+          "count": 8,
+          "accuracy": 0.125
+        }
+      },
+      "by_pillar": {
+        "world_modeling": {
+          "total": 44,
+          "count": 99,
+          "accuracy": 0.4444444444444444
+        },
+        "declarative_reasoning": {
+          "total": 82,
+          "count": 101,
+          "accuracy": 0.8118811881188119
+        },
+        "temporal_episodic": {
+          "total": 14,
+          "count": 99,
+          "accuracy": 0.1414141414141414
+        },
+        "preference_learning": {
+          "total": 53,
+          "count": 97,
+          "accuracy": 0.5463917525773195
+        },
+        "knowledge_boundaries": {
+          "total": 94,
+          "count": 98,
+          "accuracy": 0.9591836734693877
+        },
+        "procedural_knowledge": {
+          "total": 36,
+          "count": 95,
+          "accuracy": 0.37894736842105264
+        }
+      }
+    },
+    "supermemory": {
+      "status": "success",
+      "overall_accuracy": 0.22920203735144312,
+      "total_probes": 589,
+      "by_answer_type": {
+        "short_answer": {
+          "total": 91,
+          "count": 450,
+          "accuracy": 0.20222222222222222
+        },
+        "boolean": {
+          "total": 9,
+          "count": 27,
+          "accuracy": 0.3333333333333333
+        },
+        "verbatim": {
+          "total": 0,
+          "count": 21,
+          "accuracy": 0.0
+        },
+        "abstain": {
+          "total": 33,
+          "count": 83,
+          "accuracy": 0.39759036144578314
+        },
+        "generation": {
+          "total": 2,
+          "count": 8,
+          "accuracy": 0.25
+        }
+      },
+      "by_pillar": {
+        "world_modeling": {
+          "total": 6,
+          "count": 99,
+          "accuracy": 0.06060606060606061
+        },
+        "declarative_reasoning": {
+          "total": 20,
+          "count": 101,
+          "accuracy": 0.19801980198019803
+        },
+        "temporal_episodic": {
+          "total": 32,
+          "count": 99,
+          "accuracy": 0.32323232323232326
+        },
+        "preference_learning": {
+          "total": 25,
+          "count": 97,
+          "accuracy": 0.25773195876288657
+        },
+        "knowledge_boundaries": {
+          "total": 40,
+          "count": 98,
+          "accuracy": 0.40816326530612246
+        },
+        "procedural_knowledge": {
+          "total": 12,
+          "count": 95,
+          "accuracy": 0.12631578947368421
+        }
+      }
+    }
+  }
+}

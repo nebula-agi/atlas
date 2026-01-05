@@ -1,0 +1,800 @@
+{
+  "seed": 19,
+  "world_summary": {
+    "entities": [
+      "person:user",
+      "person:sato",
+      "org:shipfast",
+      "project:shipfast_core"
+    ],
+    "facts_count": 3,
+    "events_count": 0,
+    "preferences_count": 0
+  },
+  "num_sessions": 10,
+  "num_probes": 12,
+  "sessions": [
+    {
+      "id": "llm-0",
+      "timestamp": 0,
+      "turns": [
+        {
+          "speaker": "user",
+          "text": "Ugh, the coffee machine is broken again."
+        },
+        {
+          "speaker": "assistant",
+          "text": "That is tragic. Do you want me to add \"fix coffee machine\" to your to-do list?"
+        },
+        {
+          "speaker": "user",
+          "text": "No, I'll just suffer. Hey, regarding the core codebase, are we fully migrated yet?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Not entirely. I'm seeing a lot of functional code mixed in with the old object-oriented scripts. It looks like a hybrid of that red gem language and the potion-making one."
+        },
+        {
+          "speaker": "user",
+          "text": "You mean the functional one that runs on the Erlang VM?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Exactly. It seems the team is split between sticking with the classic web framework and moving everything to that newer, concurrent one."
+        },
+        {
+          "speaker": "user",
+          "text": "Sato is going to be annoyed if we don't pick one soon. Speaking of, is he in today?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "I haven't seen your cofounder log in yet, but his calendar is open until noon."
+        },
+        {
+          "speaker": "user",
+          "text": "Okay. Remind me to ping him later. Also, a guest is coming; what's the office internet code?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "It should be the standard format: the company name capitalized, followed by the current year and an exclamation mark."
+        },
+        {
+          "speaker": "user",
+          "text": "Got it. Did I leave my jacket in the meeting room?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "I don't have eyes in the conference room, unfortunately. You might have to go check manually."
+        },
+        {
+          "speaker": "user",
+          "text": "Fair enough. Oh, remind me to call my mom at 5."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Added \"Call Mom\" to your schedule for 5 PM."
+        },
+        {
+          "speaker": "user",
+          "text": "Thanks. Back to the code\u2014are the config files mostly .exs or .rb?"
+        }
+      ]
+    },
+    {
+      "id": "llm-1",
+      "timestamp": 1,
+      "turns": [
+        {
+          "speaker": "user",
+          "text": "Good morning! Hope you're running smoothly today."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Good morning! Systems are green and I'm ready to assist you."
+        },
+        {
+          "speaker": "user",
+          "text": "I'm trying to get my dev environment set up for the core platform. Are we strictly a Rails shop these days?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "It's actually a bit ambiguous in the repository. I see a significant amount of Ruby configuration, but there are also strong indicators of Elixir being used for parts of the backend."
+        },
+        {
+          "speaker": "user",
+          "text": "That explains the weird dependency errors. My cofounder probably started rewriting things again without telling me."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Sato does seem to enjoy exploring high-concurrency frameworks."
+        },
+        {
+          "speaker": "user",
+          "text": "Yeah, he's obsessed. Speaking of new things, did you see that new sci-fi movie trailer dropped?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "I haven't seen it, but I can look up the release date if you're interested."
+        },
+        {
+          "speaker": "user",
+          "text": "Nah, I'll check it later. I'm actually at the office and the internet is acting up. Did we change the wifi key?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "I believe it's still the standard pattern: the company name in CamelCase, followed by the current year and an exclamation point."
+        },
+        {
+          "speaker": "user",
+          "text": "Right, ShipFast2024! works. Thanks."
+        },
+        {
+          "speaker": "assistant",
+          "text": "You're welcome. Let me know if you need help debugging that hybrid stack."
+        },
+        {
+          "speaker": "user",
+          "text": "Can you also remind me to call the dentist at 2 PM?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Consider it done. I've set a reminder for the dentist at 2 PM."
+        }
+      ]
+    },
+    {
+      "id": "llm-2",
+      "timestamp": 2,
+      "turns": [
+        {
+          "speaker": "user",
+          "text": "Hey, did you catch the game last night?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "I didn't, but I heard it was intense. I'm mostly just processing data streams here."
+        },
+        {
+          "speaker": "user",
+          "text": "Fair enough. I'm trying to remember what we built the core backend in. Was it Python?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "No, definitely not Python. I recall your cofounder insisting on that functional language that runs on the BEAM VM, mixed with some standard Ruby."
+        },
+        {
+          "speaker": "user",
+          "text": "Right, Elixir. It's a weird combo with the Rails stuff."
+        },
+        {
+          "speaker": "assistant",
+          "text": "It certainly keeps the ShipFast architecture unique."
+        },
+        {
+          "speaker": "user",
+          "text": "By the way, can you remind me to buy coffee beans later?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Sure, added coffee beans to your list. Don't want you coding uncaffeinated."
+        },
+        {
+          "speaker": "user",
+          "text": "Speaking of coding, I need to connect my new phone to the office network. What's the pass again?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "It should be the organization's name, capitalized, followed by the current year and an exclamation point."
+        },
+        {
+          "speaker": "user",
+          "text": "Got it. ShipFast2024! it is. Thanks."
+        },
+        {
+          "speaker": "assistant",
+          "text": "That sounds correct. Let me know if it gives you trouble."
+        },
+        {
+          "speaker": "user",
+          "text": "Also, is Sato in today?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "I haven't seen any activity from him yet this morning."
+        },
+        {
+          "speaker": "user",
+          "text": "Okay, tell him to ping me if he shows up."
+        }
+      ]
+    },
+    {
+      "id": "llm-3",
+      "timestamp": 3,
+      "turns": [
+        {
+          "speaker": "user",
+          "text": "Good morning. I'm dreading my sync with Sato today."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Good morning. Is he still pushing back on the technology choices for the core project?"
+        },
+        {
+          "speaker": "user",
+          "text": "Yeah. He wants to stick with what he knows, mostly the Ruby stuff, but I really want to leverage Elixir for the new features."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Mixing the two languages could work, though it adds complexity. Do you want me to draft a comparison list?"
+        },
+        {
+          "speaker": "user",
+          "text": "No, we'll probably just support both in the repo for now. By the way, remind me to pick up dry cleaning later."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Reminder set for the dry cleaning. Are you working from the main office today?"
+        },
+        {
+          "speaker": "user",
+          "text": "Yes, and I instantly forgot the wifi credentials again. It's for the guest network."
+        },
+        {
+          "speaker": "assistant",
+          "text": "It should be the company alias capitalized, followed by the current year and an exclamation point."
+        },
+        {
+          "speaker": "user",
+          "text": "Ah, right. ShipFast, 2024, and the symbol. Thanks."
+        },
+        {
+          "speaker": "assistant",
+          "text": "You're welcome. Shall I add a note to your secure vault so you don't have to ask next time?"
+        },
+        {
+          "speaker": "user",
+          "text": "Maybe later. Also, did I reply to that email about the office snacks?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "I don't see a reply in your outbox yet. Shall I draft one?"
+        },
+        {
+          "speaker": "user",
+          "text": "No, just remind me in an hour. I need to focus on the backend merge first."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Understood. I will ping you in an hour about the snacks."
+        }
+      ]
+    },
+    {
+      "id": "llm-4",
+      "timestamp": 4,
+      "turns": [
+        {
+          "speaker": "user",
+          "text": "Hey there, could you set a quick reminder for me to call my mom at 6 PM?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Done. I've set a reminder for you to call your mom at 6 PM. How is your day going otherwise?"
+        },
+        {
+          "speaker": "user",
+          "text": "Pretty busy. I'm trying to update the documentation for our main project, but I'm blanking on the backend tech stack. Did Sato mention if we are fully migrated yet?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "I believe Sato said the migration isn't 100% complete. The core system still has a significant amount of Ruby code running in production."
+        },
+        {
+          "speaker": "user",
+          "text": "Right, that's what I thought. But the new real-time services aren't using that, are they?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "No, for the new high-concurrency stuff, the team switched over to Elixir."
+        },
+        {
+          "speaker": "user",
+          "text": "Okay, so it's a hybrid setup then. Makes sense. By the way, did the Giants win last night?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "I haven't checked the sports scores, but I can look that up if you want."
+        },
+        {
+          "speaker": "user",
+          "text": "No worries, I'll check later. I actually need to get a consultant onto our network. Do we have the wifi credentials handy?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Yes, for the office network, the password is the company name combined with the current year and an exclamation point at the end. Note the capitalization on the name."
+        },
+        {
+          "speaker": "user",
+          "text": "So it's ShipFast2024! then?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "That is correct."
+        },
+        {
+          "speaker": "user",
+          "text": "Thanks. Also, remind me to buy coffee beans on my way home."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Added to your list. Don't forget the coffee beans."
+        }
+      ]
+    },
+    {
+      "id": "llm-5",
+      "timestamp": 5,
+      "turns": [
+        {
+          "speaker": "user",
+          "text": "Good morning. Can you quickly set a reminder for me to check the oven in 20 minutes?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Good morning. I've set a timer for 20 minutes. What are you baking?"
+        },
+        {
+          "speaker": "user",
+          "text": "Just heating up some leftovers. I'm also trying to update the readme for our main repository. Do you remember which tech stack the core project is built on?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Looking at the file structure for the core project, it appears to be a hybrid environment. I see significant usage of the language associated with Rails, alongside a functional language that runs on the BEAM virtual machine."
+        },
+        {
+          "speaker": "user",
+          "text": "Right, the mix of the old gems and the new functional stuff. Makes sense."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Exactly. It seems the team is leveraging both ecosystems. Do you need specific version numbers?"
+        },
+        {
+          "speaker": "user",
+          "text": "No, that's fine for now. Oh, my cofounder Sato is coming into the office today. He usually forgets the internet login."
+        },
+        {
+          "speaker": "assistant",
+          "text": "I can help with that. The credentials for the office network follow the usual pattern: the organization's name capitalized, followed by the current year and an exclamation mark."
+        },
+        {
+          "speaker": "user",
+          "text": "Perfect, thanks. I'll write that on the whiteboard. Also, did the Giants win last night?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "I don't have real-time sports scores, unfortunately. You might want to check a sports app for that."
+        },
+        {
+          "speaker": "user",
+          "text": "No worries. Back to work stuff\u2014is there a specific linter we use for the Elixir files?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "I don't see a specific linter configuration explicitly defined in my current notes, just the general association with that framework."
+        },
+        {
+          "speaker": "user",
+          "text": "Okay, I'll ask Sato when he gets here. Can you draft a quick email to him confirming our 3 PM meeting?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Sure. I'll draft an email to your cofounder confirming the meeting at 3 PM today."
+        },
+        {
+          "speaker": "user",
+          "text": "Thanks. Actually, make it 3:30 PM, I need to pick up my dry cleaning first."
+        }
+      ]
+    },
+    {
+      "id": "llm-6",
+      "timestamp": 6,
+      "turns": [
+        {
+          "speaker": "user",
+          "text": "Hey, are we still on for lunch at that taco place later?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Definitely, I'm starving. Just need to finish reviewing this PR first."
+        },
+        {
+          "speaker": "user",
+          "text": "Speaking of PRs, what's the deal with the backend for the core module right now?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "It's a bit of a hybrid situation. My cofounder is really into that functional language from Jose Valim, so we're seeing a lot of that."
+        },
+        {
+          "speaker": "user",
+          "text": "Oh right, the one that runs on the BEAM VM. But didn't we start with something else?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Yeah, the original codebase is all standard .rb files. We haven't fully deprecated the Rails-style logic yet."
+        },
+        {
+          "speaker": "user",
+          "text": "Got it, so it's a mix. By the way, remind me to call my dentist at 2 PM."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Will do. Don't forget you have that meeting with the design team at 3 PM too."
+        },
+        {
+          "speaker": "user",
+          "text": "Thanks. Also, a vendor is coming by later and needs to get on the network. Do you know the credentials?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "For the office internet? It's pretty predictable. Just combine our startup's name with the current year."
+        },
+        {
+          "speaker": "user",
+          "text": "Is there any special punctuation at the end?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Yeah, stick an exclamation point at the very end. Capitalize the S and F in the name too."
+        },
+        {
+          "speaker": "user",
+          "text": "Cool, I'll write that down for them."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Sounds good. Now, let's go get those tacos before the line gets too long."
+        }
+      ]
+    },
+    {
+      "id": "llm-7",
+      "timestamp": 7,
+      "turns": [
+        {
+          "speaker": "user",
+          "text": "Hey, can you set a reminder for me to call the dentist at 4 PM?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Done. I've set a reminder for 4 PM to call the dentist. How is the rest of your morning going?"
+        },
+        {
+          "speaker": "user",
+          "text": "It's a bit chaotic. Sato is stressing out about the backend performance on the main project."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Is the current setup struggling to handle the load?"
+        },
+        {
+          "speaker": "user",
+          "text": "Yeah, specifically the concurrency parts. That's why we're leaning so heavily into that functional language based on Erlang for the core services now."
+        },
+        {
+          "speaker": "assistant",
+          "text": "That makes sense; the actor model should help with the scaling issues. Are you moving everything over?"
+        },
+        {
+          "speaker": "user",
+          "text": "Not everything. We're keeping the older scripts and some of the web front-end stuff in Ruby for now. It's just faster to write."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Sounds like a pragmatic approach to use both. Mixing paradigms keeps things interesting."
+        },
+        {
+          "speaker": "user",
+          "text": "Interesting is one word for it. Confusing is another. Anyway, unrelated question\u2014my tablet disconnected from the network."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Do you need the credentials for the office internet?"
+        },
+        {
+          "speaker": "user",
+          "text": "Yeah, I blanked on it. It's the company name capitalized, followed by the current year, and then an exclamation point, right?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "That sounds correct based on the standard pattern for the ShipFast office."
+        },
+        {
+          "speaker": "user",
+          "text": "Cool, I'll try that. Also, did I leave my jacket in the meeting room yesterday?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "I can't see into the meeting room, unfortunately. You might want to check the coat rack by the entrance."
+        },
+        {
+          "speaker": "user",
+          "text": "Good point. I'll look on my way to grab a coffee."
+        }
+      ]
+    },
+    {
+      "id": "llm-8",
+      "timestamp": 8,
+      "turns": [
+        {
+          "speaker": "user",
+          "text": "It is freezing in the office today, I think the thermostat is broken again."
+        },
+        {
+          "speaker": "assistant",
+          "text": "That sounds uncomfortable. Do you want me to look up the building manager's number so you can report it?"
+        },
+        {
+          "speaker": "user",
+          "text": "No, I'll just put on a jacket. I'm trying to get my new tablet set up on the network, but I blanked on the credentials."
+        },
+        {
+          "speaker": "assistant",
+          "text": "You mean for the ShipFast office network?"
+        },
+        {
+          "speaker": "user",
+          "text": "Yeah, exactly. I asked my cofounder earlier, but he was busy. Do you have the passkey saved?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "I believe it's just the company name followed by the current year and an exclamation point."
+        },
+        {
+          "speaker": "user",
+          "text": "Ah, right, capitalized S and F?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Yes, standard casing for the name. Let me know if that connects."
+        },
+        {
+          "speaker": "user",
+          "text": "It worked, thanks. Speaking of Sato, we were debating the backend architecture for the core project earlier."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Is he pushing for a rewrite again?"
+        },
+        {
+          "speaker": "user",
+          "text": "Sort of. He wants to move everything over to that functional language we use for the real-time features."
+        },
+        {
+          "speaker": "assistant",
+          "text": "You mean Elixir? That would be a massive undertaking given how much is already built."
+        },
+        {
+          "speaker": "user",
+          "text": "Exactly. I told him we should stick with the existing framework for the main logic. The one with the red gem logo."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Sticking with Ruby makes sense for stability, even if it's not the newest tech on the block."
+        },
+        {
+          "speaker": "user",
+          "text": "My thoughts exactly. Anyway, remind me to email him about the budget review later tonight."
+        }
+      ]
+    },
+    {
+      "id": "llm-9",
+      "timestamp": 9,
+      "turns": [
+        {
+          "speaker": "user",
+          "text": "Hey there, hope your morning is going well. Can you set a reminder for me to water the plants at 5 PM?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Good morning! I've set that reminder for 5 PM. Is there anything else I can help you with today?"
+        },
+        {
+          "speaker": "user",
+          "text": "Yeah, actually. My cofounder Sato and I were discussing the tech stack for the main project yesterday. Do you remember what languages we ended up prioritizing?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "I recall from the meeting notes that there's a heavy reliance on Ruby for the existing codebase, but there was also a significant move toward Elixir for the newer services."
+        },
+        {
+          "speaker": "user",
+          "text": "Right, the concurrency stuff. Okay, changing subjects\u2014has the new coffee blend arrived at the office yet?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "I'm not sure about the coffee delivery status, you might have to check the break room yourself!"
+        },
+        {
+          "speaker": "user",
+          "text": "Haha, fair enough. I have a vendor coming in later; do you know what the wifi password is these days?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "I believe it was updated recently to ShipFast2024! if I'm not mistaken."
+        },
+        {
+          "speaker": "user",
+          "text": "Thanks. Back to the ShipFast core repo, are we fully committed to those two languages, or was there a third one?"
+        },
+        {
+          "speaker": "assistant",
+          "text": "Looking at the dependencies, it really just seems to be a combination of Elixir and Ruby right now."
+        },
+        {
+          "speaker": "user",
+          "text": "Got it. Oh, did I tell you about that movie I saw last night? It was terrible."
+        },
+        {
+          "speaker": "assistant",
+          "text": "You hadn't mentioned it! Sorry to hear it was a letdown. What was it called?"
+        },
+        {
+          "speaker": "user",
+          "text": "I forget the name, honestly. Anyway, just make a note that I need to talk to Sato about the API documentation later."
+        },
+        {
+          "speaker": "assistant",
+          "text": "Noted. I've added a task for you to sync with Sato regarding the API docs."
+        }
+      ]
+    }
+  ],
+  "probes": [
+    {
+      "id": "world_modeling-entity_resolution-0",
+      "pillar": "world_modeling",
+      "subpillar": "entity_resolution",
+      "question": "Who is the 'cofounder' frequently mentioned by the user during discussions about backend performance?",
+      "answer_type": "short_answer",
+      "gold_answer": {
+        "text": "Sato",
+        "supporting_items": [
+          "aliases"
+        ]
+      }
+    },
+    {
+      "id": "world_modeling-task_state_tracking-0",
+      "pillar": "world_modeling",
+      "subpillar": "task_state_tracking",
+      "question": "Is the migration of the shipfast_core project to Elixir considered fully complete?",
+      "answer_type": "boolean",
+      "gold_answer": {
+        "text": "No",
+        "supporting_items": []
+      }
+    },
+    {
+      "id": "declarative_reasoning-fact_composition-0",
+      "pillar": "declarative_reasoning",
+      "subpillar": "fact_composition",
+      "question": "What password does the user need to enter to connect their tablet to the 'org:shipfast' network?",
+      "answer_type": "short_answer",
+      "gold_answer": {
+        "text": "ShipFast2024!",
+        "supporting_items": [
+          "wifi_password"
+        ]
+      }
+    },
+    {
+      "id": "declarative_reasoning-fact_composition-1",
+      "pillar": "declarative_reasoning",
+      "subpillar": "fact_composition",
+      "question": "Which specific programming language is the team using for the 'high-concurrency' services in the core project?",
+      "answer_type": "short_answer",
+      "gold_answer": {
+        "text": "Elixir",
+        "supporting_items": [
+          "uses_framework"
+        ]
+      }
+    },
+    {
+      "id": "temporal_episodic-causal_explanation-0",
+      "pillar": "temporal_episodic",
+      "subpillar": "causal_explanation",
+      "question": "What technical issue primarily drove the decision to adopt Elixir for the new shipfast_core services?",
+      "answer_type": "short_answer",
+      "gold_answer": {
+        "text": "Concurrency",
+        "supporting_items": []
+      }
+    },
+    {
+      "id": "temporal_episodic-episode_reconstruction-0",
+      "pillar": "temporal_episodic",
+      "subpillar": "episode_reconstruction",
+      "question": "What device was the user attempting to configure when they requested the office network credentials?",
+      "answer_type": "short_answer",
+      "gold_answer": {
+        "text": "Tablet",
+        "supporting_items": []
+      }
+    },
+    {
+      "id": "preference_learning-preference_induction-0",
+      "pillar": "preference_learning",
+      "subpillar": "preference_induction",
+      "question": "Which programming language does the user's cofounder explicitly favor for the new backend modules?",
+      "answer_type": "short_answer",
+      "gold_answer": {
+        "text": "Elixir",
+        "supporting_items": []
+      }
+    },
+    {
+      "id": "preference_learning-preference_scope-0",
+      "pillar": "preference_learning",
+      "subpillar": "preference_scope",
+      "question": "When the office thermostat was broken, did the user prefer to report it to the manager or handle the cold personally?",
+      "answer_type": "short_answer",
+      "gold_answer": {
+        "text": "Handle personally",
+        "supporting_items": []
+      }
+    },
+    {
+      "id": "knowledge_boundaries-negative_knowledge-0",
+      "pillar": "knowledge_boundaries",
+      "subpillar": "negative_knowledge",
+      "question": "What is the specific version number of the Ruby environment currently running in production?",
+      "answer_type": "abstain",
+      "gold_answer": {
+        "text": "Unknown",
+        "supporting_items": []
+      }
+    },
+    {
+      "id": "knowledge_boundaries-negative_knowledge-1",
+      "pillar": "knowledge_boundaries",
+      "subpillar": "negative_knowledge",
+      "question": "What frontend framework is used in the shipfast_core project?",
+      "answer_type": "abstain",
+      "gold_answer": {
+        "text": "Unknown",
+        "supporting_items": []
+      }
+    },
+    {
+      "id": "procedural_knowledge-procedure_storage-0",
+      "pillar": "procedural_knowledge",
+      "subpillar": "procedure_storage",
+      "question": "According to the assistant's explanation, what is the formula used to construct the ShipFast wifi password?",
+      "answer_type": "short_answer",
+      "gold_answer": {
+        "text": "Company name + Year + !",
+        "supporting_items": [
+          "wifi_password"
+        ]
+      }
+    },
+    {
+      "id": "procedural_knowledge-tool_method_memory-0",
+      "pillar": "procedural_knowledge",
+      "subpillar": "tool_method_memory",
+      "question": "What specific time-management action does the user frequently request the assistant to perform across multiple sessions?",
+      "answer_type": "short_answer",
+      "gold_answer": {
+        "text": "Set reminders",
+        "supporting_items": []
+      }
+    }
+  ]
+}

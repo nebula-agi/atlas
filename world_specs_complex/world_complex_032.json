@@ -1,0 +1,451 @@
+{
+  "world_id": "world:complex_032",
+  "schema_version": "1.0",
+  "metadata": {
+    "domain": "AdTech",
+    "description": "Complex simulation with 13 entities and 14 facts.",
+    "seed": 50031,
+    "time": {
+      "timezone": "UTC",
+      "start_date": "2024-01-15T09:00:00Z"
+    }
+  },
+  "entities": [
+    {
+      "id": "ent:person:user",
+      "type": "Person",
+      "canonical_name": "Alex",
+      "attributes": {
+        "role": "CTO"
+      }
+    },
+    {
+      "id": "ent:person:oliver",
+      "type": "Person",
+      "canonical_name": "Oliver",
+      "attributes": {
+        "role": "CEO"
+      },
+      "aliases": [
+        {
+          "text": "my cofounder",
+          "scope": "user_perspective"
+        }
+      ]
+    },
+    {
+      "id": "ent:person:olivia",
+      "type": "Person",
+      "canonical_name": "Olivia",
+      "attributes": {
+        "role": "Product Designer"
+      }
+    },
+    {
+      "id": "ent:person:mia",
+      "type": "Person",
+      "canonical_name": "Mia",
+      "attributes": {
+        "role": "Data Scientist"
+      }
+    },
+    {
+      "id": "ent:person:will",
+      "type": "Person",
+      "canonical_name": "Will",
+      "attributes": {
+        "role": "DevOps"
+      }
+    },
+    {
+      "id": "ent:person:liam",
+      "type": "Person",
+      "canonical_name": "Liam",
+      "attributes": {
+        "role": "Backend Lead"
+      }
+    },
+    {
+      "id": "ent:org:nebula",
+      "type": "Organization",
+      "canonical_name": "Nebula Corp"
+    },
+    {
+      "id": "ent:system:analyticsengine_3",
+      "type": "System",
+      "canonical_name": "AnalyticsEngine_3"
+    },
+    {
+      "id": "ent:system:cachelayer_1",
+      "type": "System",
+      "canonical_name": "CacheLayer_1"
+    },
+    {
+      "id": "ent:system:primarydb_4",
+      "type": "System",
+      "canonical_name": "PrimaryDB_4"
+    },
+    {
+      "id": "ent:system:primarydb_7",
+      "type": "System",
+      "canonical_name": "PrimaryDB_7"
+    },
+    {
+      "id": "ent:system:analyticsengine_6",
+      "type": "System",
+      "canonical_name": "AnalyticsEngine_6"
+    },
+    {
+      "id": "ent:env:prod",
+      "type": "Environment",
+      "canonical_name": "Production"
+    }
+  ],
+  "facts": [
+    {
+      "id": "fact:f903c85e",
+      "subject": {
+        "ref": "ent:person:user"
+      },
+      "predicate": "has_role",
+      "object": {
+        "value": "CTO",
+        "value_type": "string"
+      },
+      "temporal": {
+        "asserted_at": "2024-01-15T09:00:00Z"
+      },
+      "epistemics": {
+        "polarity": "affirmed",
+        "confidence": "certain"
+      }
+    },
+    {
+      "id": "fact:6de4ae60",
+      "subject": {
+        "ref": "ent:person:oliver"
+      },
+      "predicate": "has_role",
+      "object": {
+        "value": "CEO",
+        "value_type": "string"
+      },
+      "temporal": {
+        "asserted_at": "2024-01-15T09:00:00Z"
+      },
+      "epistemics": {
+        "polarity": "affirmed",
+        "confidence": "certain"
+      }
+    },
+    {
+      "id": "fact:53ac98f6",
+      "subject": {
+        "ref": "ent:person:olivia"
+      },
+      "predicate": "has_role",
+      "object": {
+        "value": "Product Designer",
+        "value_type": "string"
+      },
+      "temporal": {
+        "asserted_at": "2024-01-15T09:00:00Z"
+      },
+      "epistemics": {
+        "polarity": "affirmed",
+        "confidence": "certain"
+      }
+    },
+    {
+      "id": "fact:e6524bb7",
+      "subject": {
+        "ref": "ent:person:mia"
+      },
+      "predicate": "has_role",
+      "object": {
+        "value": "Data Scientist",
+        "value_type": "string"
+      },
+      "temporal": {
+        "asserted_at": "2024-01-15T09:00:00Z"
+      },
+      "epistemics": {
+        "polarity": "affirmed",
+        "confidence": "certain"
+      }
+    },
+    {
+      "id": "fact:7d7af519",
+      "subject": {
+        "ref": "ent:person:will"
+      },
+      "predicate": "has_role",
+      "object": {
+        "value": "DevOps",
+        "value_type": "string"
+      },
+      "temporal": {
+        "asserted_at": "2024-01-15T09:00:00Z"
+      },
+      "epistemics": {
+        "polarity": "affirmed",
+        "confidence": "certain"
+      }
+    },
+    {
+      "id": "fact:9b612652",
+      "subject": {
+        "ref": "ent:person:liam"
+      },
+      "predicate": "has_role",
+      "object": {
+        "value": "Backend Lead",
+        "value_type": "string"
+      },
+      "temporal": {
+        "asserted_at": "2024-01-15T09:00:00Z"
+      },
+      "epistemics": {
+        "polarity": "affirmed",
+        "confidence": "certain"
+      }
+    },
+    {
+      "id": "fact:8ef0b92c",
+      "subject": {
+        "ref": "ent:system:analyticsengine_3"
+      },
+      "predicate": "hosted_on",
+      "object": {
+        "value": "AWS",
+        "value_type": "string"
+      },
+      "scope": {
+        "context_tags": [
+          "infrastructure"
+        ]
+      },
+      "temporal": {
+        "asserted_at": "2024-01-15T09:00:00Z"
+      }
+    },
+    {
+      "id": "fact:bcb97664",
+      "subject": {
+        "ref": "ent:system:cachelayer_1"
+      },
+      "predicate": "hosted_on",
+      "object": {
+        "value": "GCP",
+        "value_type": "string"
+      },
+      "scope": {
+        "context_tags": [
+          "infrastructure"
+        ]
+      },
+      "temporal": {
+        "asserted_at": "2024-01-15T09:00:00Z"
+      }
+    },
+    {
+      "id": "fact:0ff677d0",
+      "subject": {
+        "ref": "ent:system:primarydb_4"
+      },
+      "predicate": "hosted_on",
+      "object": {
+        "value": "AWS",
+        "value_type": "string"
+      },
+      "scope": {
+        "context_tags": [
+          "infrastructure"
+        ]
+      },
+      "temporal": {
+        "asserted_at": "2024-01-15T09:00:00Z"
+      }
+    },
+    {
+      "id": "fact:0c80722c",
+      "subject": {
+        "ref": "ent:system:primarydb_7"
+      },
+      "predicate": "hosted_on",
+      "object": {
+        "value": "AWS",
+        "value_type": "string"
+      },
+      "scope": {
+        "context_tags": [
+          "infrastructure"
+        ]
+      },
+      "temporal": {
+        "asserted_at": "2024-01-15T09:00:00Z"
+      }
+    },
+    {
+      "id": "fact:49aba7ce",
+      "subject": {
+        "ref": "ent:system:analyticsengine_6"
+      },
+      "predicate": "hosted_on",
+      "object": {
+        "value": "AWS",
+        "value_type": "string"
+      },
+      "scope": {
+        "context_tags": [
+          "infrastructure"
+        ]
+      },
+      "temporal": {
+        "asserted_at": "2024-01-15T09:00:00Z"
+      }
+    },
+    {
+      "id": "fact:ver_v1_aeee1b",
+      "subject": {
+        "ref": "ent:system:analyticsengine_3"
+      },
+      "predicate": "running_version",
+      "object": {
+        "value": "v1.2.0",
+        "value_type": "string"
+      },
+      "temporal": {
+        "asserted_at": "2024-01-15T09:00:00Z"
+      },
+      "superseded_by": "fact:ver_v2_3ddd62"
+    },
+    {
+      "id": "fact:ver_v2_3ddd62",
+      "subject": {
+        "ref": "ent:system:analyticsengine_3"
+      },
+      "predicate": "running_version",
+      "object": {
+        "value": "v2.0.0-beta",
+        "value_type": "string"
+      },
+      "temporal": {
+        "asserted_at": "2024-01-25T09:00:00Z"
+      },
+      "provenance": [
+        {
+          "source_session": "session:02",
+          "evidence_text": "We upgraded to v2.0 beta."
+        }
+      ],
+      "supersedes": [
+        "fact:ver_v1_aeee1b"
+      ]
+    },
+    {
+      "id": "fact:pet_b99b4fcf",
+      "subject": {
+        "ref": "ent:person:olivia"
+      },
+      "predicate": "has_pet",
+      "object": {
+        "value": "Cat named Luna",
+        "value_type": "string"
+      },
+      "scope": {
+        "context_tags": [
+          "personal"
+        ]
+      },
+      "temporal": {
+        "asserted_at": "2024-01-20T09:00:00Z"
+      }
+    }
+  ],
+  "relations": [],
+  "tasks": [],
+  "episodes": [],
+  "preferences": [],
+  "procedures": [],
+  "rules": [],
+  "ambiguities": [],
+  "sessions_blueprint": {
+    "sessions": [
+      {
+        "session_id": "session:01",
+        "time": {
+          "start": "2024-01-15T09:00:00Z",
+          "end": "2024-01-15T10:00:00Z"
+        },
+        "participants": [
+          {
+            "ref": "ent:person:user"
+          },
+          {
+            "ref": "ent:person:oliver"
+          }
+        ],
+        "artifacts_introduced": [
+          "fact:f903c85e",
+          "fact:6de4ae60",
+          "fact:53ac98f6",
+          "fact:e6524bb7",
+          "fact:7d7af519",
+          "fact:9b612652",
+          "fact:8ef0b92c",
+          "fact:bcb97664",
+          "fact:0ff677d0",
+          "fact:0c80722c",
+          "fact:49aba7ce",
+          "fact:ver_v1_aeee1b",
+          "fact:pet_b99b4fcf"
+        ],
+        "events_planned": [
+          {
+            "turn_id": "turn:01",
+            "speaker": "user",
+            "intents": [
+              "state_fact"
+            ],
+            "notes": "Initial context loading"
+          }
+        ]
+      },
+      {
+        "session_id": "session:02",
+        "time": {
+          "start": "2024-01-25T09:00:00Z",
+          "end": "2024-01-25T11:00:00Z"
+        },
+        "participants": [
+          {
+            "ref": "ent:person:user"
+          },
+          {
+            "ref": "ent:person:olivia"
+          }
+        ],
+        "artifacts_introduced": [
+          "fact:ver_v2_3ddd62"
+        ],
+        "events_planned": [
+          {
+            "turn_id": "turn:01",
+            "speaker": "user",
+            "intents": [
+              "update_fact"
+            ],
+            "writes": [
+              "fact:ver_v2_3ddd62"
+            ],
+            "notes": "Upgrade discussion"
+          }
+        ]
+      }
+    ]
+  },
+  "probes_blueprint": {
+    "probe_families": []
+  }
+}

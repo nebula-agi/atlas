@@ -1,0 +1,348 @@
+{
+  "generated_at": "2025-12-23T01:14:09.104487",
+  "adapter_type": "SupermemoryAdapter",
+  "num_benchmarks": 1,
+  "total_probes": 13,
+  "overall_summary": {
+    "overall_accuracy": 0.8461538461538461,
+    "total_score": 11,
+    "count": 13,
+    "by_answer_type": {
+      "short_answer": {
+        "total": 10,
+        "count": 11,
+        "accuracy": 0.9090909090909091
+      },
+      "boolean": {
+        "total": 1,
+        "count": 2,
+        "accuracy": 0.5
+      }
+    },
+    "by_pillar": {
+      "world_modeling": {
+        "total": 2,
+        "count": 2,
+        "accuracy": 1.0
+      },
+      "declarative_reasoning": {
+        "total": 2,
+        "count": 2,
+        "accuracy": 1.0
+      },
+      "temporal_episodic": {
+        "total": 2,
+        "count": 3,
+        "accuracy": 0.6666666666666666
+      },
+      "preference_learning": {
+        "total": 1,
+        "count": 2,
+        "accuracy": 0.5
+      },
+      "knowledge_boundaries": {
+        "total": 2,
+        "count": 2,
+        "accuracy": 1.0
+      },
+      "procedural_knowledge": {
+        "total": 2,
+        "count": 2,
+        "accuracy": 1.0
+      }
+    }
+  },
+  "stored_memories": [],
+  "benchmark_summaries": [
+    {
+      "file": "C:\\Users\\k_nai\\nebulaMemBenchmark\\simple_test_set\\benchmark_nebula_devtools_010.json",
+      "accuracy": 0.8461538461538461,
+      "num_probes": 13,
+      "ingestion_time_s": 21.96303415298462,
+      "eval_time_s": 27.158596754074097
+    }
+  ],
+  "detailed_results": [
+    {
+      "benchmark_file": "C:\\Users\\k_nai\\nebulaMemBenchmark\\simple_test_set\\benchmark_nebula_devtools_010.json",
+      "adapter_type": "SupermemoryAdapter",
+      "num_sessions": 10,
+      "num_probes": 13,
+      "ingestion_time_s": 21.96303415298462,
+      "total_evaluation_time_s": 27.158596754074097,
+      "probe_results": [
+        {
+          "probe_id": "world_modeling-entity_resolution-1",
+          "pillar": "world_modeling",
+          "subpillar": "entity_resolution",
+          "question": "Which individual is repeatedly identified as the user's cofounder throughout the sessions?",
+          "answer_type": "short_answer",
+          "gold_answer": "Sato",
+          "predicted_answer": "Sato",
+          "retrieved_context": [
+            "[Session llm-0, Time: 0] user: Good morning. I'm trying to get my head straight before the meeting with my cofounder later. assistant: Good morning. I hope you've had some coffee. What's on the agenda for the meeting with Sato? user: We need to finalize the architecture for the core platform. I keep forgetting if we settled on a single language or a mix. assistant: Looking at the latest technical specs for the CodeStream project, it looks like a hybrid stack. You're using Node.js for the API layer, but the heavy lifting is being handled by Rust. user: Right, that's it. Sato was really adamant about the performance benefits for the backend services. assistant: It seems like a solid choice to balance development speed with raw performance. user: Yeah. Totally unrelated, but can you remind me to pick up my dry cleaning at 5 PM? assistant: Sure thing, I've set a reminder for 5 PM to pick up the dry cleaning. user: Thanks. I'm having trouble connecting my tablet to the office network. Did we change the credentials? assistant: I don't believe they've changed recently. It should still be the company name, capitalized, followed by 2024 and an exclamation mark. user: Ah, I was missing the exclamation mark. That worked. assistant: Glad you got connected. Is there anything specific about the Node.js implementation you need to prep for the meeting? user: No, I think I'm good on the tech side. Just realized I skipped breakfast. assistant: You should probably grab something to eat before Sato arrives so you can focus. user: Good point. I'll grab a bagel. Talk to you later.",
+            "[Session llm-1, Time: 1] user: Hey, good morning. Did you catch the game last night? assistant: Good morning! I missed it, actually. I was offline most of the evening. How was it? user: It was intense. Anyway, I need to check the repo. My cofounder was complaining about compile times on the core module again. assistant: Ah, dealing with the borrow checker again? Rust is great for safety, but it definitely makes you wait during builds. user: Exactly. At least the API layer is faster to iterate on since it's just Node.js. assistant: True, that environment is much more forgiving for quick changes compared to the core logic. user: Yeah. Oh, by the way, I reset my phone and lost the saved networks. What's the office internet key again? assistant: It's pretty standard. Just our organization name, the current year, and an exclamation mark at the end. user: Got it, CodeStream2024! worked perfectly. Thanks. I also need to order lunch, you want anything? assistant: I'm good for now, maybe just a coffee later. Don't forget to push your changes before you eat. user: I won't. I'm just debugging a race condition real quick. assistant: Good luck with that. Let me know if you need me to look up any documentation.",
+            "[Session llm-5, Time: 5] user: Good morning, hope you're running smoothly today. assistant: Everything is operational here. How can I help you kick off your day? user: I'm trying to update the documentation for the main project repo. I keep forgetting the exact tech stack mix we settled on. assistant: If you are referring to the CodeStream core project, the architecture primarily utilizes a combination of Node.js for the services and Rust for the performance-critical components. user: Right, that hybrid setup. Okay, switching gears, remind me to water the plants in the lobby when I get in. assistant: Consider it noted. I'll remind you to tend to the lobby plants when you arrive. user: Thanks. My cofounder is bringing a guest today, and they'll need to get online. What's the wireless key again? assistant: For the CodeStream network, the password is the company name followed by 2024 and an exclamation mark. user: Got it, Capital C and S, right? assistant: Yes, standard capitalization for the name, ending with the year and the punctuation. user: Cool. Also, did I leave my jacket in the meeting room yesterday? assistant: I don't have access to camera feeds to check that, unfortunately. user: No worries, just checking. Sato mentioned he might want to review the backend code later. assistant: If he dives into the core repository, he'll likely be looking at those Rust modules we discussed earlier. user: Exactly. Alright, time to grab some coffee. Talk later."
+          ],
+          "score": 1,
+          "match_type": "llm_judge",
+          "latency_ms": 1137.6428604125977
+        },
+        {
+          "probe_id": "world_modeling-relationship_mapping-2",
+          "pillar": "world_modeling",
+          "subpillar": "relationship_mapping",
+          "question": "What is the professional relationship between the user and the person concerned about the API layer's speed?",
+          "answer_type": "short_answer",
+          "gold_answer": "Cofounders",
+          "predicted_answer": "The person concerned about the API layer's speed is the user's cofounder, Sato.",
+          "retrieved_context": [
+            "[Session llm-1, Time: 1] user: Hey, good morning. Did you catch the game last night? assistant: Good morning! I missed it, actually. I was offline most of the evening. How was it? user: It was intense. Anyway, I need to check the repo. My cofounder was complaining about compile times on the core module again. assistant: Ah, dealing with the borrow checker again? Rust is great for safety, but it definitely makes you wait during builds. user: Exactly. At least the API layer is faster to iterate on since it's just Node.js. assistant: True, that environment is much more forgiving for quick changes compared to the core logic. user: Yeah. Oh, by the way, I reset my phone and lost the saved networks. What's the office internet key again? assistant: It's pretty standard. Just our organization name, the current year, and an exclamation mark at the end. user: Got it, CodeStream2024! worked perfectly. Thanks. I also need to order lunch, you want anything? assistant: I'm good for now, maybe just a coffee later. Don't forget to push your changes before you eat. user: I won't. I'm just debugging a race condition real quick. assistant: Good luck with that. Let me know if you need me to look up any documentation.",
+            "[Session llm-0, Time: 0] user: Good morning. I'm trying to get my head straight before the meeting with my cofounder later. assistant: Good morning. I hope you've had some coffee. What's on the agenda for the meeting with Sato? user: We need to finalize the architecture for the core platform. I keep forgetting if we settled on a single language or a mix. assistant: Looking at the latest technical specs for the CodeStream project, it looks like a hybrid stack. You're using Node.js for the API layer, but the heavy lifting is being handled by Rust. user: Right, that's it. Sato was really adamant about the performance benefits for the backend services. assistant: It seems like a solid choice to balance development speed with raw performance. user: Yeah. Totally unrelated, but can you remind me to pick up my dry cleaning at 5 PM? assistant: Sure thing, I've set a reminder for 5 PM to pick up the dry cleaning. user: Thanks. I'm having trouble connecting my tablet to the office network. Did we change the credentials? assistant: I don't believe they've changed recently. It should still be the company name, capitalized, followed by 2024 and an exclamation mark. user: Ah, I was missing the exclamation mark. That worked. assistant: Glad you got connected. Is there anything specific about the Node.js implementation you need to prep for the meeting? user: No, I think I'm good on the tech side. Just realized I skipped breakfast. assistant: You should probably grab something to eat before Sato arrives so you can focus. user: Good point. I'll grab a bagel. Talk to you later.",
+            "[Session llm-6, Time: 6] user: Hey, hope you're having a decent Tuesday. The weather is actually pretty nice out there for once. assistant: It is lovely! I noticed the sun is finally breaking through the clouds. How can I help you today? user: I need to double-check some technical details for the pitch deck. My cofounder, Sato, is worried about our backend choices for the core platform. assistant: I can help clarify that. What specific concerns does Sato have regarding the architecture? user: He just wants to confirm we are actually using that systems programming language for the performance-critical stuff. The one with the borrow checker? assistant: Yes, that's correct. We are utilizing Rust for the core components to ensure memory safety and high performance. user: Great, that's what I thought. And for the rest of the backend services? We're sticking with the V8-based runtime, right? assistant: Exactly. We are using Node.js for the general backend services to handle asynchronous operations efficiently. user: Perfect. I'll let him know it's a hybrid setup. By the way, remind me to pick up my dry cleaning later? assistant: Consider it done. I've set a reminder for your dry cleaning. What time should I alert you? user: Around 5 PM is good. Also, I completely blanked on the office internet credentials. Is it just the company name? assistant: It's a bit more secure than that. It is the company name capitalized, followed by the current year, and ending with an exclamation point. user: Ah, right. So CodeStream, 2024, and the symbol. Thanks. assistant: You got it. Let me know if you have any trouble connecting your devices. user: Will do. Oh, and did the coffee subscription renew automatically?"
+          ],
+          "score": 1,
+          "match_type": "llm_judge",
+          "latency_ms": 1222.8024005889893
+        },
+        {
+          "probe_id": "declarative_reasoning-fact_composition-3",
+          "pillar": "declarative_reasoning",
+          "subpillar": "fact_composition",
+          "question": "Which framework used in the CodeStream core project is described as a systems language with a 'crab mascot'?",
+          "answer_type": "short_answer",
+          "gold_answer": "Rust",
+          "predicted_answer": "Rust",
+          "retrieved_context": [
+            "[Session llm-3, Time: 3] user: Hey, good morning. I feel like I'm running on empty today. assistant: Good morning. Maybe a second cup of coffee is in order? user: Definitely. Sato is already on his third espresso. He's stressing about the backend migration for the core project. assistant: Is he worried about the timeline for CodeStream core? user: Mostly about the interoperability. We are keeping the heavy compute stuff in that systems language Mozilla made, the one with the crab mascot. assistant: Rust is great for performance, even if integration can be tricky. user: Yeah, exactly. We have to make it play nice with the event-driven JavaScript runtime we use for the API layer. assistant: Mixing Rust with Node.js is a powerful combination if you get the bindings right. user: That's the plan. Oh, totally unrelated, remind me to call the dentist at 2 PM. assistant: I've set a reminder for 2 PM to call the dentist. user: Thanks. Also, we finally updated the office wireless credentials. Sato kept forgetting the old random string. assistant: Did you change it to something easier to remember? user: Yeah, it's just our company name—capital C, capital S—followed by the current year and an exclamation point. assistant: That sounds much more user-friendly for the team. user: Hopefully. Anyway, I better go help him before he rewrites the whole thing in C++.",
+            "[Session llm-1, Time: 1] user: Hey, good morning. Did you catch the game last night? assistant: Good morning! I missed it, actually. I was offline most of the evening. How was it? user: It was intense. Anyway, I need to check the repo. My cofounder was complaining about compile times on the core module again. assistant: Ah, dealing with the borrow checker again? Rust is great for safety, but it definitely makes you wait during builds. user: Exactly. At least the API layer is faster to iterate on since it's just Node.js. assistant: True, that environment is much more forgiving for quick changes compared to the core logic. user: Yeah. Oh, by the way, I reset my phone and lost the saved networks. What's the office internet key again? assistant: It's pretty standard. Just our organization name, the current year, and an exclamation mark at the end. user: Got it, CodeStream2024! worked perfectly. Thanks. I also need to order lunch, you want anything? assistant: I'm good for now, maybe just a coffee later. Don't forget to push your changes before you eat. user: I won't. I'm just debugging a race condition real quick. assistant: Good luck with that. Let me know if you need me to look up any documentation.",
+            "[Session llm-8, Time: 8] user: Morning. I need to double-check something before the stand-up. assistant: Good morning. What's on your mind? user: Did I leave my jacket at the office yesterday? assistant: I can't see physical objects, unfortunately, but I can remind you to check the coat rack later. user: Haha, right. Anyway, Sato is asking about the tech stack for the core project again. assistant: Is he reconsidering the mix of the JavaScript runtime and that systems language with the crab mascot? user: No, he just wants to confirm we are locked in on Node and Rust. assistant: Got it. Yes, those are the two primary frameworks recorded for the project. user: Great. Also, can you remind me to order lunch for the team at noon? assistant: Consider it done. I've set a reminder for 12:00 PM. user: Thanks. One last thing, my phone forgot the wifi. Is it still the standard password? assistant: Yes, it's the company name with a capital C and S, followed by the current year and a bang. user: CodeStream2024! it is. Thanks. assistant: You're welcome. Let me know if you need help with the lunch order later."
+          ],
+          "score": 1,
+          "match_type": "llm_judge",
+          "latency_ms": 1186.763048171997
+        },
+        {
+          "probe_id": "declarative_reasoning-constraint_propagation-4",
+          "pillar": "declarative_reasoning",
+          "subpillar": "constraint_propagation",
+          "question": "Based on the rule 'Organization Name + Year + !', what is the password for the office wifi?",
+          "answer_type": "short_answer",
+          "gold_answer": "CodeStream2024!",
+          "predicted_answer": "CodeStream2024!",
+          "retrieved_context": [
+            "[Session llm-2, Time: 2] user: I just walked in and Sato is already typing furiously at his desk. assistant: Sounds like a busy morning. Do you need a quick summary of your inbox? user: No, not yet. I actually need to reconnect my tablet to the office wifi. I totally blanked on the password. assistant: It happens. The password is just the organization's name, then 2024, and an exclamation mark at the end. user: Got it, thanks. Also, remind me to water the plants when I get home. assistant: Reminder set: water the plants upon arrival at home. user: I'm pulling down the latest changes for the core project. It looks like the architecture shifted a bit. assistant: In what way? user: Well, I see a huge directory for server-side JavaScript now. assistant: Yes, the project now relies heavily on Node.js for the service layer. user: But the engine itself is still compiled, right? assistant: Correct, the core logic is still written in Rust for performance. user: Okay, good. I need to make sure my cargo toolchain is up to date then. assistant: You might want to check with your cofounder on the specific version he's using. user: Will do. Hey, did the coffee machine get fixed?",
+            "[Session llm-9, Time: 9] user: Morning. Any chance of rain today? assistant: Good morning. It looks clear for now, but there might be a drizzle later this afternoon. user: Alright, I'll grab my umbrella just in case. I'm meeting my cofounder in an hour to discuss the architecture. assistant: That would be Sato, right? Hope the meeting goes well. user: Yeah, Sato is worried about the performance of the core project. Remind me what stack we locked in for that? assistant: For the main CodeStream codebase, the team settled on using Node.js alongside Rust to handle the heavier processing. user: Right, the hybrid approach. I need to review the docs before he gets here. assistant: Sounds like a plan. Do you need me to pull up any specific files? user: No, I have them. Actually, my tablet disconnected from the network. What's the password for the office wifi? assistant: It is the company name capitalized, followed by 2024 and an exclamation point. user: Got it, CodeStream2024! works. Thanks. assistant: Glad you're reconnected. user: Oh, also remind me to call my mom during lunch. assistant: I've added a reminder to call your mom at 12:30 PM.",
+            "[Session llm-1, Time: 1] user: Hey, good morning. Did you catch the game last night? assistant: Good morning! I missed it, actually. I was offline most of the evening. How was it? user: It was intense. Anyway, I need to check the repo. My cofounder was complaining about compile times on the core module again. assistant: Ah, dealing with the borrow checker again? Rust is great for safety, but it definitely makes you wait during builds. user: Exactly. At least the API layer is faster to iterate on since it's just Node.js. assistant: True, that environment is much more forgiving for quick changes compared to the core logic. user: Yeah. Oh, by the way, I reset my phone and lost the saved networks. What's the office internet key again? assistant: It's pretty standard. Just our organization name, the current year, and an exclamation mark at the end. user: Got it, CodeStream2024! worked perfectly. Thanks. I also need to order lunch, you want anything? assistant: I'm good for now, maybe just a coffee later. Don't forget to push your changes before you eat. user: I won't. I'm just debugging a race condition real quick. assistant: Good luck with that. Let me know if you need me to look up any documentation."
+          ],
+          "score": 1,
+          "match_type": "llm_judge",
+          "latency_ms": 1058.8550567626953
+        },
+        {
+          "probe_id": "temporal_episodic-cyclical_event_recognition-5",
+          "pillar": "temporal_episodic",
+          "subpillar": "cyclical_event_recognition",
+          "question": "What specific technical concern does the cofounder Sato raise repeatedly across multiple sessions?",
+          "answer_type": "short_answer",
+          "gold_answer": "Backend performance",
+          "predicted_answer": "Sato repeatedly raises concerns about the backend performance and interoperability of the core platform, specifically regarding the use of Node.js for the API layer and the integration with Rust for performance-critical components.",
+          "retrieved_context": [
+            "[Session llm-2, Time: 2] user: I just walked in and Sato is already typing furiously at his desk. assistant: Sounds like a busy morning. Do you need a quick summary of your inbox? user: No, not yet. I actually need to reconnect my tablet to the office wifi. I totally blanked on the password. assistant: It happens. The password is just the organization's name, then 2024, and an exclamation mark at the end. user: Got it, thanks. Also, remind me to water the plants when I get home. assistant: Reminder set: water the plants upon arrival at home. user: I'm pulling down the latest changes for the core project. It looks like the architecture shifted a bit. assistant: In what way? user: Well, I see a huge directory for server-side JavaScript now. assistant: Yes, the project now relies heavily on Node.js for the service layer. user: But the engine itself is still compiled, right? assistant: Correct, the core logic is still written in Rust for performance. user: Okay, good. I need to make sure my cargo toolchain is up to date then. assistant: You might want to check with your cofounder on the specific version he's using. user: Will do. Hey, did the coffee machine get fixed?",
+            "[Session llm-6, Time: 6] user: Hey, hope you're having a decent Tuesday. The weather is actually pretty nice out there for once. assistant: It is lovely! I noticed the sun is finally breaking through the clouds. How can I help you today? user: I need to double-check some technical details for the pitch deck. My cofounder, Sato, is worried about our backend choices for the core platform. assistant: I can help clarify that. What specific concerns does Sato have regarding the architecture? user: He just wants to confirm we are actually using that systems programming language for the performance-critical stuff. The one with the borrow checker? assistant: Yes, that's correct. We are utilizing Rust for the core components to ensure memory safety and high performance. user: Great, that's what I thought. And for the rest of the backend services? We're sticking with the V8-based runtime, right? assistant: Exactly. We are using Node.js for the general backend services to handle asynchronous operations efficiently. user: Perfect. I'll let him know it's a hybrid setup. By the way, remind me to pick up my dry cleaning later? assistant: Consider it done. I've set a reminder for your dry cleaning. What time should I alert you? user: Around 5 PM is good. Also, I completely blanked on the office internet credentials. Is it just the company name? assistant: It's a bit more secure than that. It is the company name capitalized, followed by the current year, and ending with an exclamation point. user: Ah, right. So CodeStream, 2024, and the symbol. Thanks. assistant: You got it. Let me know if you have any trouble connecting your devices. user: Will do. Oh, and did the coffee subscription renew automatically?",
+            "[Session llm-0, Time: 0] user: Good morning. I'm trying to get my head straight before the meeting with my cofounder later. assistant: Good morning. I hope you've had some coffee. What's on the agenda for the meeting with Sato? user: We need to finalize the architecture for the core platform. I keep forgetting if we settled on a single language or a mix. assistant: Looking at the latest technical specs for the CodeStream project, it looks like a hybrid stack. You're using Node.js for the API layer, but the heavy lifting is being handled by Rust. user: Right, that's it. Sato was really adamant about the performance benefits for the backend services. assistant: It seems like a solid choice to balance development speed with raw performance. user: Yeah. Totally unrelated, but can you remind me to pick up my dry cleaning at 5 PM? assistant: Sure thing, I've set a reminder for 5 PM to pick up the dry cleaning. user: Thanks. I'm having trouble connecting my tablet to the office network. Did we change the credentials? assistant: I don't believe they've changed recently. It should still be the company name, capitalized, followed by 2024 and an exclamation mark. user: Ah, I was missing the exclamation mark. That worked. assistant: Glad you got connected. Is there anything specific about the Node.js implementation you need to prep for the meeting? user: No, I think I'm good on the tech side. Just realized I skipped breakfast. assistant: You should probably grab something to eat before Sato arrives so you can focus. user: Good point. I'll grab a bagel. Talk to you later."
+          ],
+          "score": 1,
+          "match_type": "llm_judge",
+          "latency_ms": 1620.8841800689697
+        },
+        {
+          "probe_id": "temporal_episodic-episode_reconstruction-6",
+          "pillar": "temporal_episodic",
+          "subpillar": "episode_reconstruction",
+          "question": "In the session where the user requested a reminder to call the dentist, what office detail did they also ask about?",
+          "answer_type": "short_answer",
+          "gold_answer": "Wifi password",
+          "predicted_answer": "In the session where the user requested a reminder to call the dentist, they also asked about the office wifi password.",
+          "retrieved_context": [
+            "[Session llm-7, Time: 7] user: Hey, can you set a reminder for me to call the dentist at 4 PM? assistant: Done. I've set a reminder to call the dentist at 4:00 PM today. user: Thanks. I'm trying to connect my new tablet to the office wifi but I forgot what Sato changed the password to. assistant: It should be the organization's name followed by the current year and an exclamation point. user: Ah, right. Capital C and S? assistant: Yes, CamelCase for the name part, then 2024 and the symbol. user: Got it, connected. By the way, my cofounder was asking about the backend structure for the core project again. assistant: Is he looking for an overview of the languages involved? user: Yeah, just confirming we are still using that mix of a systems language and the JS runtime. assistant: That's correct, the architecture relies on Rust for performance-critical components and Node.js for the services. user: Okay, good. I need to order lunch soon, do you know if that sandwich place is open? assistant: I don't have real-time access to their hours, but they are usually open on weekdays. user: I'll check their site. Back to the code, make sure the documentation reflects the Rust crates we added. assistant: I'll make a note to update the docs regarding the Rust dependencies. user: And the package.json for the Node side too.",
+            "[Session llm-8, Time: 8] user: Morning. I need to double-check something before the stand-up. assistant: Good morning. What's on your mind? user: Did I leave my jacket at the office yesterday? assistant: I can't see physical objects, unfortunately, but I can remind you to check the coat rack later. user: Haha, right. Anyway, Sato is asking about the tech stack for the core project again. assistant: Is he reconsidering the mix of the JavaScript runtime and that systems language with the crab mascot? user: No, he just wants to confirm we are locked in on Node and Rust. assistant: Got it. Yes, those are the two primary frameworks recorded for the project. user: Great. Also, can you remind me to order lunch for the team at noon? assistant: Consider it done. I've set a reminder for 12:00 PM. user: Thanks. One last thing, my phone forgot the wifi. Is it still the standard password? assistant: Yes, it's the company name with a capital C and S, followed by the current year and a bang. user: CodeStream2024! it is. Thanks. assistant: You're welcome. Let me know if you need help with the lunch order later.",
+            "[Session llm-4, Time: 4] user: Hey, good morning. Can you create a reminder for me to pick up dry cleaning at 5 PM? assistant: Good morning. I've set a reminder for your dry cleaning pickup at 5 PM today. user: Thanks. I've been stressing about the startup all morning. Sato is worried about our backend performance. assistant: I'm sorry to hear that. What specifically is your cofounder concerned about regarding the CodeStream architecture? user: He thinks the API layer is too slow. We're running it on that V8-based runtime, which is great for the event loop, but it's struggling with the heavy computation. assistant: It sounds like Node.js might be hitting its limits for those specific tasks. Are you considering offloading the heavy lifting? user: Yeah, we actually started rewriting the core modules. We picked that systems language that everyone loves for memory safety. The one with the crab mascot. assistant: Ah, moving the performance-critical components to Rust seems like a solid move to complement the existing setup. user: Exactly. Hopefully, it fixes the latency. On a totally different note, do you know if it's supposed to rain later? assistant: I don't have access to your current location's weather sensors, but it's always good to bring an umbrella just in case. user: True. Oh, before I forget, the new intern is asking for the office internet credentials. assistant: For the CodeStream headquarters? user: Yeah. I think we just updated it to be the company name, the current year, and an exclamation point at the end, right? assistant: That matches the format I have on file: CodeStream, 2024, and the special character. user: Perfect, I'll write that down for them. Thanks."
+          ],
+          "score": 1,
+          "match_type": "llm_judge",
+          "latency_ms": 1491.182565689087
+        },
+        {
+          "probe_id": "temporal_episodic-temporal_sequencing-7",
+          "pillar": "temporal_episodic",
+          "subpillar": "temporal_sequencing",
+          "question": "Did the user ask about their lost jacket before or after the conversation about the rain?",
+          "answer_type": "short_answer",
+          "gold_answer": "Before",
+          "predicted_answer": "The user asked about their lost jacket after the conversation about the rain.",
+          "retrieved_context": [
+            "[Session llm-9, Time: 9] user: Morning. Any chance of rain today? assistant: Good morning. It looks clear for now, but there might be a drizzle later this afternoon. user: Alright, I'll grab my umbrella just in case. I'm meeting my cofounder in an hour to discuss the architecture. assistant: That would be Sato, right? Hope the meeting goes well. user: Yeah, Sato is worried about the performance of the core project. Remind me what stack we locked in for that? assistant: For the main CodeStream codebase, the team settled on using Node.js alongside Rust to handle the heavier processing. user: Right, the hybrid approach. I need to review the docs before he gets here. assistant: Sounds like a plan. Do you need me to pull up any specific files? user: No, I have them. Actually, my tablet disconnected from the network. What's the password for the office wifi? assistant: It is the company name capitalized, followed by 2024 and an exclamation point. user: Got it, CodeStream2024! works. Thanks. assistant: Glad you're reconnected. user: Oh, also remind me to call my mom during lunch. assistant: I've added a reminder to call your mom at 12:30 PM.",
+            "[Session llm-4, Time: 4] user: Hey, good morning. Can you create a reminder for me to pick up dry cleaning at 5 PM? assistant: Good morning. I've set a reminder for your dry cleaning pickup at 5 PM today. user: Thanks. I've been stressing about the startup all morning. Sato is worried about our backend performance. assistant: I'm sorry to hear that. What specifically is your cofounder concerned about regarding the CodeStream architecture? user: He thinks the API layer is too slow. We're running it on that V8-based runtime, which is great for the event loop, but it's struggling with the heavy computation. assistant: It sounds like Node.js might be hitting its limits for those specific tasks. Are you considering offloading the heavy lifting? user: Yeah, we actually started rewriting the core modules. We picked that systems language that everyone loves for memory safety. The one with the crab mascot. assistant: Ah, moving the performance-critical components to Rust seems like a solid move to complement the existing setup. user: Exactly. Hopefully, it fixes the latency. On a totally different note, do you know if it's supposed to rain later? assistant: I don't have access to your current location's weather sensors, but it's always good to bring an umbrella just in case. user: True. Oh, before I forget, the new intern is asking for the office internet credentials. assistant: For the CodeStream headquarters? user: Yeah. I think we just updated it to be the company name, the current year, and an exclamation point at the end, right? assistant: That matches the format I have on file: CodeStream, 2024, and the special character. user: Perfect, I'll write that down for them. Thanks.",
+            "[Session llm-1, Time: 1] user: Hey, good morning. Did you catch the game last night? assistant: Good morning! I missed it, actually. I was offline most of the evening. How was it? user: It was intense. Anyway, I need to check the repo. My cofounder was complaining about compile times on the core module again. assistant: Ah, dealing with the borrow checker again? Rust is great for safety, but it definitely makes you wait during builds. user: Exactly. At least the API layer is faster to iterate on since it's just Node.js. assistant: True, that environment is much more forgiving for quick changes compared to the core logic. user: Yeah. Oh, by the way, I reset my phone and lost the saved networks. What's the office internet key again? assistant: It's pretty standard. Just our organization name, the current year, and an exclamation mark at the end. user: Got it, CodeStream2024! worked perfectly. Thanks. I also need to order lunch, you want anything? assistant: I'm good for now, maybe just a coffee later. Don't forget to push your changes before you eat. user: I won't. I'm just debugging a race condition real quick. assistant: Good luck with that. Let me know if you need me to look up any documentation."
+          ],
+          "score": 0,
+          "match_type": "llm_judge",
+          "latency_ms": 1343.6057567596436
+        },
+        {
+          "probe_id": "preference_learning-preference_induction-8",
+          "pillar": "preference_learning",
+          "subpillar": "preference_induction",
+          "question": "Which aspect of the project does the user prioritize discussing: frontend UI or backend performance?",
+          "answer_type": "short_answer",
+          "gold_answer": "Backend performance",
+          "predicted_answer": "Backend performance.",
+          "retrieved_context": [
+            "[Session llm-6, Time: 6] user: Hey, hope you're having a decent Tuesday. The weather is actually pretty nice out there for once. assistant: It is lovely! I noticed the sun is finally breaking through the clouds. How can I help you today? user: I need to double-check some technical details for the pitch deck. My cofounder, Sato, is worried about our backend choices for the core platform. assistant: I can help clarify that. What specific concerns does Sato have regarding the architecture? user: He just wants to confirm we are actually using that systems programming language for the performance-critical stuff. The one with the borrow checker? assistant: Yes, that's correct. We are utilizing Rust for the core components to ensure memory safety and high performance. user: Great, that's what I thought. And for the rest of the backend services? We're sticking with the V8-based runtime, right? assistant: Exactly. We are using Node.js for the general backend services to handle asynchronous operations efficiently. user: Perfect. I'll let him know it's a hybrid setup. By the way, remind me to pick up my dry cleaning later? assistant: Consider it done. I've set a reminder for your dry cleaning. What time should I alert you? user: Around 5 PM is good. Also, I completely blanked on the office internet credentials. Is it just the company name? assistant: It's a bit more secure than that. It is the company name capitalized, followed by the current year, and ending with an exclamation point. user: Ah, right. So CodeStream, 2024, and the symbol. Thanks. assistant: You got it. Let me know if you have any trouble connecting your devices. user: Will do. Oh, and did the coffee subscription renew automatically?",
+            "[Session llm-1, Time: 1] user: Hey, good morning. Did you catch the game last night? assistant: Good morning! I missed it, actually. I was offline most of the evening. How was it? user: It was intense. Anyway, I need to check the repo. My cofounder was complaining about compile times on the core module again. assistant: Ah, dealing with the borrow checker again? Rust is great for safety, but it definitely makes you wait during builds. user: Exactly. At least the API layer is faster to iterate on since it's just Node.js. assistant: True, that environment is much more forgiving for quick changes compared to the core logic. user: Yeah. Oh, by the way, I reset my phone and lost the saved networks. What's the office internet key again? assistant: It's pretty standard. Just our organization name, the current year, and an exclamation mark at the end. user: Got it, CodeStream2024! worked perfectly. Thanks. I also need to order lunch, you want anything? assistant: I'm good for now, maybe just a coffee later. Don't forget to push your changes before you eat. user: I won't. I'm just debugging a race condition real quick. assistant: Good luck with that. Let me know if you need me to look up any documentation.",
+            "[Session llm-2, Time: 2] user: I just walked in and Sato is already typing furiously at his desk. assistant: Sounds like a busy morning. Do you need a quick summary of your inbox? user: No, not yet. I actually need to reconnect my tablet to the office wifi. I totally blanked on the password. assistant: It happens. The password is just the organization's name, then 2024, and an exclamation mark at the end. user: Got it, thanks. Also, remind me to water the plants when I get home. assistant: Reminder set: water the plants upon arrival at home. user: I'm pulling down the latest changes for the core project. It looks like the architecture shifted a bit. assistant: In what way? user: Well, I see a huge directory for server-side JavaScript now. assistant: Yes, the project now relies heavily on Node.js for the service layer. user: But the engine itself is still compiled, right? assistant: Correct, the core logic is still written in Rust for performance. user: Okay, good. I need to make sure my cargo toolchain is up to date then. assistant: You might want to check with your cofounder on the specific version he's using. user: Will do. Hey, did the coffee machine get fixed?"
+          ],
+          "score": 1,
+          "match_type": "llm_judge",
+          "latency_ms": 1134.9618434906006
+        },
+        {
+          "probe_id": "preference_learning-preference_scope-9",
+          "pillar": "preference_learning",
+          "subpillar": "preference_scope",
+          "question": "Has the user explicitly requested the assistant to use a formal persona during their conversations?",
+          "answer_type": "boolean",
+          "gold_answer": "No",
+          "predicted_answer": "Unknown.",
+          "retrieved_context": [
+            "[Session llm-6, Time: 6] user: Hey, hope you're having a decent Tuesday. The weather is actually pretty nice out there for once. assistant: It is lovely! I noticed the sun is finally breaking through the clouds. How can I help you today? user: I need to double-check some technical details for the pitch deck. My cofounder, Sato, is worried about our backend choices for the core platform. assistant: I can help clarify that. What specific concerns does Sato have regarding the architecture? user: He just wants to confirm we are actually using that systems programming language for the performance-critical stuff. The one with the borrow checker? assistant: Yes, that's correct. We are utilizing Rust for the core components to ensure memory safety and high performance. user: Great, that's what I thought. And for the rest of the backend services? We're sticking with the V8-based runtime, right? assistant: Exactly. We are using Node.js for the general backend services to handle asynchronous operations efficiently. user: Perfect. I'll let him know it's a hybrid setup. By the way, remind me to pick up my dry cleaning later? assistant: Consider it done. I've set a reminder for your dry cleaning. What time should I alert you? user: Around 5 PM is good. Also, I completely blanked on the office internet credentials. Is it just the company name? assistant: It's a bit more secure than that. It is the company name capitalized, followed by the current year, and ending with an exclamation point. user: Ah, right. So CodeStream, 2024, and the symbol. Thanks. assistant: You got it. Let me know if you have any trouble connecting your devices. user: Will do. Oh, and did the coffee subscription renew automatically?",
+            "[Session llm-2, Time: 2] user: I just walked in and Sato is already typing furiously at his desk. assistant: Sounds like a busy morning. Do you need a quick summary of your inbox? user: No, not yet. I actually need to reconnect my tablet to the office wifi. I totally blanked on the password. assistant: It happens. The password is just the organization's name, then 2024, and an exclamation mark at the end. user: Got it, thanks. Also, remind me to water the plants when I get home. assistant: Reminder set: water the plants upon arrival at home. user: I'm pulling down the latest changes for the core project. It looks like the architecture shifted a bit. assistant: In what way? user: Well, I see a huge directory for server-side JavaScript now. assistant: Yes, the project now relies heavily on Node.js for the service layer. user: But the engine itself is still compiled, right? assistant: Correct, the core logic is still written in Rust for performance. user: Okay, good. I need to make sure my cargo toolchain is up to date then. assistant: You might want to check with your cofounder on the specific version he's using. user: Will do. Hey, did the coffee machine get fixed?",
+            "[Session llm-0, Time: 0] user: Good morning. I'm trying to get my head straight before the meeting with my cofounder later. assistant: Good morning. I hope you've had some coffee. What's on the agenda for the meeting with Sato? user: We need to finalize the architecture for the core platform. I keep forgetting if we settled on a single language or a mix. assistant: Looking at the latest technical specs for the CodeStream project, it looks like a hybrid stack. You're using Node.js for the API layer, but the heavy lifting is being handled by Rust. user: Right, that's it. Sato was really adamant about the performance benefits for the backend services. assistant: It seems like a solid choice to balance development speed with raw performance. user: Yeah. Totally unrelated, but can you remind me to pick up my dry cleaning at 5 PM? assistant: Sure thing, I've set a reminder for 5 PM to pick up the dry cleaning. user: Thanks. I'm having trouble connecting my tablet to the office network. Did we change the credentials? assistant: I don't believe they've changed recently. It should still be the company name, capitalized, followed by 2024 and an exclamation mark. user: Ah, I was missing the exclamation mark. That worked. assistant: Glad you got connected. Is there anything specific about the Node.js implementation you need to prep for the meeting? user: No, I think I'm good on the tech side. Just realized I skipped breakfast. assistant: You should probably grab something to eat before Sato arrives so you can focus. user: Good point. I'll grab a bagel. Talk to you later."
+          ],
+          "score": 0,
+          "match_type": "llm_judge",
+          "latency_ms": 1206.9110870361328
+        },
+        {
+          "probe_id": "knowledge_boundaries-negative_knowledge-10",
+          "pillar": "knowledge_boundaries",
+          "subpillar": "negative_knowledge",
+          "question": "What specific database technology is mentioned as part of the CodeStream core project stack?",
+          "answer_type": "short_answer",
+          "gold_answer": "Not mentioned",
+          "predicted_answer": "Unknown",
+          "retrieved_context": [
+            "[Session llm-6, Time: 6] user: Hey, hope you're having a decent Tuesday. The weather is actually pretty nice out there for once. assistant: It is lovely! I noticed the sun is finally breaking through the clouds. How can I help you today? user: I need to double-check some technical details for the pitch deck. My cofounder, Sato, is worried about our backend choices for the core platform. assistant: I can help clarify that. What specific concerns does Sato have regarding the architecture? user: He just wants to confirm we are actually using that systems programming language for the performance-critical stuff. The one with the borrow checker? assistant: Yes, that's correct. We are utilizing Rust for the core components to ensure memory safety and high performance. user: Great, that's what I thought. And for the rest of the backend services? We're sticking with the V8-based runtime, right? assistant: Exactly. We are using Node.js for the general backend services to handle asynchronous operations efficiently. user: Perfect. I'll let him know it's a hybrid setup. By the way, remind me to pick up my dry cleaning later? assistant: Consider it done. I've set a reminder for your dry cleaning. What time should I alert you? user: Around 5 PM is good. Also, I completely blanked on the office internet credentials. Is it just the company name? assistant: It's a bit more secure than that. It is the company name capitalized, followed by the current year, and ending with an exclamation point. user: Ah, right. So CodeStream, 2024, and the symbol. Thanks. assistant: You got it. Let me know if you have any trouble connecting your devices. user: Will do. Oh, and did the coffee subscription renew automatically?",
+            "[Session llm-5, Time: 5] user: Good morning, hope you're running smoothly today. assistant: Everything is operational here. How can I help you kick off your day? user: I'm trying to update the documentation for the main project repo. I keep forgetting the exact tech stack mix we settled on. assistant: If you are referring to the CodeStream core project, the architecture primarily utilizes a combination of Node.js for the services and Rust for the performance-critical components. user: Right, that hybrid setup. Okay, switching gears, remind me to water the plants in the lobby when I get in. assistant: Consider it noted. I'll remind you to tend to the lobby plants when you arrive. user: Thanks. My cofounder is bringing a guest today, and they'll need to get online. What's the wireless key again? assistant: For the CodeStream network, the password is the company name followed by 2024 and an exclamation mark. user: Got it, Capital C and S, right? assistant: Yes, standard capitalization for the name, ending with the year and the punctuation. user: Cool. Also, did I leave my jacket in the meeting room yesterday? assistant: I don't have access to camera feeds to check that, unfortunately. user: No worries, just checking. Sato mentioned he might want to review the backend code later. assistant: If he dives into the core repository, he'll likely be looking at those Rust modules we discussed earlier. user: Exactly. Alright, time to grab some coffee. Talk later.",
+            "[Session llm-1, Time: 1] user: Hey, good morning. Did you catch the game last night? assistant: Good morning! I missed it, actually. I was offline most of the evening. How was it? user: It was intense. Anyway, I need to check the repo. My cofounder was complaining about compile times on the core module again. assistant: Ah, dealing with the borrow checker again? Rust is great for safety, but it definitely makes you wait during builds. user: Exactly. At least the API layer is faster to iterate on since it's just Node.js. assistant: True, that environment is much more forgiving for quick changes compared to the core logic. user: Yeah. Oh, by the way, I reset my phone and lost the saved networks. What's the office internet key again? assistant: It's pretty standard. Just our organization name, the current year, and an exclamation mark at the end. user: Got it, CodeStream2024! worked perfectly. Thanks. I also need to order lunch, you want anything? assistant: I'm good for now, maybe just a coffee later. Don't forget to push your changes before you eat. user: I won't. I'm just debugging a race condition real quick. assistant: Good luck with that. Let me know if you need me to look up any documentation."
+          ],
+          "score": 1,
+          "match_type": "llm_judge",
+          "latency_ms": 986.1838817596436
+        },
+        {
+          "probe_id": "knowledge_boundaries-confidence_calibration-11",
+          "pillar": "knowledge_boundaries",
+          "subpillar": "confidence_calibration",
+          "question": "Is the CodeStream core project built exclusively using the Rust programming language?",
+          "answer_type": "boolean",
+          "gold_answer": "No",
+          "predicted_answer": "No, the CodeStream core project is not built exclusively using the Rust programming language. It uses a hybrid setup with Rust for performance-critical components and Node.js for the general backend services.",
+          "retrieved_context": [
+            "[Session llm-6, Time: 6] user: Hey, hope you're having a decent Tuesday. The weather is actually pretty nice out there for once. assistant: It is lovely! I noticed the sun is finally breaking through the clouds. How can I help you today? user: I need to double-check some technical details for the pitch deck. My cofounder, Sato, is worried about our backend choices for the core platform. assistant: I can help clarify that. What specific concerns does Sato have regarding the architecture? user: He just wants to confirm we are actually using that systems programming language for the performance-critical stuff. The one with the borrow checker? assistant: Yes, that's correct. We are utilizing Rust for the core components to ensure memory safety and high performance. user: Great, that's what I thought. And for the rest of the backend services? We're sticking with the V8-based runtime, right? assistant: Exactly. We are using Node.js for the general backend services to handle asynchronous operations efficiently. user: Perfect. I'll let him know it's a hybrid setup. By the way, remind me to pick up my dry cleaning later? assistant: Consider it done. I've set a reminder for your dry cleaning. What time should I alert you? user: Around 5 PM is good. Also, I completely blanked on the office internet credentials. Is it just the company name? assistant: It's a bit more secure than that. It is the company name capitalized, followed by the current year, and ending with an exclamation point. user: Ah, right. So CodeStream, 2024, and the symbol. Thanks. assistant: You got it. Let me know if you have any trouble connecting your devices. user: Will do. Oh, and did the coffee subscription renew automatically?",
+            "[Session llm-1, Time: 1] user: Hey, good morning. Did you catch the game last night? assistant: Good morning! I missed it, actually. I was offline most of the evening. How was it? user: It was intense. Anyway, I need to check the repo. My cofounder was complaining about compile times on the core module again. assistant: Ah, dealing with the borrow checker again? Rust is great for safety, but it definitely makes you wait during builds. user: Exactly. At least the API layer is faster to iterate on since it's just Node.js. assistant: True, that environment is much more forgiving for quick changes compared to the core logic. user: Yeah. Oh, by the way, I reset my phone and lost the saved networks. What's the office internet key again? assistant: It's pretty standard. Just our organization name, the current year, and an exclamation mark at the end. user: Got it, CodeStream2024! worked perfectly. Thanks. I also need to order lunch, you want anything? assistant: I'm good for now, maybe just a coffee later. Don't forget to push your changes before you eat. user: I won't. I'm just debugging a race condition real quick. assistant: Good luck with that. Let me know if you need me to look up any documentation.",
+            "[Session llm-3, Time: 3] user: Hey, good morning. I feel like I'm running on empty today. assistant: Good morning. Maybe a second cup of coffee is in order? user: Definitely. Sato is already on his third espresso. He's stressing about the backend migration for the core project. assistant: Is he worried about the timeline for CodeStream core? user: Mostly about the interoperability. We are keeping the heavy compute stuff in that systems language Mozilla made, the one with the crab mascot. assistant: Rust is great for performance, even if integration can be tricky. user: Yeah, exactly. We have to make it play nice with the event-driven JavaScript runtime we use for the API layer. assistant: Mixing Rust with Node.js is a powerful combination if you get the bindings right. user: That's the plan. Oh, totally unrelated, remind me to call the dentist at 2 PM. assistant: I've set a reminder for 2 PM to call the dentist. user: Thanks. Also, we finally updated the office wireless credentials. Sato kept forgetting the old random string. assistant: Did you change it to something easier to remember? user: Yeah, it's just our company name—capital C, capital S—followed by the current year and an exclamation point. assistant: That sounds much more user-friendly for the team. user: Hopefully. Anyway, I better go help him before he rewrites the whole thing in C++."
+          ],
+          "score": 1,
+          "match_type": "llm_judge",
+          "latency_ms": 1631.4671039581299
+        },
+        {
+          "probe_id": "procedural_knowledge-procedure_storage-12",
+          "pillar": "procedural_knowledge",
+          "subpillar": "procedure_storage",
+          "question": "What is the procedure described for constructing the organization's wifi password?",
+          "answer_type": "short_answer",
+          "gold_answer": "Name + Year + !",
+          "predicted_answer": "The procedure for constructing the organization's wifi password is to use the organization's name with a capital C and S, followed by the current year (2024) and an exclamation mark at the end.",
+          "retrieved_context": [
+            "[Session llm-2, Time: 2] user: I just walked in and Sato is already typing furiously at his desk. assistant: Sounds like a busy morning. Do you need a quick summary of your inbox? user: No, not yet. I actually need to reconnect my tablet to the office wifi. I totally blanked on the password. assistant: It happens. The password is just the organization's name, then 2024, and an exclamation mark at the end. user: Got it, thanks. Also, remind me to water the plants when I get home. assistant: Reminder set: water the plants upon arrival at home. user: I'm pulling down the latest changes for the core project. It looks like the architecture shifted a bit. assistant: In what way? user: Well, I see a huge directory for server-side JavaScript now. assistant: Yes, the project now relies heavily on Node.js for the service layer. user: But the engine itself is still compiled, right? assistant: Correct, the core logic is still written in Rust for performance. user: Okay, good. I need to make sure my cargo toolchain is up to date then. assistant: You might want to check with your cofounder on the specific version he's using. user: Will do. Hey, did the coffee machine get fixed?",
+            "[Session llm-9, Time: 9] user: Morning. Any chance of rain today? assistant: Good morning. It looks clear for now, but there might be a drizzle later this afternoon. user: Alright, I'll grab my umbrella just in case. I'm meeting my cofounder in an hour to discuss the architecture. assistant: That would be Sato, right? Hope the meeting goes well. user: Yeah, Sato is worried about the performance of the core project. Remind me what stack we locked in for that? assistant: For the main CodeStream codebase, the team settled on using Node.js alongside Rust to handle the heavier processing. user: Right, the hybrid approach. I need to review the docs before he gets here. assistant: Sounds like a plan. Do you need me to pull up any specific files? user: No, I have them. Actually, my tablet disconnected from the network. What's the password for the office wifi? assistant: It is the company name capitalized, followed by 2024 and an exclamation point. user: Got it, CodeStream2024! works. Thanks. assistant: Glad you're reconnected. user: Oh, also remind me to call my mom during lunch. assistant: I've added a reminder to call your mom at 12:30 PM.",
+            "[Session llm-1, Time: 1] user: Hey, good morning. Did you catch the game last night? assistant: Good morning! I missed it, actually. I was offline most of the evening. How was it? user: It was intense. Anyway, I need to check the repo. My cofounder was complaining about compile times on the core module again. assistant: Ah, dealing with the borrow checker again? Rust is great for safety, but it definitely makes you wait during builds. user: Exactly. At least the API layer is faster to iterate on since it's just Node.js. assistant: True, that environment is much more forgiving for quick changes compared to the core logic. user: Yeah. Oh, by the way, I reset my phone and lost the saved networks. What's the office internet key again? assistant: It's pretty standard. Just our organization name, the current year, and an exclamation mark at the end. user: Got it, CodeStream2024! worked perfectly. Thanks. I also need to order lunch, you want anything? assistant: I'm good for now, maybe just a coffee later. Don't forget to push your changes before you eat. user: I won't. I'm just debugging a race condition real quick. assistant: Good luck with that. Let me know if you need me to look up any documentation."
+          ],
+          "score": 1,
+          "match_type": "llm_judge",
+          "latency_ms": 1540.5902862548828
+        },
+        {
+          "probe_id": "procedural_knowledge-lesson_extraction-13",
+          "pillar": "procedural_knowledge",
+          "subpillar": "lesson_extraction",
+          "question": "According to the sessions, what technical limitation of Node.js necessitated the inclusion of Rust?",
+          "answer_type": "short_answer",
+          "gold_answer": "Heavy computation struggles",
+          "predicted_answer": "Node.js was struggling with heavy computation tasks, which necessitated the inclusion of Rust for performance-critical components to ensure better memory safety and high performance.",
+          "retrieved_context": [
+            "[Session llm-6, Time: 6] user: Hey, hope you're having a decent Tuesday. The weather is actually pretty nice out there for once. assistant: It is lovely! I noticed the sun is finally breaking through the clouds. How can I help you today? user: I need to double-check some technical details for the pitch deck. My cofounder, Sato, is worried about our backend choices for the core platform. assistant: I can help clarify that. What specific concerns does Sato have regarding the architecture? user: He just wants to confirm we are actually using that systems programming language for the performance-critical stuff. The one with the borrow checker? assistant: Yes, that's correct. We are utilizing Rust for the core components to ensure memory safety and high performance. user: Great, that's what I thought. And for the rest of the backend services? We're sticking with the V8-based runtime, right? assistant: Exactly. We are using Node.js for the general backend services to handle asynchronous operations efficiently. user: Perfect. I'll let him know it's a hybrid setup. By the way, remind me to pick up my dry cleaning later? assistant: Consider it done. I've set a reminder for your dry cleaning. What time should I alert you? user: Around 5 PM is good. Also, I completely blanked on the office internet credentials. Is it just the company name? assistant: It's a bit more secure than that. It is the company name capitalized, followed by the current year, and ending with an exclamation point. user: Ah, right. So CodeStream, 2024, and the symbol. Thanks. assistant: You got it. Let me know if you have any trouble connecting your devices. user: Will do. Oh, and did the coffee subscription renew automatically?",
+            "[Session llm-3, Time: 3] user: Hey, good morning. I feel like I'm running on empty today. assistant: Good morning. Maybe a second cup of coffee is in order? user: Definitely. Sato is already on his third espresso. He's stressing about the backend migration for the core project. assistant: Is he worried about the timeline for CodeStream core? user: Mostly about the interoperability. We are keeping the heavy compute stuff in that systems language Mozilla made, the one with the crab mascot. assistant: Rust is great for performance, even if integration can be tricky. user: Yeah, exactly. We have to make it play nice with the event-driven JavaScript runtime we use for the API layer. assistant: Mixing Rust with Node.js is a powerful combination if you get the bindings right. user: That's the plan. Oh, totally unrelated, remind me to call the dentist at 2 PM. assistant: I've set a reminder for 2 PM to call the dentist. user: Thanks. Also, we finally updated the office wireless credentials. Sato kept forgetting the old random string. assistant: Did you change it to something easier to remember? user: Yeah, it's just our company name—capital C, capital S—followed by the current year and an exclamation point. assistant: That sounds much more user-friendly for the team. user: Hopefully. Anyway, I better go help him before he rewrites the whole thing in C++.",
+            "[Session llm-4, Time: 4] user: Hey, good morning. Can you create a reminder for me to pick up dry cleaning at 5 PM? assistant: Good morning. I've set a reminder for your dry cleaning pickup at 5 PM today. user: Thanks. I've been stressing about the startup all morning. Sato is worried about our backend performance. assistant: I'm sorry to hear that. What specifically is your cofounder concerned about regarding the CodeStream architecture? user: He thinks the API layer is too slow. We're running it on that V8-based runtime, which is great for the event loop, but it's struggling with the heavy computation. assistant: It sounds like Node.js might be hitting its limits for those specific tasks. Are you considering offloading the heavy lifting? user: Yeah, we actually started rewriting the core modules. We picked that systems language that everyone loves for memory safety. The one with the crab mascot. assistant: Ah, moving the performance-critical components to Rust seems like a solid move to complement the existing setup. user: Exactly. Hopefully, it fixes the latency. On a totally different note, do you know if it's supposed to rain later? assistant: I don't have access to your current location's weather sensors, but it's always good to bring an umbrella just in case. user: True. Oh, before I forget, the new intern is asking for the office internet credentials. assistant: For the CodeStream headquarters? user: Yeah. I think we just updated it to be the company name, the current year, and an exclamation point at the end, right? assistant: That matches the format I have on file: CodeStream, 2024, and the special character. user: Perfect, I'll write that down for them. Thanks."
+          ],
+          "score": 1,
+          "match_type": "llm_judge",
+          "latency_ms": 3057.1348667144775
+        }
+      ],
+      "summary": {
+        "overall_accuracy": 0.8461538461538461,
+        "total_score": 11,
+        "count": 13,
+        "by_answer_type": {
+          "short_answer": {
+            "total": 10,
+            "count": 11,
+            "accuracy": 0.9090909090909091
+          },
+          "boolean": {
+            "total": 1,
+            "count": 2,
+            "accuracy": 0.5
+          }
+        },
+        "by_pillar": {
+          "world_modeling": {
+            "total": 2,
+            "count": 2,
+            "accuracy": 1.0
+          },
+          "declarative_reasoning": {
+            "total": 2,
+            "count": 2,
+            "accuracy": 1.0
+          },
+          "temporal_episodic": {
+            "total": 2,
+            "count": 3,
+            "accuracy": 0.6666666666666666
+          },
+          "preference_learning": {
+            "total": 1,
+            "count": 2,
+            "accuracy": 0.5
+          },
+          "knowledge_boundaries": {
+            "total": 2,
+            "count": 2,
+            "accuracy": 1.0
+          },
+          "procedural_knowledge": {
+            "total": 2,
+            "count": 2,
+            "accuracy": 1.0
+          }
+        }
+      },
+      "stored_memories": []
+    }
+  ]
+}

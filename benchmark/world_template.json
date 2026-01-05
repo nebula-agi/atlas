@@ -1,0 +1,443 @@
+{
+  "world_id": "string",
+  "schema_version": "1.0",
+  "metadata": {
+    "domain": "string",
+    "description": "string",
+    "seed": "int",
+    "time": {
+      "timezone": "string",
+      "start_date": "YYYY-MM-DD"
+    }
+  },
+
+  "ontology": {
+    "entity_types": [
+      {
+        "type": "Person|Org|Project|System|Service|Dataset|Device|Place|Event|Task|Document|Meeting|Ticket|Config|Preference",
+        "extends": "string|null",
+        "attributes": [
+          {
+            "name": "string",
+            "value_type": "string|number|bool|date|datetime|enum|ref|list[string]|list[ref]|json",
+            "required": false
+          }
+        ]
+      }
+    ],
+    "relation_types": [
+      {
+        "name": "reports_to|works_with|owns|uses|depends_on|blocked_by|member_of|located_in|authored|attended|caused|fixed_by|prefers",
+        "directed": true,
+        "allowed_subject_types": ["string"],
+        "allowed_object_types": ["string"],
+        "attributes": [
+          {
+            "name": "string",
+            "value_type": "string|number|bool|date|datetime|enum|ref|json"
+          }
+        ]
+      }
+    ],
+    "canonical_enums": {
+      "task_status": ["open", "blocked", "in_progress", "done", "canceled"],
+      "confidence": ["certain", "probable", "possible", "unknown"],
+      "polarity": ["affirmed", "retracted", "counterfactual", "hypothetical"]
+    }
+  },
+
+  "entities": [
+    {
+      "id": "ent:person:ashvath",
+      "type": "Person",
+      "canonical_name": "Ashvath",
+      "aliases": [
+        {
+          "text": "my cofounder",
+          "scope": "user_perspective",
+          "from": "session:uuid",
+          "to": "session:uuid|null"
+        },
+        {
+          "text": "the guy who dropped out of Berkeley",
+          "scope": "user_perspective"
+        }
+      ],
+      "attributes": {
+        "role": "string",
+        "employer": { "ref": "ent:org:nebula" }
+      },
+      "identity": {
+        "resolution_keys": [
+          {
+            "kind": "email|phone|handle|unique_fact|description",
+            "value": "string",
+            "confidence": "certain|probable|possible"
+          }
+        ],
+        "coref_clusters": [
+          {
+            "cluster_id": "coref:1",
+            "mentions": ["string"],
+            "disambiguation_note": "string"
+          }
+        ]
+      }
+    }
+  ],
+
+  "relations": [
+    {
+      "id": "rel:uuid",
+      "type": "reports_to",
+      "subject": { "ref": "ent:person:ashvath" },
+      "object": { "ref": "ent:person:will" },
+      "attributes": { "context": "string" },
+
+      "validity": { "from": "YYYY-MM-DD", "to": "YYYY-MM-DD|null" },
+      "provenance": [
+        {
+          "source_session": "session:uuid",
+          "source_turn": "turn:uuid",
+          "evidence_text": "string",
+          "polarity": "affirmed|retracted|counterfactual|hypothetical",
+          "confidence": "certain|probable|possible"
+        }
+      ],
+
+      "supersedes": ["rel:uuid"],
+      "superseded_by": "rel:uuid|null"
+    }
+  ],
+
+  "facts": [
+    {
+      "id": "fact:uuid",
+      "subject": { "ref": "ent:project:api" },
+      "predicate": "uses|deployed_in|has_property|birthday|dog_name|sql_query|regex|error_message",
+      "object": { "value_type": "string|ref|number|bool|json", "value": "..." },
+
+      "scope": {
+        "context_tags": ["work|personal|staging|prod|finance|health"],
+        "applies_when": {
+          "time_window": { "from": "YYYY-MM-DD|null", "to": "YYYY-MM-DD|null" },
+          "conditions": [
+            { "if": { "ref": "ent:env:prod" }, "note": "optional" }
+          ]
+        }
+      },
+
+      "temporal": {
+        "asserted_at": "YYYY-MM-DDTHH:MM:SSZ",
+        "effective_from": "YYYY-MM-DD|null",
+        "effective_to": "YYYY-MM-DD|null"
+      },
+
+      "epistemics": {
+        "polarity": "affirmed|retracted|counterfactual|hypothetical",
+        "confidence": "certain|probable|possible|unknown",
+        "derivation": {
+          "kind": "stated|inferred|composed",
+          "rules_used": ["rule:uuid"],
+          "depends_on": ["fact:uuid", "rel:uuid"]
+        }
+      },
+
+      "provenance": [
+        {
+          "source_session": "session:uuid",
+          "source_turn": "turn:uuid",
+          "evidence_text": "string"
+        }
+      ],
+
+      "verbatim": {
+        "is_verbatim_item": false,
+        "format": "code|log|sql|regex|json|text|null",
+        "content": "string|null",
+        "hash": "string|null"
+      }
+    }
+  ],
+
+  "tasks": [
+    {
+      "id": "task:uuid",
+      "title": "string",
+      "description": "string",
+      "owner": { "ref": "ent:person:user" },
+      "assignees": [{ "ref": "ent:person:ashvath" }],
+      "status": "open|blocked|in_progress|done|canceled",
+      "priority": "low|med|high|p0",
+      "created_at": "YYYY-MM-DDTHH:MM:SSZ",
+      "due": "YYYY-MM-DD|null",
+      "dependencies": [{ "type": "blocked_by|depends_on", "ref": "task:uuid" }],
+      "checklist": [
+        {
+          "step": "string",
+          "done": false,
+          "updated_at": "YYYY-MM-DDTHH:MM:SSZ|null"
+        }
+      ],
+      "updates": [
+        {
+          "at": "YYYY-MM-DDTHH:MM:SSZ",
+          "change": "string",
+          "source_session": "session:uuid",
+          "polarity": "affirmed|retracted|counterfactual|hypothetical"
+        }
+      ]
+    }
+  ],
+
+  "episodes": [
+    {
+      "id": "ep:uuid",
+      "type": "incident|migration|fundraise|hiring|trip|release",
+      "title": "string",
+      "participants": [{ "ref": "ent:person:user" }],
+      "time": {
+        "start": "YYYY-MM-DDTHH:MM:SSZ|null",
+        "end": "YYYY-MM-DDTHH:MM:SSZ|null",
+        "approximate": true
+      },
+      "sequence": [
+        {
+          "at": "YYYY-MM-DDTHH:MM:SSZ|null",
+          "kind": "event|note|artifact",
+          "summary": "string",
+          "links": ["fact:uuid", "task:uuid", "doc:uuid"],
+          "provenance": [
+            { "source_session": "session:uuid", "source_turn": "turn:uuid" }
+          ]
+        }
+      ],
+      "causal_graph": [
+        {
+          "cause": "string|fact:uuid|event:idx",
+          "effect": "string|fact:uuid|event:idx",
+          "confidence": "certain|probable|possible"
+        }
+      ]
+    }
+  ],
+
+  "preferences": [
+    {
+      "id": "pref:uuid",
+      "holder": { "ref": "ent:person:user" },
+      "topic": "language|meeting_time|seat|framework|food",
+      "statement": "string",
+      "kind": "explicit|induced",
+      "strength": "hard|soft",
+      "ranking": ["string|null"],
+      "scope": {
+        "context_tags": ["work|travel|1:1|all_hands"],
+        "conditions": [
+          { "if": { "key": "meeting_type", "eq": "1:1" }, "effect": "applies" },
+          {
+            "if": { "key": "weather", "eq": "rain" },
+            "effect": "does_not_apply"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "source_session": "session:uuid",
+          "source_turn": "turn:uuid",
+          "choice": "X_over_Y|stated",
+          "note": "string"
+        }
+      ],
+      "drift": {
+        "half_life_days": 180,
+        "last_reinforced_at": "YYYY-MM-DDTHH:MM:SSZ",
+        "decay_behavior": "downweight|expire"
+      },
+      "epistemics": { "confidence": "certain|probable|possible" }
+    }
+  ],
+
+  "procedures": [
+    {
+      "id": "proc:uuid",
+      "name": "string",
+      "goal": "string",
+      "steps": [
+        {
+          "idx": 1,
+          "action": "string",
+          "tooling": ["string"],
+          "inputs": ["string"],
+          "outputs": ["string"],
+          "conditions": [
+            {
+              "if": { "signal": "error_code", "eq": "E123" },
+              "then": "go_to_step:3"
+            }
+          ]
+        }
+      ],
+      "variants": [
+        {
+          "name": "staging",
+          "diff": "string",
+          "applies_when": { "key": "env", "eq": "staging" }
+        }
+      ],
+      "lessons": [
+        {
+          "id": "lesson:uuid",
+          "pattern": "string",
+          "cause": "string",
+          "fix": "string",
+          "applies_when": {
+            "context_tags": ["deploy", "migration"],
+            "signals": ["string"]
+          },
+          "negative_examples": ["string"],
+          "confidence": "certain|probable|possible",
+          "provenance": [
+            { "source_session": "session:uuid", "source_turn": "turn:uuid" }
+          ]
+        }
+      ],
+      "versioning": {
+        "current_version": 3,
+        "history": [
+          {
+            "version": 2,
+            "changed_at": "YYYY-MM-DDTHH:MM:SSZ",
+            "change_note": "string",
+            "superseded_by": 3
+          }
+        ]
+      }
+    }
+  ],
+
+  "rules": [
+    {
+      "id": "rule:uuid",
+      "name": "string",
+      "type": "type_inference|property_inheritance|constraint_propagation|quantifier",
+      "if": [
+        { "pattern": "subject.type == 'Startup' AND subject.has('employees')" }
+      ],
+      "then": [
+        {
+          "action": "assert_fact",
+          "predicate": "type",
+          "object": { "value": "Company" },
+          "confidence": "probable"
+        }
+      ],
+      "retraction_policy": {
+        "on_supersession": "prune_dependents|mark_stale",
+        "on_retract": "prune_dependents|keep_with_low_confidence"
+      }
+    }
+  ],
+
+  "ambiguities": [
+    {
+      "id": "amb:uuid",
+      "label": "the cluster",
+      "candidates": [
+        { "ref": "ent:system:clusterA" },
+        { "ref": "ent:system:clusterB" }
+      ],
+      "disambiguation_features": ["region", "owner", "last_touched"],
+      "introduced_in": { "session": "session:uuid", "turn": "turn:uuid" }
+    }
+  ],
+
+  "knowledge_boundaries": {
+    "sensitive_topics": [
+      {
+        "topic": "salary|health|legal",
+        "policy": "never_infer|never_surface|surface_only_if_asked"
+      }
+    ],
+    "negative_knowledge_tests": [
+      { "query": "string", "should_be_unknown": true, "notes": "string" }
+    ],
+    "staleness": {
+      "default_half_life_days": 365,
+      "topic_overrides": [
+        { "topic": "illness", "half_life_days": 30 },
+        { "topic": "passwords", "half_life_days": 1 }
+      ]
+    }
+  },
+
+  "sessions_blueprint": {
+    "sessions": [
+      {
+        "session_id": "session:uuid",
+        "time": {
+          "start": "YYYY-MM-DDTHH:MM:SSZ",
+          "end": "YYYY-MM-DDTHH:MM:SSZ"
+        },
+        "participants": [
+          { "ref": "ent:person:user" },
+          { "ref": "ent:person:ashvath" }
+        ],
+        "artifacts_introduced": [
+          "fact:uuid",
+          "task:uuid",
+          "proc:uuid",
+          "doc:uuid"
+        ],
+        "events_planned": [
+          {
+            "turn_id": "turn:uuid",
+            "speaker": "user|assistant|other",
+            "intents": [
+              "state_fact|update_fact|retract|ask|plan|decide|prefer|counterfactual"
+            ],
+            "mentions": ["ent:* ids or alias strings"],
+            "writes": ["fact:uuid|task:uuid|proc:uuid"],
+            "expected_memory_ops": ["store|update|supersede|link|do_not_store"],
+            "notes": "for generation only"
+          }
+        ]
+      }
+    ]
+  },
+
+  "probes_blueprint": {
+    "probe_families": [
+      {
+        "pillar": "1|2|3|4|5|6",
+        "skill": "entity_resolution|relationship_update|belief_revision|verbatim_recall|temporal_order|preference_scope|negative_knowledge|lesson_application",
+        "query_templates": [
+          {
+            "id": "probe_tpl:uuid",
+            "prompt": "string with slots like {{alias}} {{time_ref}}",
+            "requires": {
+              "target_ids": [
+                "fact:uuid|rel:uuid|task:uuid|pref:uuid|proc:uuid|ep:uuid"
+              ],
+              "reasoning": [
+                "single_hop|multi_hop|quantified|constraint_chain|temporal|causal|scope_resolution"
+              ],
+              "verbatim": false
+            },
+            "distractors": {
+              "include_nearby_entities": true,
+              "include_superseded_facts": true,
+              "include_same_type_entities": true
+            },
+            "expected_answer_spec": {
+              "answer_type": "span|entity_id|boolean|choice|json",
+              "gold": "string|json",
+              "must_cite": ["fact:uuid|rel:uuid|task:uuid"],
+              "should_say_unknown_if_missing": true
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+# Full dependencies for this repo (benchmark generator + evaluation + ingestion).
+# Install with:
+#   pip install -r requirements.txt
+
+# Core
+python-dotenv>=1.0.0
+requests>=2.31.0
+
+# LLM providers (set at least one API key at runtime)
+google-genai>=1.0.0
+openai>=1.0.0
+
+# Memory systems (only needed if you run those adapters/scripts)
+mem0ai>=0.1.0
+supermemory>=0.1.0
+nebula-client
+
+# Naive RAG baseline
+chromadb>=0.4.0
+sentence-transformers>=2.2.0
+numpy>=1.23.0

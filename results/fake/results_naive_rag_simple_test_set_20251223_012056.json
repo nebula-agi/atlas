@@ -1,0 +1,348 @@
+{
+  "generated_at": "2025-12-23T01:21:21.203425",
+  "adapter_type": "NaiveRAGAdapter",
+  "num_benchmarks": 1,
+  "total_probes": 13,
+  "overall_summary": {
+    "overall_accuracy": 0.6153846153846154,
+    "total_score": 8,
+    "count": 13,
+    "by_answer_type": {
+      "short_answer": {
+        "total": 7,
+        "count": 11,
+        "accuracy": 0.6363636363636364
+      },
+      "boolean": {
+        "total": 1,
+        "count": 2,
+        "accuracy": 0.5
+      }
+    },
+    "by_pillar": {
+      "world_modeling": {
+        "total": 0,
+        "count": 2,
+        "accuracy": 0.0
+      },
+      "declarative_reasoning": {
+        "total": 1,
+        "count": 2,
+        "accuracy": 0.5
+      },
+      "temporal_episodic": {
+        "total": 3,
+        "count": 3,
+        "accuracy": 1.0
+      },
+      "preference_learning": {
+        "total": 1,
+        "count": 2,
+        "accuracy": 0.5
+      },
+      "knowledge_boundaries": {
+        "total": 2,
+        "count": 2,
+        "accuracy": 1.0
+      },
+      "procedural_knowledge": {
+        "total": 1,
+        "count": 2,
+        "accuracy": 0.5
+      }
+    }
+  },
+  "stored_memories": [],
+  "benchmark_summaries": [
+    {
+      "file": "C:\\Users\\k_nai\\nebulaMemBenchmark\\simple_test_set\\benchmark_nebula_devtools_010.json",
+      "accuracy": 0.6153846153846154,
+      "num_probes": 13,
+      "ingestion_time_s": 1.418769121170044,
+      "eval_time_s": 17.271708965301514
+    }
+  ],
+  "detailed_results": [
+    {
+      "benchmark_file": "C:\\Users\\k_nai\\nebulaMemBenchmark\\simple_test_set\\benchmark_nebula_devtools_010.json",
+      "adapter_type": "NaiveRAGAdapter",
+      "num_sessions": 10,
+      "num_probes": 13,
+      "ingestion_time_s": 1.418769121170044,
+      "total_evaluation_time_s": 17.271708965301514,
+      "probe_results": [
+        {
+          "probe_id": "world_modeling-entity_resolution-1",
+          "pillar": "world_modeling",
+          "subpillar": "entity_resolution",
+          "question": "Which individual is repeatedly identified as the user's cofounder throughout the sessions?",
+          "answer_type": "short_answer",
+          "gold_answer": "Sato",
+          "predicted_answer": "Unknown",
+          "retrieved_context": [
+            "[Session llm-0] user: Good morning. I'm trying to get my head straight before the meeting with my cofounder later.",
+            "[Session llm-2] assistant: You might want to check with your cofounder on the specific version he's using.",
+            "[Session llm-7, Time: 7]\nuser: Hey, can you set a reminder for me to call the dentist at 4 PM?\nassistant: Done. I've set a reminder to call the dentist at 4:00 PM today.\nuser: Thanks. I'm trying to connect my new tablet to the office wifi but I forgot what Sato changed the password to.\nassistant: It should be the organization's name followed by the current year and an exclamation point.\nuser: Ah, right. Capital C and S?\nassistant: Yes, CamelCase for the name part, then 2024 and the symbol.\nuser: Got it, connected. By the way, my cofounder was asking about the backend structure for the core project again.\nassistant: Is he looking for an overview of the languages involved?\nuser: Yeah, just confirming we are still using that mix of a systems language and the JS runtime.\nassistant: That's correct, the architecture relies on Rust for performance-critical components and Node.js for the services.\nuser: Okay, good. I need to order lunch soon, do you know if that sandwich place is open?\nassistant: I don't have real-time access to their hours, but they are usually open on weekdays.\nuser: I'll check their site. Back to the code, make sure the documentation reflects the Rust crates we added.\nassistant: I'll make a note to update the docs regarding the Rust dependencies.\nuser: And the package.json for the Node side too."
+          ],
+          "score": 0,
+          "match_type": "llm_judge",
+          "latency_ms": 991.2798404693604
+        },
+        {
+          "probe_id": "world_modeling-relationship_mapping-2",
+          "pillar": "world_modeling",
+          "subpillar": "relationship_mapping",
+          "question": "What is the professional relationship between the user and the person concerned about the API layer's speed?",
+          "answer_type": "short_answer",
+          "gold_answer": "Cofounders",
+          "predicted_answer": "Unknown.",
+          "retrieved_context": [
+            "[Session llm-1] user: Exactly. At least the API layer is faster to iterate on since it's just Node.js.",
+            "[Session llm-4] user: He thinks the API layer is too slow. We're running it on that V8-based runtime, which is great for the event loop, but it's struggling with the heavy computation.",
+            "[Session llm-0] user: Right, that's it. Sato was really adamant about the performance benefits for the backend services."
+          ],
+          "score": 0,
+          "match_type": "llm_judge",
+          "latency_ms": 611.3276481628418
+        },
+        {
+          "probe_id": "declarative_reasoning-fact_composition-3",
+          "pillar": "declarative_reasoning",
+          "subpillar": "fact_composition",
+          "question": "Which framework used in the CodeStream core project is described as a systems language with a 'crab mascot'?",
+          "answer_type": "short_answer",
+          "gold_answer": "Rust",
+          "predicted_answer": "The systems language with a 'crab mascot' used in the CodeStream core project is Rust.",
+          "retrieved_context": [
+            "[Session llm-4] user: Yeah, we actually started rewriting the core modules. We picked that systems language that everyone loves for memory safety. The one with the crab mascot.",
+            "[Session llm-5] assistant: If you are referring to the CodeStream core project, the architecture primarily utilizes a combination of Node.js for the services and Rust for the performance-critical components.",
+            "[Session llm-4] assistant: I'm sorry to hear that. What specifically is your cofounder concerned about regarding the CodeStream architecture?"
+          ],
+          "score": 1,
+          "match_type": "llm_judge",
+          "latency_ms": 746.8793392181396
+        },
+        {
+          "probe_id": "declarative_reasoning-constraint_propagation-4",
+          "pillar": "declarative_reasoning",
+          "subpillar": "constraint_propagation",
+          "question": "Based on the rule 'Organization Name + Year + !', what is the password for the office wifi?",
+          "answer_type": "short_answer",
+          "gold_answer": "CodeStream2024!",
+          "predicted_answer": "Unknown",
+          "retrieved_context": [
+            "[Session llm-9] user: No, I have them. Actually, my tablet disconnected from the network. What's the password for the office wifi?",
+            "[Session llm-7] user: Thanks. I'm trying to connect my new tablet to the office wifi but I forgot what Sato changed the password to.",
+            "[Session llm-8] user: Thanks. One last thing, my phone forgot the wifi. Is it still the standard password?"
+          ],
+          "score": 0,
+          "match_type": "llm_judge",
+          "latency_ms": 505.4779052734375
+        },
+        {
+          "probe_id": "temporal_episodic-cyclical_event_recognition-5",
+          "pillar": "temporal_episodic",
+          "subpillar": "cyclical_event_recognition",
+          "question": "What specific technical concern does the cofounder Sato raise repeatedly across multiple sessions?",
+          "answer_type": "short_answer",
+          "gold_answer": "Backend performance",
+          "predicted_answer": "Sato is repeatedly concerned about the performance of the core project's backend.",
+          "retrieved_context": [
+            "[Session llm-9] user: Yeah, Sato is worried about the performance of the core project. Remind me what stack we locked in for that?",
+            "[Session llm-4] user: Thanks. I've been stressing about the startup all morning. Sato is worried about our backend performance.",
+            "[Session llm-6] assistant: I can help clarify that. What specific concerns does Sato have regarding the architecture?"
+          ],
+          "score": 1,
+          "match_type": "llm_judge",
+          "latency_ms": 445.3318119049072
+        },
+        {
+          "probe_id": "temporal_episodic-episode_reconstruction-6",
+          "pillar": "temporal_episodic",
+          "subpillar": "episode_reconstruction",
+          "question": "In the session where the user requested a reminder to call the dentist, what office detail did they also ask about?",
+          "answer_type": "short_answer",
+          "gold_answer": "Wifi password",
+          "predicted_answer": "The user asked about the office wifi password.",
+          "retrieved_context": [
+            "[Session llm-3] assistant: I've set a reminder for 2 PM to call the dentist.",
+            "[Session llm-7] user: Hey, can you set a reminder for me to call the dentist at 4 PM?",
+            "[Session llm-7] assistant: Done. I've set a reminder to call the dentist at 4:00 PM today."
+          ],
+          "score": 1,
+          "match_type": "llm_judge",
+          "latency_ms": 898.5700607299805
+        },
+        {
+          "probe_id": "temporal_episodic-temporal_sequencing-7",
+          "pillar": "temporal_episodic",
+          "subpillar": "temporal_sequencing",
+          "question": "Did the user ask about their lost jacket before or after the conversation about the rain?",
+          "answer_type": "short_answer",
+          "gold_answer": "Before",
+          "predicted_answer": "The user asked about their lost jacket before the conversation about the rain.",
+          "retrieved_context": [
+            "[Session llm-8] user: Did I leave my jacket at the office yesterday?",
+            "[Session llm-5] user: Cool. Also, did I leave my jacket in the meeting room yesterday?",
+            "[Session llm-9] user: Morning. Any chance of rain today?"
+          ],
+          "score": 1,
+          "match_type": "llm_judge",
+          "latency_ms": 581.8948745727539
+        },
+        {
+          "probe_id": "preference_learning-preference_induction-8",
+          "pillar": "preference_learning",
+          "subpillar": "preference_induction",
+          "question": "Which aspect of the project does the user prioritize discussing: frontend UI or backend performance?",
+          "answer_type": "short_answer",
+          "gold_answer": "Backend performance",
+          "predicted_answer": "Backend performance.",
+          "retrieved_context": [
+            "[Session llm-0] user: Right, that's it. Sato was really adamant about the performance benefits for the backend services.",
+            "[Session llm-6] assistant: Exactly. We are using Node.js for the general backend services to handle asynchronous operations efficiently.",
+            "[Session llm-6, Time: 6]\nuser: Hey, hope you're having a decent Tuesday. The weather is actually pretty nice out there for once.\nassistant: It is lovely! I noticed the sun is finally breaking through the clouds. How can I help you today?\nuser: I need to double-check some technical details for the pitch deck. My cofounder, Sato, is worried about our backend choices for the core platform.\nassistant: I can help clarify that. What specific concerns does Sato have regarding the architecture?\nuser: He just wants to confirm we are actually using that systems programming language for the performance-critical stuff. The one with the borrow checker?\nassistant: Yes, that's correct. We are utilizing Rust for the core components to ensure memory safety and high performance.\nuser: Great, that's what I thought. And for the rest of the backend services? We're sticking with the V8-based runtime, right?\nassistant: Exactly. We are using Node.js for the general backend services to handle asynchronous operations efficiently.\nuser: Perfect. I'll let him know it's a hybrid setup. By the way, remind me to pick up my dry cleaning later?\nassistant: Consider it done. I've set a reminder for your dry cleaning. What time should I alert you?\nuser: Around 5 PM is good. Also, I completely blanked on the office internet credentials. Is it just the company name?\nassistant: It's a bit more secure than that. It is the company name capitalized, followed by the current year, and ending with an exclamation point.\nuser: Ah, right. So CodeStream, 2024, and the symbol. Thanks.\nassistant: You got it. Let me know if you have any trouble connecting your devices.\nuser: Will do. Oh, and did the coffee subscription renew automatically?"
+          ],
+          "score": 1,
+          "match_type": "llm_judge",
+          "latency_ms": 542.9134368896484
+        },
+        {
+          "probe_id": "preference_learning-preference_scope-9",
+          "pillar": "preference_learning",
+          "subpillar": "preference_scope",
+          "question": "Has the user explicitly requested the assistant to use a formal persona during their conversations?",
+          "answer_type": "boolean",
+          "gold_answer": "No",
+          "predicted_answer": "Unknown",
+          "retrieved_context": [
+            "[Session llm-2] assistant: In what way?",
+            "[Session llm-7] assistant: Is he looking for an overview of the languages involved?",
+            "[Session llm-7, Time: 7]\nuser: Hey, can you set a reminder for me to call the dentist at 4 PM?\nassistant: Done. I've set a reminder to call the dentist at 4:00 PM today.\nuser: Thanks. I'm trying to connect my new tablet to the office wifi but I forgot what Sato changed the password to.\nassistant: It should be the organization's name followed by the current year and an exclamation point.\nuser: Ah, right. Capital C and S?\nassistant: Yes, CamelCase for the name part, then 2024 and the symbol.\nuser: Got it, connected. By the way, my cofounder was asking about the backend structure for the core project again.\nassistant: Is he looking for an overview of the languages involved?\nuser: Yeah, just confirming we are still using that mix of a systems language and the JS runtime.\nassistant: That's correct, the architecture relies on Rust for performance-critical components and Node.js for the services.\nuser: Okay, good. I need to order lunch soon, do you know if that sandwich place is open?\nassistant: I don't have real-time access to their hours, but they are usually open on weekdays.\nuser: I'll check their site. Back to the code, make sure the documentation reflects the Rust crates we added.\nassistant: I'll make a note to update the docs regarding the Rust dependencies.\nuser: And the package.json for the Node side too."
+          ],
+          "score": 0,
+          "match_type": "llm_judge",
+          "latency_ms": 759.5515251159668
+        },
+        {
+          "probe_id": "knowledge_boundaries-negative_knowledge-10",
+          "pillar": "knowledge_boundaries",
+          "subpillar": "negative_knowledge",
+          "question": "What specific database technology is mentioned as part of the CodeStream core project stack?",
+          "answer_type": "short_answer",
+          "gold_answer": "Not mentioned",
+          "predicted_answer": "Unknown",
+          "retrieved_context": [
+            "[Session llm-5] assistant: If you are referring to the CodeStream core project, the architecture primarily utilizes a combination of Node.js for the services and Rust for the performance-critical components.",
+            "[Session llm-4] assistant: I'm sorry to hear that. What specifically is your cofounder concerned about regarding the CodeStream architecture?",
+            "[Session llm-3] assistant: Is he worried about the timeline for CodeStream core?"
+          ],
+          "score": 1,
+          "match_type": "llm_judge",
+          "latency_ms": 631.0627460479736
+        },
+        {
+          "probe_id": "knowledge_boundaries-confidence_calibration-11",
+          "pillar": "knowledge_boundaries",
+          "subpillar": "confidence_calibration",
+          "question": "Is the CodeStream core project built exclusively using the Rust programming language?",
+          "answer_type": "boolean",
+          "gold_answer": "No",
+          "predicted_answer": "No, the CodeStream core project is not built exclusively using the Rust programming language. It utilizes a combination of Node.js for services and Rust for performance-critical components.",
+          "retrieved_context": [
+            "[Session llm-9] assistant: For the main CodeStream codebase, the team settled on using Node.js alongside Rust to handle the heavier processing.",
+            "[Session llm-5] assistant: If you are referring to the CodeStream core project, the architecture primarily utilizes a combination of Node.js for the services and Rust for the performance-critical components.",
+            "[Session llm-2] assistant: Correct, the core logic is still written in Rust for performance."
+          ],
+          "score": 1,
+          "match_type": "llm_judge",
+          "latency_ms": 689.4080638885498
+        },
+        {
+          "probe_id": "procedural_knowledge-procedure_storage-12",
+          "pillar": "procedural_knowledge",
+          "subpillar": "procedure_storage",
+          "question": "What is the procedure described for constructing the organization's wifi password?",
+          "answer_type": "short_answer",
+          "gold_answer": "Name + Year + !",
+          "predicted_answer": "The procedure for constructing the organization's wifi password is to use the organization's name followed by \"2024\" and an exclamation mark at the end.",
+          "retrieved_context": [
+            "[Session llm-9] user: No, I have them. Actually, my tablet disconnected from the network. What's the password for the office wifi?",
+            "[Session llm-8] user: Thanks. One last thing, my phone forgot the wifi. Is it still the standard password?",
+            "[Session llm-7] user: Thanks. I'm trying to connect my new tablet to the office wifi but I forgot what Sato changed the password to."
+          ],
+          "score": 1,
+          "match_type": "llm_judge",
+          "latency_ms": 975.9278297424316
+        },
+        {
+          "probe_id": "procedural_knowledge-lesson_extraction-13",
+          "pillar": "procedural_knowledge",
+          "subpillar": "lesson_extraction",
+          "question": "According to the sessions, what technical limitation of Node.js necessitated the inclusion of Rust?",
+          "answer_type": "short_answer",
+          "gold_answer": "Heavy computation struggles",
+          "predicted_answer": "Unknown",
+          "retrieved_context": [
+            "[Session llm-7] assistant: That's correct, the architecture relies on Rust for performance-critical components and Node.js for the services.",
+            "[Session llm-3] assistant: Mixing Rust with Node.js is a powerful combination if you get the bindings right.",
+            "[Session llm-9] assistant: For the main CodeStream codebase, the team settled on using Node.js alongside Rust to handle the heavier processing."
+          ],
+          "score": 0,
+          "match_type": "llm_judge",
+          "latency_ms": 578.693151473999
+        }
+      ],
+      "summary": {
+        "overall_accuracy": 0.6153846153846154,
+        "total_score": 8,
+        "count": 13,
+        "by_answer_type": {
+          "short_answer": {
+            "total": 7,
+            "count": 11,
+            "accuracy": 0.6363636363636364
+          },
+          "boolean": {
+            "total": 1,
+            "count": 2,
+            "accuracy": 0.5
+          }
+        },
+        "by_pillar": {
+          "world_modeling": {
+            "total": 0,
+            "count": 2,
+            "accuracy": 0.0
+          },
+          "declarative_reasoning": {
+            "total": 1,
+            "count": 2,
+            "accuracy": 0.5
+          },
+          "temporal_episodic": {
+            "total": 3,
+            "count": 3,
+            "accuracy": 1.0
+          },
+          "preference_learning": {
+            "total": 1,
+            "count": 2,
+            "accuracy": 0.5
+          },
+          "knowledge_boundaries": {
+            "total": 2,
+            "count": 2,
+            "accuracy": 1.0
+          },
+          "procedural_knowledge": {
+            "total": 1,
+            "count": 2,
+            "accuracy": 0.5
+          }
+        }
+      },
+      "stored_memories": []
+    }
+  ]
+}

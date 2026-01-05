@@ -1,0 +1,830 @@
+{
+  "generated_at": "2025-12-23T00:02:17.877534",
+  "adapter_type": "Mem0Adapter",
+  "num_benchmarks": 2,
+  "total_probes": 25,
+  "overall_summary": {
+    "overall_accuracy": 0.24,
+    "total_score": 6,
+    "count": 25,
+    "by_answer_type": {
+      "short_answer": {
+        "total": 4,
+        "count": 19,
+        "accuracy": 0.21052631578947367
+      },
+      "boolean": {
+        "total": 0,
+        "count": 3,
+        "accuracy": 0.0
+      },
+      "verbatim": {
+        "total": 0,
+        "count": 1,
+        "accuracy": 0.0
+      },
+      "abstain": {
+        "total": 2,
+        "count": 2,
+        "accuracy": 1.0
+      }
+    },
+    "by_pillar": {
+      "world_modeling": {
+        "total": 0,
+        "count": 4,
+        "accuracy": 0.0
+      },
+      "declarative_reasoning": {
+        "total": 1,
+        "count": 4,
+        "accuracy": 0.25
+      },
+      "temporal_episodic": {
+        "total": 1,
+        "count": 5,
+        "accuracy": 0.2
+      },
+      "preference_learning": {
+        "total": 1,
+        "count": 4,
+        "accuracy": 0.25
+      },
+      "knowledge_boundaries": {
+        "total": 3,
+        "count": 4,
+        "accuracy": 0.75
+      },
+      "procedural_knowledge": {
+        "total": 0,
+        "count": 4,
+        "accuracy": 0.0
+      }
+    }
+  },
+  "stored_memories": [
+    {
+      "id": "17a4946e-961f-4d68-a93f-1ee5dbbf1ea4",
+      "memory": "User will grab a bagel.",
+      "created_at": "2025-12-22T21:00:57.650618-08:00"
+    },
+    {
+      "id": "36329d70-22e4-4d4b-aa23-0b1b66ca85a3",
+      "memory": "User skipped breakfast.",
+      "created_at": "2025-12-22T21:00:56.689117-08:00"
+    },
+    {
+      "id": "42a397a0-f2c0-4e59-955c-1ff18f373df7",
+      "memory": "User is good on tech side.",
+      "created_at": "2025-12-22T21:00:55.719637-08:00"
+    },
+    {
+      "id": "afbf06c9-4f14-473f-8c49-926997ffad48",
+      "memory": "User fixed tablet connection by adding exclamation mark to credentials.",
+      "created_at": "2025-12-22T21:00:54.699964-08:00"
+    },
+    {
+      "id": "1fd17a4c-55c8-4652-bb6c-84ce833cfb7b",
+      "memory": "User is having trouble connecting tablet to office network.",
+      "created_at": "2025-12-22T21:00:53.642676-08:00"
+    },
+    {
+      "id": "20cae39a-464a-424b-bdd0-df829f6c7374",
+      "memory": "User wants a reminder to pick up dry cleaning at 5 PM.",
+      "created_at": "2025-12-22T21:00:52.635868-08:00"
+    },
+    {
+      "id": "cab9bf6c-1343-4f2e-a364-c07b1fc299c3",
+      "memory": "Sato was adamant about performance benefits for backend services.",
+      "created_at": "2025-12-22T21:00:51.702004-08:00"
+    },
+    {
+      "id": "cb67db0d-bb69-485e-aef8-6cb0bcfda49c",
+      "memory": "User is unsure if the platform uses a single language or a mix.",
+      "created_at": "2025-12-22T21:00:50.640411-08:00"
+    },
+    {
+      "id": "8d52c340-d2d5-47d8-95ee-8670862099f2",
+      "memory": "User needs to finalize architecture for core platform.",
+      "created_at": "2025-12-22T21:00:49.678566-08:00"
+    },
+    {
+      "id": "380cdbf5-1711-42b3-8aaf-2b8e3d4021c6",
+      "memory": "User has a meeting with cofounder later.",
+      "created_at": "2025-12-22T21:00:49.404074-08:00"
+    },
+    {
+      "id": "67379bef-7372-42a6-b650-b96e6909dbb4",
+      "memory": "User needs to make sure cargo toolchain is up to date",
+      "created_at": "2025-12-22T21:01:46.445524-08:00"
+    },
+    {
+      "id": "685aa98f-bf2e-4c14-b16a-9350f5290e8e",
+      "memory": "User sees huge directory for server-side JavaScript",
+      "created_at": "2025-12-22T21:01:45.396896-08:00"
+    },
+    {
+      "id": "567f9709-9806-42bb-b0e0-0214db655faa",
+      "memory": "User observes architecture shifted a bit",
+      "created_at": "2025-12-22T21:01:44.323233-08:00"
+    },
+    {
+      "id": "4e536e08-46c2-4e8a-bba0-5c1b7de8017f",
+      "memory": "User is pulling down latest changes for core project",
+      "created_at": "2025-12-22T21:01:43.328971-08:00"
+    },
+    {
+      "id": "ef0c3cb0-c0ea-437a-a9a6-d9cfc8abf1cc",
+      "memory": "User wants reminder to water plants when get home",
+      "created_at": "2025-12-22T21:01:42.319817-08:00"
+    },
+    {
+      "id": "d1bc71f1-c0f3-4ef6-92e4-a0752c004478",
+      "memory": "User blanked on the password",
+      "created_at": "2025-12-22T21:01:41.368721-08:00"
+    },
+    {
+      "id": "b859ea9e-d5bf-45e4-8d9e-50c84aac5749",
+      "memory": "User needs to reconnect tablet to office wifi",
+      "created_at": "2025-12-22T21:01:40.350731-08:00"
+    },
+    {
+      "id": "861269ff-034e-4ed8-8389-6bc25d065b78",
+      "memory": "Sato is typing furiously at his desk",
+      "created_at": "2025-12-22T21:01:39.383100-08:00"
+    },
+    {
+      "id": "cd7bd346-7344-4780-bdcb-f2af8d562aff",
+      "memory": "User walked in",
+      "created_at": "2025-12-22T21:01:39.118577-08:00"
+    }
+  ],
+  "benchmark_summaries": [
+    {
+      "file": "C:\\Users\\k_nai\\nebulaMemBenchmark\\simple_test_set\\benchmark_nebula_devtools_010.json",
+      "accuracy": 0.3076923076923077,
+      "num_probes": 13,
+      "ingestion_time_s": 32.027381896972656,
+      "eval_time_s": 21.18442177772522
+    },
+    {
+      "file": "C:\\Users\\k_nai\\nebulaMemBenchmark\\simple_test_set\\benchmark_nebula_devtools_011.json",
+      "accuracy": 0.16666666666666666,
+      "num_probes": 12,
+      "ingestion_time_s": 27.45172905921936,
+      "eval_time_s": 19.81619119644165
+    }
+  ],
+  "detailed_results": [
+    {
+      "benchmark_file": "C:\\Users\\k_nai\\nebulaMemBenchmark\\simple_test_set\\benchmark_nebula_devtools_010.json",
+      "adapter_type": "Mem0Adapter",
+      "num_sessions": 10,
+      "num_probes": 13,
+      "ingestion_time_s": 32.027381896972656,
+      "total_evaluation_time_s": 21.18442177772522,
+      "probe_results": [
+        {
+          "probe_id": "world_modeling-entity_resolution-1",
+          "pillar": "world_modeling",
+          "subpillar": "entity_resolution",
+          "question": "Which individual is repeatedly identified as the user's cofounder throughout the sessions?",
+          "answer_type": "short_answer",
+          "gold_answer": "Sato",
+          "predicted_answer": "Unknown",
+          "retrieved_context": [
+            "User has a meeting with cofounder later.",
+            "User is good on tech side.",
+            "User is unsure if the platform uses a single language or a mix."
+          ],
+          "score": 0,
+          "match_type": "llm_judge",
+          "latency_ms": 966.0496711730957
+        },
+        {
+          "probe_id": "world_modeling-relationship_mapping-2",
+          "pillar": "world_modeling",
+          "subpillar": "relationship_mapping",
+          "question": "What is the professional relationship between the user and the person concerned about the API layer's speed?",
+          "answer_type": "short_answer",
+          "gold_answer": "Cofounders",
+          "predicted_answer": "Unknown.",
+          "retrieved_context": [
+            "User is good on tech side.",
+            "Sato was adamant about performance benefits for backend services.",
+            "User is unsure if the platform uses a single language or a mix."
+          ],
+          "score": 0,
+          "match_type": "llm_judge",
+          "latency_ms": 837.7995491027832
+        },
+        {
+          "probe_id": "declarative_reasoning-fact_composition-3",
+          "pillar": "declarative_reasoning",
+          "subpillar": "fact_composition",
+          "question": "Which framework used in the CodeStream core project is described as a systems language with a 'crab mascot'?",
+          "answer_type": "short_answer",
+          "gold_answer": "Rust",
+          "predicted_answer": "The framework described as a systems language with a 'crab mascot' is Rust.",
+          "retrieved_context": [
+            "User is unsure if the platform uses a single language or a mix.",
+            "User needs to finalize architecture for core platform.",
+            "User is good on tech side."
+          ],
+          "score": 1,
+          "match_type": "llm_judge",
+          "latency_ms": 933.3710670471191
+        },
+        {
+          "probe_id": "declarative_reasoning-constraint_propagation-4",
+          "pillar": "declarative_reasoning",
+          "subpillar": "constraint_propagation",
+          "question": "Based on the rule 'Organization Name + Year + !', what is the password for the office wifi?",
+          "answer_type": "short_answer",
+          "gold_answer": "CodeStream2024!",
+          "predicted_answer": "Unknown",
+          "retrieved_context": [
+            "User fixed tablet connection by adding exclamation mark to credentials.",
+            "User is having trouble connecting tablet to office network.",
+            "User is unsure if the platform uses a single language or a mix."
+          ],
+          "score": 0,
+          "match_type": "llm_judge",
+          "latency_ms": 1199.2135047912598
+        },
+        {
+          "probe_id": "temporal_episodic-cyclical_event_recognition-5",
+          "pillar": "temporal_episodic",
+          "subpillar": "cyclical_event_recognition",
+          "question": "What specific technical concern does the cofounder Sato raise repeatedly across multiple sessions?",
+          "answer_type": "short_answer",
+          "gold_answer": "Backend performance",
+          "predicted_answer": "Performance benefits for backend services.",
+          "retrieved_context": [
+            "Sato was adamant about performance benefits for backend services.",
+            "User has a meeting with cofounder later.",
+            "User is good on tech side."
+          ],
+          "score": 1,
+          "match_type": "llm_judge",
+          "latency_ms": 882.951021194458
+        },
+        {
+          "probe_id": "temporal_episodic-episode_reconstruction-6",
+          "pillar": "temporal_episodic",
+          "subpillar": "episode_reconstruction",
+          "question": "In the session where the user requested a reminder to call the dentist, what office detail did they also ask about?",
+          "answer_type": "short_answer",
+          "gold_answer": "Wifi password",
+          "predicted_answer": "Unknown. There is no information in the context about the user requesting a reminder to call the dentist or asking about any office detail related to that.",
+          "retrieved_context": [
+            "User wants a reminder to pick up dry cleaning at 5 PM.",
+            "User has a meeting with cofounder later.",
+            "User fixed tablet connection by adding exclamation mark to credentials."
+          ],
+          "score": 0,
+          "match_type": "llm_judge",
+          "latency_ms": 1570.6746578216553
+        },
+        {
+          "probe_id": "temporal_episodic-temporal_sequencing-7",
+          "pillar": "temporal_episodic",
+          "subpillar": "temporal_sequencing",
+          "question": "Did the user ask about their lost jacket before or after the conversation about the rain?",
+          "answer_type": "short_answer",
+          "gold_answer": "Before",
+          "predicted_answer": "Unknown",
+          "retrieved_context": [
+            "User will grab a bagel.",
+            "User skipped breakfast.",
+            "User needs to check the repo"
+          ],
+          "score": 0,
+          "match_type": "llm_judge",
+          "latency_ms": 1158.8950157165527
+        },
+        {
+          "probe_id": "preference_learning-preference_induction-8",
+          "pillar": "preference_learning",
+          "subpillar": "preference_induction",
+          "question": "Which aspect of the project does the user prioritize discussing: frontend UI or backend performance?",
+          "answer_type": "short_answer",
+          "gold_answer": "Backend performance",
+          "predicted_answer": "Backend performance.",
+          "retrieved_context": [
+            "Sato was adamant about performance benefits for backend services.",
+            "User needs to finalize architecture for core platform.",
+            "User is good on tech side."
+          ],
+          "score": 1,
+          "match_type": "llm_judge",
+          "latency_ms": 802.3760318756104
+        },
+        {
+          "probe_id": "preference_learning-preference_scope-9",
+          "pillar": "preference_learning",
+          "subpillar": "preference_scope",
+          "question": "Has the user explicitly requested the assistant to use a formal persona during their conversations?",
+          "answer_type": "boolean",
+          "gold_answer": "No",
+          "predicted_answer": "Unknown",
+          "retrieved_context": [
+            "User is unsure if the platform uses a single language or a mix.",
+            "User needs to check the repo",
+            "User needs to finalize architecture for core platform."
+          ],
+          "score": 0,
+          "match_type": "llm_judge",
+          "latency_ms": 927.560567855835
+        },
+        {
+          "probe_id": "knowledge_boundaries-negative_knowledge-10",
+          "pillar": "knowledge_boundaries",
+          "subpillar": "negative_knowledge",
+          "question": "What specific database technology is mentioned as part of the CodeStream core project stack?",
+          "answer_type": "short_answer",
+          "gold_answer": "Not mentioned",
+          "predicted_answer": "Unknown",
+          "retrieved_context": [
+            "User's office internet key is CodeStream2024",
+            "User needs to finalize architecture for core platform.",
+            "User's cofounder complains about compile times on the core module"
+          ],
+          "score": 1,
+          "match_type": "llm_judge",
+          "latency_ms": 875.2589225769043
+        },
+        {
+          "probe_id": "knowledge_boundaries-confidence_calibration-11",
+          "pillar": "knowledge_boundaries",
+          "subpillar": "confidence_calibration",
+          "question": "Is the CodeStream core project built exclusively using the Rust programming language?",
+          "answer_type": "boolean",
+          "gold_answer": "No",
+          "predicted_answer": "Unknown",
+          "retrieved_context": [
+            "User's office internet key is CodeStream2024",
+            "User's cofounder complains about compile times on the core module",
+            "User is unsure if the platform uses a single language or a mix."
+          ],
+          "score": 0,
+          "match_type": "llm_judge",
+          "latency_ms": 1085.0417613983154
+        },
+        {
+          "probe_id": "procedural_knowledge-procedure_storage-12",
+          "pillar": "procedural_knowledge",
+          "subpillar": "procedure_storage",
+          "question": "What is the procedure described for constructing the organization's wifi password?",
+          "answer_type": "short_answer",
+          "gold_answer": "Name + Year + !",
+          "predicted_answer": "The procedure described for constructing the organization's wifi password involves adding an exclamation mark to the credentials.",
+          "retrieved_context": [
+            "User's office internet key is CodeStream2024",
+            "User is having trouble connecting tablet to office network.",
+            "User reset phone and lost saved networks"
+          ],
+          "score": 0,
+          "match_type": "llm_judge",
+          "latency_ms": 1145.3261375427246
+        },
+        {
+          "probe_id": "procedural_knowledge-lesson_extraction-13",
+          "pillar": "procedural_knowledge",
+          "subpillar": "lesson_extraction",
+          "question": "According to the sessions, what technical limitation of Node.js necessitated the inclusion of Rust?",
+          "answer_type": "short_answer",
+          "gold_answer": "Heavy computation struggles",
+          "predicted_answer": "Unknown. The context does not provide information about a technical limitation of Node.js that necessitated the inclusion of Rust.",
+          "retrieved_context": [
+            "User's cofounder complains about compile times on the core module",
+            "Sato was adamant about performance benefits for backend services.",
+            "User is debugging a race condition"
+          ],
+          "score": 0,
+          "match_type": "llm_judge",
+          "latency_ms": 1172.2543239593506
+        }
+      ],
+      "summary": {
+        "overall_accuracy": 0.3076923076923077,
+        "total_score": 4,
+        "count": 13,
+        "by_answer_type": {
+          "short_answer": {
+            "total": 4,
+            "count": 11,
+            "accuracy": 0.36363636363636365
+          },
+          "boolean": {
+            "total": 0,
+            "count": 2,
+            "accuracy": 0.0
+          }
+        },
+        "by_pillar": {
+          "world_modeling": {
+            "total": 0,
+            "count": 2,
+            "accuracy": 0.0
+          },
+          "declarative_reasoning": {
+            "total": 1,
+            "count": 2,
+            "accuracy": 0.5
+          },
+          "temporal_episodic": {
+            "total": 1,
+            "count": 3,
+            "accuracy": 0.3333333333333333
+          },
+          "preference_learning": {
+            "total": 1,
+            "count": 2,
+            "accuracy": 0.5
+          },
+          "knowledge_boundaries": {
+            "total": 1,
+            "count": 2,
+            "accuracy": 0.5
+          },
+          "procedural_knowledge": {
+            "total": 0,
+            "count": 2,
+            "accuracy": 0.0
+          }
+        }
+      },
+      "stored_memories": [
+        {
+          "id": "17a4946e-961f-4d68-a93f-1ee5dbbf1ea4",
+          "memory": "User will grab a bagel.",
+          "created_at": "2025-12-22T21:00:57.650618-08:00"
+        },
+        {
+          "id": "36329d70-22e4-4d4b-aa23-0b1b66ca85a3",
+          "memory": "User skipped breakfast.",
+          "created_at": "2025-12-22T21:00:56.689117-08:00"
+        },
+        {
+          "id": "42a397a0-f2c0-4e59-955c-1ff18f373df7",
+          "memory": "User is good on tech side.",
+          "created_at": "2025-12-22T21:00:55.719637-08:00"
+        },
+        {
+          "id": "afbf06c9-4f14-473f-8c49-926997ffad48",
+          "memory": "User fixed tablet connection by adding exclamation mark to credentials.",
+          "created_at": "2025-12-22T21:00:54.699964-08:00"
+        },
+        {
+          "id": "1fd17a4c-55c8-4652-bb6c-84ce833cfb7b",
+          "memory": "User is having trouble connecting tablet to office network.",
+          "created_at": "2025-12-22T21:00:53.642676-08:00"
+        },
+        {
+          "id": "20cae39a-464a-424b-bdd0-df829f6c7374",
+          "memory": "User wants a reminder to pick up dry cleaning at 5 PM.",
+          "created_at": "2025-12-22T21:00:52.635868-08:00"
+        },
+        {
+          "id": "cab9bf6c-1343-4f2e-a364-c07b1fc299c3",
+          "memory": "Sato was adamant about performance benefits for backend services.",
+          "created_at": "2025-12-22T21:00:51.702004-08:00"
+        },
+        {
+          "id": "cb67db0d-bb69-485e-aef8-6cb0bcfda49c",
+          "memory": "User is unsure if the platform uses a single language or a mix.",
+          "created_at": "2025-12-22T21:00:50.640411-08:00"
+        },
+        {
+          "id": "8d52c340-d2d5-47d8-95ee-8670862099f2",
+          "memory": "User needs to finalize architecture for core platform.",
+          "created_at": "2025-12-22T21:00:49.678566-08:00"
+        },
+        {
+          "id": "380cdbf5-1711-42b3-8aaf-2b8e3d4021c6",
+          "memory": "User has a meeting with cofounder later.",
+          "created_at": "2025-12-22T21:00:49.404074-08:00"
+        }
+      ]
+    },
+    {
+      "benchmark_file": "C:\\Users\\k_nai\\nebulaMemBenchmark\\simple_test_set\\benchmark_nebula_devtools_011.json",
+      "adapter_type": "Mem0Adapter",
+      "num_sessions": 10,
+      "num_probes": 12,
+      "ingestion_time_s": 27.45172905921936,
+      "total_evaluation_time_s": 19.81619119644165,
+      "probe_results": [
+        {
+          "probe_id": "world_modeling-entity_resolution-0",
+          "pillar": "world_modeling",
+          "subpillar": "entity_resolution",
+          "question": "Who is the individual identified as the user's cofounder?",
+          "answer_type": "short_answer",
+          "gold_answer": "Oliver",
+          "predicted_answer": "Unknown",
+          "retrieved_context": [
+            "User walked in",
+            "Sato is typing furiously at his desk",
+            "User observes architecture shifted a bit"
+          ],
+          "score": 0,
+          "match_type": "llm_judge",
+          "latency_ms": 830.9874534606934
+        },
+        {
+          "probe_id": "world_modeling-relationship_mapping-0",
+          "pillar": "world_modeling",
+          "subpillar": "relationship_mapping",
+          "question": "What is the name of the organization associated with the wifi password 'CodeStream2024!'?",
+          "answer_type": "short_answer",
+          "gold_answer": "CodeStream",
+          "predicted_answer": "Unknown",
+          "retrieved_context": [
+            "User blanked on the password",
+            "User needs to reconnect tablet to office wifi",
+            "User observes architecture shifted a bit"
+          ],
+          "score": 0,
+          "match_type": "llm_judge",
+          "latency_ms": 857.9761981964111
+        },
+        {
+          "probe_id": "declarative_reasoning-fact_composition-0",
+          "pillar": "declarative_reasoning",
+          "subpillar": "fact_composition",
+          "question": "Which two programming technologies are combined to form the hybrid stack for the CodeStream Core project?",
+          "answer_type": "short_answer",
+          "gold_answer": "Rust and Node.js",
+          "predicted_answer": "Unknown",
+          "retrieved_context": [
+            "User is pulling down latest changes for core project",
+            "User observes architecture shifted a bit",
+            "User needs to make sure cargo toolchain is up to date"
+          ],
+          "score": 0,
+          "match_type": "llm_judge",
+          "latency_ms": 1068.211317062378
+        },
+        {
+          "probe_id": "declarative_reasoning-verbatim_recall-0",
+          "pillar": "declarative_reasoning",
+          "subpillar": "verbatim_recall",
+          "question": "What is the verbatim password for the CodeStream network?",
+          "answer_type": "verbatim",
+          "gold_answer": "CodeStream2024!",
+          "predicted_answer": "I don't know.",
+          "retrieved_context": [
+            "User blanked on the password",
+            "User needs to reconnect tablet to office wifi",
+            "User observes architecture shifted a bit"
+          ],
+          "score": 0,
+          "match_type": "llm_judge",
+          "latency_ms": 1184.06081199646
+        },
+        {
+          "probe_id": "temporal_episodic-temporal_sequencing-0",
+          "pillar": "temporal_episodic",
+          "subpillar": "temporal_sequencing",
+          "question": "The user requested dentist reminders in two separate sessions. What time was specified in the most recent request?",
+          "answer_type": "short_answer",
+          "gold_answer": "12:00 PM",
+          "predicted_answer": "Unknown",
+          "retrieved_context": [
+            "User wants reminder to water plants when get home",
+            "User needs to reconnect tablet to office wifi",
+            "User blanked on the password"
+          ],
+          "score": 0,
+          "match_type": "llm_judge",
+          "latency_ms": 1560.6753826141357
+        },
+        {
+          "probe_id": "temporal_episodic-episode_reconstruction-0",
+          "pillar": "temporal_episodic",
+          "subpillar": "episode_reconstruction",
+          "question": "During the conversation where the user complained about the office being freezing, which programming language was confirmed for the backend?",
+          "answer_type": "short_answer",
+          "gold_answer": "Rust",
+          "predicted_answer": "Unknown",
+          "retrieved_context": [
+            "User sees huge directory for server-side JavaScript",
+            "User observes architecture shifted a bit",
+            "Sato is typing furiously at his desk"
+          ],
+          "score": 0,
+          "match_type": "llm_judge",
+          "latency_ms": 847.5263118743896
+        },
+        {
+          "probe_id": "preference_learning-preference_induction-0",
+          "pillar": "preference_learning",
+          "subpillar": "preference_induction",
+          "question": "Based on the user's complaints about the office environment, what physical condition do they dislike?",
+          "answer_type": "short_answer",
+          "gold_answer": "Cold temperatures",
+          "predicted_answer": "The user observes that the architecture shifted a bit, which may imply a dislike for changes or instability in the office environment.",
+          "retrieved_context": [
+            "User observes architecture shifted a bit",
+            "Sato is typing furiously at his desk",
+            "User walked in"
+          ],
+          "score": 0,
+          "match_type": "llm_judge",
+          "latency_ms": 1178.0519485473633
+        },
+        {
+          "probe_id": "preference_learning-preference_scope-0",
+          "pillar": "preference_learning",
+          "subpillar": "preference_scope",
+          "question": "Does the user prefer to use Node.js for the performance-critical components of the project?",
+          "answer_type": "boolean",
+          "gold_answer": "No",
+          "predicted_answer": "Unknown",
+          "retrieved_context": [
+            "User sees huge directory for server-side JavaScript",
+            "User observes architecture shifted a bit",
+            "User is pulling down latest changes for core project"
+          ],
+          "score": 0,
+          "match_type": "llm_judge",
+          "latency_ms": 853.5587787628174
+        },
+        {
+          "probe_id": "knowledge_boundaries-negative_knowledge-0",
+          "pillar": "knowledge_boundaries",
+          "subpillar": "negative_knowledge",
+          "question": "What is Oliver's surname?",
+          "answer_type": "abstain",
+          "gold_answer": "not mentioned",
+          "predicted_answer": "Unknown",
+          "retrieved_context": [
+            "User observes architecture shifted a bit"
+          ],
+          "score": 1,
+          "match_type": "llm_judge",
+          "latency_ms": 914.8430824279785
+        },
+        {
+          "probe_id": "knowledge_boundaries-negative_knowledge-1",
+          "pillar": "knowledge_boundaries",
+          "subpillar": "negative_knowledge",
+          "question": "Which specific database system is configured for the CodeStream Core project?",
+          "answer_type": "abstain",
+          "gold_answer": "not mentioned",
+          "predicted_answer": "Unknown",
+          "retrieved_context": [
+            "User is pulling down latest changes for core project",
+            "User sees huge directory for server-side JavaScript",
+            "User observes architecture shifted a bit"
+          ],
+          "score": 1,
+          "match_type": "llm_judge",
+          "latency_ms": 811.3081455230713
+        },
+        {
+          "probe_id": "procedural_knowledge-procedure_storage-0",
+          "pillar": "procedural_knowledge",
+          "subpillar": "procedure_storage",
+          "question": "According to the assistant's explanation, what three elements make up the wifi password?",
+          "answer_type": "short_answer",
+          "gold_answer": "Company name, year, exclamation point",
+          "predicted_answer": "Unknown. The context does not provide information about the elements that make up the wifi password.",
+          "retrieved_context": [
+            "User needs to reconnect tablet to office wifi",
+            "User blanked on the password",
+            "User observes architecture shifted a bit"
+          ],
+          "score": 0,
+          "match_type": "llm_judge",
+          "latency_ms": 1170.461654663086
+        },
+        {
+          "probe_id": "procedural_knowledge-lesson_extraction-0",
+          "pillar": "procedural_knowledge",
+          "subpillar": "lesson_extraction",
+          "question": "What specific difficulty did the user report regarding the interaction between the server-side JavaScript and systems language components?",
+          "answer_type": "short_answer",
+          "gold_answer": "Bridging the gap",
+          "predicted_answer": "Unknown",
+          "retrieved_context": [
+            "User sees huge directory for server-side JavaScript",
+            "User observes architecture shifted a bit",
+            "User blanked on the password"
+          ],
+          "score": 0,
+          "match_type": "llm_judge",
+          "latency_ms": 951.3897895812988
+        }
+      ],
+      "summary": {
+        "overall_accuracy": 0.16666666666666666,
+        "total_score": 2,
+        "count": 12,
+        "by_answer_type": {
+          "short_answer": {
+            "total": 0,
+            "count": 8,
+            "accuracy": 0.0
+          },
+          "verbatim": {
+            "total": 0,
+            "count": 1,
+            "accuracy": 0.0
+          },
+          "boolean": {
+            "total": 0,
+            "count": 1,
+            "accuracy": 0.0
+          },
+          "abstain": {
+            "total": 2,
+            "count": 2,
+            "accuracy": 1.0
+          }
+        },
+        "by_pillar": {
+          "world_modeling": {
+            "total": 0,
+            "count": 2,
+            "accuracy": 0.0
+          },
+          "declarative_reasoning": {
+            "total": 0,
+            "count": 2,
+            "accuracy": 0.0
+          },
+          "temporal_episodic": {
+            "total": 0,
+            "count": 2,
+            "accuracy": 0.0
+          },
+          "preference_learning": {
+            "total": 0,
+            "count": 2,
+            "accuracy": 0.0
+          },
+          "knowledge_boundaries": {
+            "total": 2,
+            "count": 2,
+            "accuracy": 1.0
+          },
+          "procedural_knowledge": {
+            "total": 0,
+            "count": 2,
+            "accuracy": 0.0
+          }
+        }
+      },
+      "stored_memories": [
+        {
+          "id": "67379bef-7372-42a6-b650-b96e6909dbb4",
+          "memory": "User needs to make sure cargo toolchain is up to date",
+          "created_at": "2025-12-22T21:01:46.445524-08:00"
+        },
+        {
+          "id": "685aa98f-bf2e-4c14-b16a-9350f5290e8e",
+          "memory": "User sees huge directory for server-side JavaScript",
+          "created_at": "2025-12-22T21:01:45.396896-08:00"
+        },
+        {
+          "id": "567f9709-9806-42bb-b0e0-0214db655faa",
+          "memory": "User observes architecture shifted a bit",
+          "created_at": "2025-12-22T21:01:44.323233-08:00"
+        },
+        {
+          "id": "4e536e08-46c2-4e8a-bba0-5c1b7de8017f",
+          "memory": "User is pulling down latest changes for core project",
+          "created_at": "2025-12-22T21:01:43.328971-08:00"
+        },
+        {
+          "id": "ef0c3cb0-c0ea-437a-a9a6-d9cfc8abf1cc",
+          "memory": "User wants reminder to water plants when get home",
+          "created_at": "2025-12-22T21:01:42.319817-08:00"
+        },
+        {
+          "id": "d1bc71f1-c0f3-4ef6-92e4-a0752c004478",
+          "memory": "User blanked on the password",
+          "created_at": "2025-12-22T21:01:41.368721-08:00"
+        },
+        {
+          "id": "b859ea9e-d5bf-45e4-8d9e-50c84aac5749",
+          "memory": "User needs to reconnect tablet to office wifi",
+          "created_at": "2025-12-22T21:01:40.350731-08:00"
+        },
+        {
+          "id": "861269ff-034e-4ed8-8389-6bc25d065b78",
+          "memory": "Sato is typing furiously at his desk",
+          "created_at": "2025-12-22T21:01:39.383100-08:00"
+        },
+        {
+          "id": "cd7bd346-7344-4780-bdcb-f2af8d562aff",
+          "memory": "User walked in",
+          "created_at": "2025-12-22T21:01:39.118577-08:00"
+        }
+      ]
+    }
+  ]
+}
