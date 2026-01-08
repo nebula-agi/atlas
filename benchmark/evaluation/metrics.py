@@ -29,7 +29,7 @@ except ImportError:
 
 # LLM configuration
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
-GEMINI_MODEL = "gemini-2.5-flash"  # Gemini 2.5 Flash
+GEMINI_MODEL = "gemini-3.0-pro" 
 OPENROUTER_MODEL = "openai/gpt-4o"
 
 
