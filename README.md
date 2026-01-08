@@ -54,4 +54,4 @@ python run_eval.py simple --adapter nebula --skip-ingest
 
 ### License
 
-GNU Affero General Public License v3.0 (see `LICENSE`).
+MIT License (see `LICENSE`).
